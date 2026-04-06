@@ -1,0 +1,47 @@
+{
+  "name": "ecosurge",
+  "version": "1.0.0",
+  "description": "Ecosurge - Green Tech Innovation & The Species Archive",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --port 3000",
+    "build": "next build",
+    "start": "next start --port 3000",
+    "fetch:images": "node --experimental-modules scripts/fetch-images.js",
+    "build:db": "node --experimental-modules scripts/build-db.js",
+    "prebuild": "npm run build:db || true"
+  },
+  "keywords": [
+    "species",
+    "taxonomy",
+    "biodiversity",
+    "tree-of-life",
+    "field-guide",
+    "green-tech"
+  ],
+  "author": "Ecosurge",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.0",
+    "@types/d3": "^7.4.3",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.13",
+    "@types/react-dom": "^19.2.3",
+    "@types/three": "^0.182.0",
+    "better-sqlite3": "^11.0.0",
+    "sharp": "^0.33.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
+    "d3": "^7.9.0",
+    "idb": "^8.0.0",
+    "next": "^16.1.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "recharts": "^3.7.0",
+    "sql.js": "^1.10.0",
+    "three": "^0.182.0"
+  }
+}

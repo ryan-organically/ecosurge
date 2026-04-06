@@ -1,0 +1,2140 @@
+{
+  "generated": "2026-02-07T00:09:23.028Z",
+  "species": {
+    "panthera-leo": {
+      "thumb": "/species-images/panthera-leo/thumb.webp",
+      "medium": "/species-images/panthera-leo/medium.webp",
+      "full": "/species-images/panthera-leo/full.webp",
+      "attribution": "Charles J. Sharp, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Lion_(Panthera_leo)_male_6y.jpg"
+    },
+    "balaenoptera-musculus": {
+      "thumb": "/species-images/balaenoptera-musculus/thumb.webp",
+      "medium": "/species-images/balaenoptera-musculus/medium.webp",
+      "full": "/species-images/balaenoptera-musculus/full.webp",
+      "attribution": "NMFS Northeast Fisheries Science Center (NOAA), Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Bluewhale877.jpg"
+    },
+    "apis-mellifera": {
+      "thumb": "/species-images/apis-mellifera/thumb.webp",
+      "medium": "/species-images/apis-mellifera/medium.webp",
+      "full": "/species-images/apis-mellifera/full.webp",
+      "attribution": "John Severns (Severnjc), Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:European_honey_bee_extracts_nectar.jpg"
+    },
+    "sequoia-sempervirens": {
+      "thumb": "/species-images/sequoia-sempervirens/thumb.webp",
+      "medium": "/species-images/sequoia-sempervirens/medium.webp",
+      "full": "/species-images/sequoia-sempervirens/full.webp",
+      "attribution": "Acroterion, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:US_199_Redwood_Highway.jpg"
+    },
+    "octopus-vulgaris": {
+      "thumb": "/species-images/octopus-vulgaris/thumb.webp",
+      "medium": "/species-images/octopus-vulgaris/medium.webp",
+      "full": "/species-images/octopus-vulgaris/full.webp",
+      "attribution": "H. Zell, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Octopus_vulgaris_03.jpg"
+    },
+    "homo-sapiens": {
+      "thumb": "/species-images/homo-sapiens/thumb.webp",
+      "medium": "/species-images/homo-sapiens/medium.webp",
+      "full": "/species-images/homo-sapiens/full.webp",
+      "attribution": "MichaelMaggs, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Homeless_man,_Tokyo,_2008.jpg"
+    },
+    "pan-paniscus": {
+      "thumb": "/species-images/pan-paniscus/thumb.webp",
+      "medium": "/species-images/pan-paniscus/medium.webp",
+      "full": "/species-images/pan-paniscus/full.webp",
+      "attribution": "Hans Hillewaert, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Pan_paniscus_(female).jpg"
+    },
+    "gorilla-gorilla": {
+      "thumb": "/species-images/gorilla-gorilla/thumb.webp",
+      "medium": "/species-images/gorilla-gorilla/medium.webp",
+      "full": "/species-images/gorilla-gorilla/full.webp",
+      "attribution": "Charles J. Sharp, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Mountain_gorilla_(Gorilla_beringei_beringei)_yawn.jpg"
+    },
+    "gorilla-beringei": {
+      "thumb": "/species-images/gorilla-beringei/thumb.webp",
+      "medium": "/species-images/gorilla-beringei/medium.webp",
+      "full": "/species-images/gorilla-beringei/full.webp",
+      "attribution": "Charles J. Sharp, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Mountain_gorilla_(Gorilla_beringei_beringei)_eyes.jpg"
+    },
+    "pongo-abelii": {
+      "thumb": "/species-images/pongo-abelii/thumb.webp",
+      "medium": "/species-images/pongo-abelii/medium.webp",
+      "full": "/species-images/pongo-abelii/full.webp",
+      "attribution": "Calistemon, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sumatran_Orangutan_(Pongo_abelii)_at_Perth_Zoo,_February_2023_10.jpg"
+    },
+    "pongo-tapanuliensis": {
+      "thumb": "/species-images/pongo-tapanuliensis/thumb.webp",
+      "medium": "/species-images/pongo-tapanuliensis/medium.webp",
+      "full": "/species-images/pongo-tapanuliensis/full.webp",
+      "attribution": "Tim Laman, Wikimedia Commons, CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Pongo_tapanuliensis.jpg"
+    },
+    "orcinus-orca": {
+      "thumb": "/species-images/orcinus-orca/thumb.webp",
+      "medium": "/species-images/orcinus-orca/medium.webp",
+      "full": "/species-images/orcinus-orca/full.webp",
+      "attribution": "H. Zell, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Orcinus_orca_-_Loro_Parque_01.jpg"
+    },
+    "delphinus-delphis": {
+      "thumb": "/species-images/delphinus-delphis/thumb.webp",
+      "medium": "/species-images/delphinus-delphis/medium.webp",
+      "full": "/species-images/delphinus-delphis/full.webp",
+      "attribution": "H. Zell, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Delphinus_delphis_01.jpg"
+    },
+    "balaenoptera-acutorostrata": {
+      "thumb": "/species-images/balaenoptera-acutorostrata/thumb.webp",
+      "medium": "/species-images/balaenoptera-acutorostrata/medium.webp",
+      "full": "/species-images/balaenoptera-acutorostrata/full.webp",
+      "attribution": "Cephas, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Balaenoptera_acutorostrata_Saint-Laurent_02.jpg"
+    },
+    "pteropus-giganteus": {
+      "thumb": "/species-images/pteropus-giganteus/thumb.webp",
+      "medium": "/species-images/pteropus-giganteus/medium.webp",
+      "full": "/species-images/pteropus-giganteus/full.webp",
+      "attribution": "Charles J. Sharp, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Indian_flying_fox_(Pteropus_giganteus_giganteus)_in_flight.jpg"
+    },
+    "myotis-lucifugus": {
+      "thumb": "/species-images/myotis-lucifugus/thumb.webp",
+      "medium": "/species-images/myotis-lucifugus/medium.webp",
+      "full": "/species-images/myotis-lucifugus/full.webp",
+      "attribution": "en:Don Pfritzer, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Little_Brown_Bat_FWS.jpg"
+    },
+    "artibeus-jamaicensis": {
+      "thumb": "/species-images/artibeus-jamaicensis/thumb.webp",
+      "medium": "/species-images/artibeus-jamaicensis/medium.webp",
+      "full": "/species-images/artibeus-jamaicensis/full.webp",
+      "attribution": "Tobusaru, Wikimedia Commons, CC BY 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Artibeus_jamaicensis_los_tuxtlas_2008.jpg"
+    },
+    "rhinolophus-ferrumequinum": {
+      "thumb": "/species-images/rhinolophus-ferrumequinum/thumb.webp",
+      "medium": "/species-images/rhinolophus-ferrumequinum/medium.webp",
+      "full": "/species-images/rhinolophus-ferrumequinum/full.webp",
+      "attribution": "Rhinolophusferrumequinum, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Greater_Horseshoe_Bat_(Rhinolophus_ferrumequinum),_Gloucestershire,_UK.jpg"
+    },
+    "tadarida-brasiliensis": {
+      "thumb": "/species-images/tadarida-brasiliensis/thumb.webp",
+      "medium": "/species-images/tadarida-brasiliensis/medium.webp",
+      "full": "/species-images/tadarida-brasiliensis/full.webp",
+      "attribution": "Matti Mero, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Tadarida_brasiliensis_-_Bahamas_-_Long_Island_(sic)_-_Cartwright_Cave_-_March_2006_-_2.jpg"
+    },
+    "loxodonta-africana": {
+      "thumb": "/species-images/loxodonta-africana/thumb.webp",
+      "medium": "/species-images/loxodonta-africana/medium.webp",
+      "full": "/species-images/loxodonta-africana/full.webp",
+      "attribution": "Geoff Gallice, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Loxodonta_africana_South_Luangwa_National_Park_(1).jpg"
+    },
+    "elephas-maximus": {
+      "thumb": "/species-images/elephas-maximus/thumb.webp",
+      "medium": "/species-images/elephas-maximus/medium.webp",
+      "full": "/species-images/elephas-maximus/full.webp",
+      "attribution": "Alexander Klink. If you enjoy this photo and have a Flattr account, I'd appreciate a flattr!, Wikimedia Commons, CC BY 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Elephas_Maximus_Eye_Closeup_cropped.jpg"
+    },
+    "bos-taurus": {
+      "thumb": "/species-images/bos-taurus/thumb.webp",
+      "medium": "/species-images/bos-taurus/medium.webp",
+      "full": "/species-images/bos-taurus/full.webp",
+      "attribution": "Jjron, edited by Fir0002, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Hereford_Calf_Portrait,_SC,_Vic,_13.10.2007_edit.jpg"
+    },
+    "bos-indicus": {
+      "thumb": "/species-images/bos-indicus/thumb.webp",
+      "medium": "/species-images/bos-indicus/medium.webp",
+      "full": "/species-images/bos-indicus/full.webp",
+      "attribution": "NasserHalaweh, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Bovidae_Bos_taurus_indicus_3.jpg"
+    },
+    "bos-grunniens": {
+      "thumb": "/species-images/bos-grunniens/thumb.webp",
+      "medium": "/species-images/bos-grunniens/medium.webp",
+      "full": "/species-images/bos-grunniens/full.webp",
+      "attribution": "travelwayoflife, Wikimedia Commons, CC BY-SA 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Bos_grunniens_at_Letdar_on_Annapurna_Circuit.jpg"
+    },
+    "bison-bonasus": {
+      "thumb": "/species-images/bison-bonasus/thumb.webp",
+      "medium": "/species-images/bison-bonasus/medium.webp",
+      "full": "/species-images/bison-bonasus/full.webp",
+      "attribution": "Michael Gäbler, Wikimedia Commons, CC BY 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Bison_bonasus_(Linnaeus_1758).jpg"
+    },
+    "bubalus-bubalis": {
+      "thumb": "/species-images/bubalus-bubalis/thumb.webp",
+      "medium": "/species-images/bubalus-bubalis/medium.webp",
+      "full": "/species-images/bubalus-bubalis/full.webp",
+      "attribution": "Basile Morin, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Three_buffaloes_heads_above_water_in_Si_Phan_Don.jpg"
+    },
+    "syncerus-caffer": {
+      "thumb": "/species-images/syncerus-caffer/thumb.webp",
+      "medium": "/species-images/syncerus-caffer/medium.webp",
+      "full": "/species-images/syncerus-caffer/full.webp",
+      "attribution": "Jebulon, Wikimedia Commons, CC0",
+      "source": "https://commons.wikimedia.org/wiki/File:Syncerus_caffer_african_buffalo_skull_MNHN.jpg"
+    },
+    "capra-aegagrus": {
+      "thumb": "/species-images/capra-aegagrus/thumb.webp",
+      "medium": "/species-images/capra-aegagrus/medium.webp",
+      "full": "/species-images/capra-aegagrus/full.webp",
+      "attribution": "Wilfredor, Wikimedia Commons, CC0",
+      "source": "https://commons.wikimedia.org/wiki/File:Capra_aegagrus_hircus_in_isla_Margarita.jpg"
+    },
+    "capra-hircus": {
+      "thumb": "/species-images/capra-hircus/thumb.webp",
+      "medium": "/species-images/capra-hircus/medium.webp",
+      "full": "/species-images/capra-hircus/full.webp",
+      "attribution": "Benjamint444, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Boer_goat444.jpg"
+    },
+    "capra-ibex": {
+      "thumb": "/species-images/capra-ibex/thumb.webp",
+      "medium": "/species-images/capra-ibex/medium.webp",
+      "full": "/species-images/capra-ibex/full.webp",
+      "attribution": "Isiwal, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Alpensteinbock_Capra_ibex-0801.jpg"
+    },
+    "ovis-aries": {
+      "thumb": "/species-images/ovis-aries/thumb.webp",
+      "medium": "/species-images/ovis-aries/medium.webp",
+      "full": "/species-images/ovis-aries/full.webp",
+      "attribution": "Richard Bartz, Wikimedia Commons, CC BY-SA 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:01_Ovis_orientalis_aries_portrait.jpg"
+    },
+    "ovis-canadensis": {
+      "thumb": "/species-images/ovis-canadensis/thumb.webp",
+      "medium": "/species-images/ovis-canadensis/medium.webp",
+      "full": "/species-images/ovis-canadensis/full.webp",
+      "attribution": "The High Fin Sperm Whale, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Bighorn_sheep_(Ovis_canadensis).JPG"
+    },
+    "ovis-ammon": {
+      "thumb": "/species-images/ovis-ammon/thumb.webp",
+      "medium": "/species-images/ovis-ammon/medium.webp",
+      "full": "/species-images/ovis-ammon/full.webp",
+      "attribution": "Joseph Smit, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Ovis_ammon_ammon_by_Joseph_Smit.jpg"
+    },
+    "oryx-gazella": {
+      "thumb": "/species-images/oryx-gazella/thumb.webp",
+      "medium": "/species-images/oryx-gazella/medium.webp",
+      "full": "/species-images/oryx-gazella/full.webp",
+      "attribution": "Hans Hillewaert, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Oryx_gazella_(Okevi).jpg"
+    },
+    "oryx-leucoryx": {
+      "thumb": "/species-images/oryx-leucoryx/thumb.webp",
+      "medium": "/species-images/oryx-leucoryx/medium.webp",
+      "full": "/species-images/oryx-leucoryx/full.webp",
+      "attribution": "MathKnight, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Reem-Lavan001.jpg"
+    },
+    "hippotragus-niger": {
+      "thumb": "/species-images/hippotragus-niger/thumb.webp",
+      "medium": "/species-images/hippotragus-niger/medium.webp",
+      "full": "/species-images/hippotragus-niger/full.webp",
+      "attribution": "Paulmaz, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sable_bull.jpg"
+    },
+    "hippotragus-equinus": {
+      "thumb": "/species-images/hippotragus-equinus/thumb.webp",
+      "medium": "/species-images/hippotragus-equinus/medium.webp",
+      "full": "/species-images/hippotragus-equinus/full.webp",
+      "attribution": "Charles J. Sharp, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Roan_antelope_(Hippotragus_equinus_equinus)_male.jpg"
+    },
+    "connochaetes-taurinus": {
+      "thumb": "/species-images/connochaetes-taurinus/thumb.webp",
+      "medium": "/species-images/connochaetes-taurinus/medium.webp",
+      "full": "/species-images/connochaetes-taurinus/full.webp",
+      "attribution": "Diego Delso, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:%C3%91us_comunes_(Connochaetes_taurinus),_parque_nacional_de_Tarangire,_Tanzania,_2024-05-25,_DD_38-43_PAN.jpg"
+    },
+    "connochaetes-gnou": {
+      "thumb": "/species-images/connochaetes-gnou/thumb.webp",
+      "medium": "/species-images/connochaetes-gnou/medium.webp",
+      "full": "/species-images/connochaetes-gnou/full.webp",
+      "attribution": "Gzen92, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Gnou_bleu_(Connochaetes_taurinus).jpg"
+    },
+    "gazella-gazella": {
+      "thumb": "/species-images/gazella-gazella/thumb.webp",
+      "medium": "/species-images/gazella-gazella/medium.webp",
+      "full": "/species-images/gazella-gazella/full.webp",
+      "attribution": "Hans Hillewaert, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Oryx_gazella_(Okevi).jpg"
+    },
+    "gazella-dorcas": {
+      "thumb": "/species-images/gazella-dorcas/thumb.webp",
+      "medium": "/species-images/gazella-dorcas/medium.webp",
+      "full": "/species-images/gazella-dorcas/full.webp",
+      "attribution": "Frithjof Spangenberg, Wikimedia Commons, CC BY-SA 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Gazella-dorcas.jpg"
+    },
+    "rupicapra-rupicapra": {
+      "thumb": "/species-images/rupicapra-rupicapra/thumb.webp",
+      "medium": "/species-images/rupicapra-rupicapra/medium.webp",
+      "full": "/species-images/rupicapra-rupicapra/full.webp",
+      "attribution": "Jacek rybak, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Rupicapra_rupicapra_tatrica.jpg"
+    },
+    "cervus-elaphus": {
+      "thumb": "/species-images/cervus-elaphus/thumb.webp",
+      "medium": "/species-images/cervus-elaphus/medium.webp",
+      "full": "/species-images/cervus-elaphus/full.webp",
+      "attribution": "Michael Gäbler, Wikimedia Commons, CC BY 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cervus_elaphus_(female).jpg"
+    },
+    "cervus-canadensis": {
+      "thumb": "/species-images/cervus-canadensis/thumb.webp",
+      "medium": "/species-images/cervus-canadensis/medium.webp",
+      "full": "/species-images/cervus-canadensis/full.webp",
+      "attribution": "John James Audubon, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Audubon-eastern-elk.jpg"
+    },
+    "cervus-nippon": {
+      "thumb": "/species-images/cervus-nippon/thumb.webp",
+      "medium": "/species-images/cervus-nippon/medium.webp",
+      "full": "/species-images/cervus-nippon/full.webp",
+      "attribution": "Lilly M, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cervus_nippon_002.jpg"
+    },
+    "odocoileus-virginianus": {
+      "thumb": "/species-images/odocoileus-virginianus/thumb.webp",
+      "medium": "/species-images/odocoileus-virginianus/medium.webp",
+      "full": "/species-images/odocoileus-virginianus/full.webp",
+      "attribution": "Ianaré Sévi, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Odocoileus_virginianus_clavium_male_head.jpg"
+    },
+    "odocoileus-hemionus": {
+      "thumb": "/species-images/odocoileus-hemionus/thumb.webp",
+      "medium": "/species-images/odocoileus-hemionus/medium.webp",
+      "full": "/species-images/odocoileus-hemionus/full.webp",
+      "attribution": "Walter Siegmund (talk), Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Odocoileus_hemionus_5432.JPG"
+    },
+    "alces-alces": {
+      "thumb": "/species-images/alces-alces/thumb.webp",
+      "medium": "/species-images/alces-alces/medium.webp",
+      "full": "/species-images/alces-alces/full.webp",
+      "attribution": "Tony Hisgett from Birmingham, UK, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Moose_in_Grand_Teton_National_Park_3_(8007698498).jpg"
+    },
+    "rangifer-tarandus": {
+      "thumb": "/species-images/rangifer-tarandus/thumb.webp",
+      "medium": "/species-images/rangifer-tarandus/medium.webp",
+      "full": "/species-images/rangifer-tarandus/full.webp",
+      "attribution": "Alexandre Buisse (Nattfodd), Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:20070818-0001-strolling_reindeer.jpg"
+    },
+    "capreolus-capreolus": {
+      "thumb": "/species-images/capreolus-capreolus/thumb.webp",
+      "medium": "/species-images/capreolus-capreolus/medium.webp",
+      "full": "/species-images/capreolus-capreolus/full.webp",
+      "attribution": "Uoaei1, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Capreolus_capreolus_Wien_Zentralfriedhof_20161230_01.jpg"
+    },
+    "muntiacus-reevesi": {
+      "thumb": "/species-images/muntiacus-reevesi/thumb.webp",
+      "medium": "/species-images/muntiacus-reevesi/medium.webp",
+      "full": "/species-images/muntiacus-reevesi/full.webp",
+      "attribution": "FakirNL, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Muntiacus_reevesi_micrurus_in_Zoo_Krefeld_(2).jpg"
+    },
+    "sus-scrofa": {
+      "thumb": "/species-images/sus-scrofa/thumb.webp",
+      "medium": "/species-images/sus-scrofa/medium.webp",
+      "full": "/species-images/sus-scrofa/full.webp",
+      "attribution": "Richard Bartz, Munich Makro Freak, Wikimedia Commons, CC BY-SA 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Wild_Boar_Habbitat_2.jpg"
+    },
+    "sus-domesticus": {
+      "thumb": "/species-images/sus-domesticus/thumb.webp",
+      "medium": "/species-images/sus-domesticus/medium.webp",
+      "full": "/species-images/sus-domesticus/full.webp",
+      "attribution": "Alvesgaspar, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Pot-bellied_pigs_in_Lisbon_Zoo_2008.jpg"
+    },
+    "sus-barbatus": {
+      "thumb": "/species-images/sus-barbatus/thumb.webp",
+      "medium": "/species-images/sus-barbatus/medium.webp",
+      "full": "/species-images/sus-barbatus/full.webp",
+      "attribution": "Ben Lunsford, Wikimedia Commons, CC BY-SA 3.0 us",
+      "source": "https://commons.wikimedia.org/wiki/File:Bearded-Pig.jpg"
+    },
+    "phacochoerus-africanus": {
+      "thumb": "/species-images/phacochoerus-africanus/thumb.webp",
+      "medium": "/species-images/phacochoerus-africanus/medium.webp",
+      "full": "/species-images/phacochoerus-africanus/full.webp",
+      "attribution": "Charles J. Sharp, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Warthogs_(Phacochoerus_africanus)_young_males_eyeballing.jpg"
+    },
+    "potamochoerus-porcus": {
+      "thumb": "/species-images/potamochoerus-porcus/thumb.webp",
+      "medium": "/species-images/potamochoerus-porcus/medium.webp",
+      "full": "/species-images/potamochoerus-porcus/full.webp",
+      "attribution": "Rufus46, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Pinselohrschwein_Potamochoerus_porcus_Tierpark_Hellabrunn-5.jpg"
+    },
+    "babyrousa-celebensis": {
+      "thumb": "/species-images/babyrousa-celebensis/thumb.webp",
+      "medium": "/species-images/babyrousa-celebensis/medium.webp",
+      "full": "/species-images/babyrousa-celebensis/full.webp",
+      "attribution": "Alena Houšková, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Babyrousa_celebensis_ZOO_D%C4%9B%C4%8D%C3%ADn.jpg"
+    },
+    "pecari-tajacu": {
+      "thumb": "/species-images/pecari-tajacu/thumb.webp",
+      "medium": "/species-images/pecari-tajacu/medium.webp",
+      "full": "/species-images/pecari-tajacu/full.webp",
+      "attribution": "Chrumps, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Tayassu_tajacu.jpg"
+    },
+    "tayassu-pecari": {
+      "thumb": "/species-images/tayassu-pecari/thumb.webp",
+      "medium": "/species-images/tayassu-pecari/medium.webp",
+      "full": "/species-images/tayassu-pecari/full.webp",
+      "attribution": "Ana_Cotta, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Tayassu_pecari_-Brazil-8.jpg"
+    },
+    "giraffa-camelopardalis": {
+      "thumb": "/species-images/giraffa-camelopardalis/thumb.webp",
+      "medium": "/species-images/giraffa-camelopardalis/medium.webp",
+      "full": "/species-images/giraffa-camelopardalis/full.webp",
+      "attribution": "Hans Hillewaert, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Giraffa_camelopardalis_angolensis_(mating).jpg"
+    },
+    "vicugna-vicugna": {
+      "thumb": "/species-images/vicugna-vicugna/thumb.webp",
+      "medium": "/species-images/vicugna-vicugna/medium.webp",
+      "full": "/species-images/vicugna-vicugna/full.webp",
+      "attribution": "Luca Galuzzi (Lucag), Wikimedia Commons, CC BY-SA 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Vicu%C3%B1a_Vigogne_Lago_Chungar%C3%A0_4570m_Chile_Luca_Galuzzi_2006.jpg"
+    },
+    "vicugna-pacos": {
+      "thumb": "/species-images/vicugna-pacos/thumb.webp",
+      "medium": "/species-images/vicugna-pacos/medium.webp",
+      "full": "/species-images/vicugna-pacos/full.webp",
+      "attribution": "Diego Delso, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Vicu%C3%B1as_(Vicugna_vicugna),_Laguna_de_Salinas,_Arequipa,_Per%C3%BA,_2015-08-02,_DD_40.JPG"
+    },
+    "tragulus-kanchil": {
+      "thumb": "/species-images/tragulus-kanchil/thumb.webp",
+      "medium": "/species-images/tragulus-kanchil/medium.webp",
+      "full": "/species-images/tragulus-kanchil/full.webp",
+      "attribution": "Christoph Moning, Wikimedia Commons, CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Tragulus_kanchil_60531100.jpg"
+    },
+    "moschus-moschiferus": {
+      "thumb": "/species-images/moschus-moschiferus/thumb.webp",
+      "medium": "/species-images/moschus-moschiferus/medium.webp",
+      "full": "/species-images/moschus-moschiferus/full.webp",
+      "attribution": "Unknown, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Moschustier.jpg"
+    },
+    "equus-caballus": {
+      "thumb": "/species-images/equus-caballus/thumb.webp",
+      "medium": "/species-images/equus-caballus/medium.webp",
+      "full": "/species-images/equus-caballus/full.webp",
+      "attribution": "Softeis, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Horse-racing-4.jpg"
+    },
+    "equus-africanus": {
+      "thumb": "/species-images/equus-africanus/thumb.webp",
+      "medium": "/species-images/equus-africanus/medium.webp",
+      "full": "/species-images/equus-africanus/full.webp",
+      "attribution": "Lilly M, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Equus_asinus_Kadzid%C5%82owo_001.jpg"
+    },
+    "equus-asinus": {
+      "thumb": "/species-images/equus-asinus/thumb.webp",
+      "medium": "/species-images/equus-asinus/medium.webp",
+      "full": "/species-images/equus-asinus/full.webp",
+      "attribution": "Lilly M, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Equus_asinus_Kadzid%C5%82owo_001.jpg"
+    },
+    "equus-quagga": {
+      "thumb": "/species-images/equus-quagga/thumb.webp",
+      "medium": "/species-images/equus-quagga/medium.webp",
+      "full": "/species-images/equus-quagga/full.webp",
+      "attribution": "Yathin S Krishnappa, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Equus_quagga_(Namutoni,_2012).jpg"
+    },
+    "equus-grevyi": {
+      "thumb": "/species-images/equus-grevyi/thumb.webp",
+      "medium": "/species-images/equus-grevyi/medium.webp",
+      "full": "/species-images/equus-grevyi/full.webp",
+      "attribution": "André Karwath aka Aka, Wikimedia Commons, CC BY-SA 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Equus_grevyi_(aka).jpg"
+    },
+    "equus-zebra": {
+      "thumb": "/species-images/equus-zebra/thumb.webp",
+      "medium": "/species-images/equus-zebra/medium.webp",
+      "full": "/species-images/equus-zebra/full.webp",
+      "attribution": "Yathin S Krishnappa, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Equus_zebra_hartmannae_-_Etosha_2015.jpg"
+    },
+    "equus-hemionus": {
+      "thumb": "/species-images/equus-hemionus/thumb.webp",
+      "medium": "/species-images/equus-hemionus/medium.webp",
+      "full": "/species-images/equus-hemionus/full.webp",
+      "attribution": "Jebulon, Wikimedia Commons, CC0",
+      "source": "https://commons.wikimedia.org/wiki/File:Equus_hemionus_kulan_MNHN.jpg"
+    },
+    "equus-kiang": {
+      "thumb": "/species-images/equus-kiang/thumb.webp",
+      "medium": "/species-images/equus-kiang/medium.webp",
+      "full": "/species-images/equus-kiang/full.webp",
+      "attribution": "Bodlina, Wikimedia Commons, CC BY 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Equus_kiang_holdereri02.jpg"
+    },
+    "rhinoceros-unicornis": {
+      "thumb": "/species-images/rhinoceros-unicornis/thumb.webp",
+      "medium": "/species-images/rhinoceros-unicornis/medium.webp",
+      "full": "/species-images/rhinoceros-unicornis/full.webp",
+      "attribution": "Hans Hillewaert, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Rhinoceros_unicornis_(posterior).jpg"
+    },
+    "rhinoceros-sondaicus": {
+      "thumb": "/species-images/rhinoceros-sondaicus/thumb.webp",
+      "medium": "/species-images/rhinoceros-sondaicus/medium.webp",
+      "full": "/species-images/rhinoceros-sondaicus/full.webp",
+      "attribution": "T.Dixon. The Zoological Society of London, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Rhinoceros_sondaicus_in_London_Zoo.jpg"
+    },
+    "dicerorhinus-sumatrensis": {
+      "thumb": "/species-images/dicerorhinus-sumatrensis/thumb.webp",
+      "medium": "/species-images/dicerorhinus-sumatrensis/medium.webp",
+      "full": "/species-images/dicerorhinus-sumatrensis/full.webp",
+      "attribution": "Charles W. Hardin, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sumatran_Rhino_2.jpg"
+    },
+    "ceratotherium-simum": {
+      "thumb": "/species-images/ceratotherium-simum/thumb.webp",
+      "medium": "/species-images/ceratotherium-simum/medium.webp",
+      "full": "/species-images/ceratotherium-simum/full.webp",
+      "attribution": "Jebulon, Wikimedia Commons, CC0",
+      "source": "https://commons.wikimedia.org/wiki/File:Ceratotherium_simum_white_Rhinoceros_blanc_female_MNHN.jpg"
+    },
+    "diceros-bicornis": {
+      "thumb": "/species-images/diceros-bicornis/thumb.webp",
+      "medium": "/species-images/diceros-bicornis/medium.webp",
+      "full": "/species-images/diceros-bicornis/full.webp",
+      "attribution": "Jebulon, Wikimedia Commons, CC0",
+      "source": "https://commons.wikimedia.org/wiki/File:Diceros_bicornis_MNHN.jpg"
+    },
+    "tapirus-indicus": {
+      "thumb": "/species-images/tapirus-indicus/thumb.webp",
+      "medium": "/species-images/tapirus-indicus/medium.webp",
+      "full": "/species-images/tapirus-indicus/full.webp",
+      "attribution": "Unknown, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Malayan_Tapir.JPG"
+    },
+    "tapirus-terrestris": {
+      "thumb": "/species-images/tapirus-terrestris/thumb.webp",
+      "medium": "/species-images/tapirus-terrestris/medium.webp",
+      "full": "/species-images/tapirus-terrestris/full.webp",
+      "attribution": "Charles J. Sharp, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:South_American_tapir_(Tapirus_terrestris).JPG"
+    },
+    "tapirus-pinchaque": {
+      "thumb": "/species-images/tapirus-pinchaque/thumb.webp",
+      "medium": "/species-images/tapirus-pinchaque/medium.webp",
+      "full": "/species-images/tapirus-pinchaque/full.webp",
+      "attribution": "desertnaturalist, Wikimedia Commons, CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Tapirus_pinchaque_133820325.jpg"
+    },
+    "tapirus-bairdii": {
+      "thumb": "/species-images/tapirus-bairdii/thumb.webp",
+      "medium": "/species-images/tapirus-bairdii/medium.webp",
+      "full": "/species-images/tapirus-bairdii/full.webp",
+      "attribution": "Unknown, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Central_American_Tapir-Belize20.jpg"
+    },
+    "tapirus-kabomani": {
+      "thumb": "/species-images/tapirus-kabomani/thumb.webp",
+      "medium": "/species-images/tapirus-kabomani/medium.webp",
+      "full": "/species-images/tapirus-kabomani/full.webp",
+      "attribution": "Vardion, Wikimedia Commons, CC0",
+      "source": "https://commons.wikimedia.org/wiki/File:Mapa_Tapirus_kabomani.png"
+    },
+    "ornithorhynchus-anatinus": {
+      "thumb": "/species-images/ornithorhynchus-anatinus/thumb.webp",
+      "medium": "/species-images/ornithorhynchus-anatinus/medium.webp",
+      "full": "/species-images/ornithorhynchus-anatinus/full.webp",
+      "attribution": "Charles J. Sharp, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Duck-billed_platypus_(Ornithorhynchus_anatinus)_Scottsdale_2.jpg"
+    },
+    "macropus-rufus": {
+      "thumb": "/species-images/macropus-rufus/thumb.webp",
+      "medium": "/species-images/macropus-rufus/medium.webp",
+      "full": "/species-images/macropus-rufus/full.webp",
+      "attribution": "Fernando Losada Rodríguez, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Macropus_rufus.002_-_Zoo_Aquarium_de_Madrid.JPG"
+    },
+    "macropus-giganteus": {
+      "thumb": "/species-images/macropus-giganteus/thumb.webp",
+      "medium": "/species-images/macropus-giganteus/medium.webp",
+      "full": "/species-images/macropus-giganteus/full.webp",
+      "attribution": "Eastern_Grey_Kangaroo_Feeding.jpg:  Toby Hudson\nderivative work:  Durova (  talk ), Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Eastern_Grey_Kangaroo_Feeding_edited.jpg"
+    },
+    "macropus-fuliginosus": {
+      "thumb": "/species-images/macropus-fuliginosus/thumb.webp",
+      "medium": "/species-images/macropus-fuliginosus/medium.webp",
+      "full": "/species-images/macropus-fuliginosus/full.webp",
+      "attribution": "Charles J. Sharp, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Kangaroo_Island_Western_grey_kangaroo_(Macropus_fuliginosus_fuliginosus)_female_with_joey.jpg"
+    },
+    "wallabia-bicolor": {
+      "thumb": "/species-images/wallabia-bicolor/thumb.webp",
+      "medium": "/species-images/wallabia-bicolor/medium.webp",
+      "full": "/species-images/wallabia-bicolor/full.webp",
+      "attribution": "Peripitus, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Wallabia_bicolor_and_large_joey.JPG"
+    },
+    "setonix-brachyurus": {
+      "thumb": "/species-images/setonix-brachyurus/thumb.webp",
+      "medium": "/species-images/setonix-brachyurus/medium.webp",
+      "full": "/species-images/setonix-brachyurus/full.webp",
+      "attribution": "en:User:SeanMack, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Rottnest_Quokka_2004_SeanMcClean.jpg"
+    },
+    "trichosurus-vulpecula": {
+      "thumb": "/species-images/trichosurus-vulpecula/thumb.webp",
+      "medium": "/species-images/trichosurus-vulpecula/medium.webp",
+      "full": "/species-images/trichosurus-vulpecula/full.webp",
+      "attribution": "user:benjamint444 modified by Tony Wills, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Brush_tail_possum_4-colour_corr.jpg"
+    },
+    "phascolarctos-cinereus": {
+      "thumb": "/species-images/phascolarctos-cinereus/thumb.webp",
+      "medium": "/species-images/phascolarctos-cinereus/medium.webp",
+      "full": "/species-images/phascolarctos-cinereus/full.webp",
+      "attribution": "Diliff, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Koala_climbing_tree.jpg"
+    },
+    "vombatus-ursinus": {
+      "thumb": "/species-images/vombatus-ursinus/thumb.webp",
+      "medium": "/species-images/vombatus-ursinus/medium.webp",
+      "full": "/species-images/vombatus-ursinus/full.webp",
+      "attribution": "JJ Harrison (jjharrison89@facebook.com), Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Vombatus_ursinus_-Maria_Island_National_Park.jpg"
+    },
+    "lasiorhinus-latifrons": {
+      "thumb": "/species-images/lasiorhinus-latifrons/thumb.webp",
+      "medium": "/species-images/lasiorhinus-latifrons/medium.webp",
+      "full": "/species-images/lasiorhinus-latifrons/full.webp",
+      "attribution": "Jason Pratt, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Southern_Hairy-nosed_Wombat.jpg"
+    },
+    "petaurus-breviceps": {
+      "thumb": "/species-images/petaurus-breviceps/thumb.webp",
+      "medium": "/species-images/petaurus-breviceps/medium.webp",
+      "full": "/species-images/petaurus-breviceps/full.webp",
+      "attribution": "Unknown, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Petaurus_breviceps-Cayley.jpg"
+    },
+    "dasyurus-maculatus": {
+      "thumb": "/species-images/dasyurus-maculatus/thumb.webp",
+      "medium": "/species-images/dasyurus-maculatus/medium.webp",
+      "full": "/species-images/dasyurus-maculatus/full.webp",
+      "attribution": "SeanMack at English Wikipedia, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:SpottedQuoll_2005_SeanMcClean.jpg"
+    },
+    "dasyurus-viverrinus": {
+      "thumb": "/species-images/dasyurus-viverrinus/thumb.webp",
+      "medium": "/species-images/dasyurus-viverrinus/medium.webp",
+      "full": "/species-images/dasyurus-viverrinus/full.webp",
+      "attribution": "Charles J. Sharp, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Eastern_quoll_(Dasyurus_viverrinus)_black_morph_Esk_Valley.jpg"
+    },
+    "sarcophilus-harrisii": {
+      "thumb": "/species-images/sarcophilus-harrisii/thumb.webp",
+      "medium": "/species-images/sarcophilus-harrisii/medium.webp",
+      "full": "/species-images/sarcophilus-harrisii/full.webp",
+      "attribution": "JJ Harrison (https://www.jjharrison.com.au/), Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sarcophilus_harrisii_taranna.jpg"
+    },
+    "macrotis-lagotis": {
+      "thumb": "/species-images/macrotis-lagotis/thumb.webp",
+      "medium": "/species-images/macrotis-lagotis/medium.webp",
+      "full": "/species-images/macrotis-lagotis/full.webp",
+      "attribution": "Bernard DUPONT from FRANCE, Wikimedia Commons, CC BY-SA 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Greater_Bilby_(Macrotis_lagotis)_(9996456685).jpg"
+    },
+    "didelphis-virginiana": {
+      "thumb": "/species-images/didelphis-virginiana/thumb.webp",
+      "medium": "/species-images/didelphis-virginiana/medium.webp",
+      "full": "/species-images/didelphis-virginiana/full.webp",
+      "attribution": "Cody Pope, Wikimedia Commons, CC BY-SA 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Opossum_2.jpg"
+    },
+    "bradypus-variegatus": {
+      "thumb": "/species-images/bradypus-variegatus/thumb.webp",
+      "medium": "/species-images/bradypus-variegatus/medium.webp",
+      "full": "/species-images/bradypus-variegatus/full.webp",
+      "attribution": "Stefan Laube (Tauchgurke), Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Bradypus.jpg"
+    },
+    "bradypus-tridactylus": {
+      "thumb": "/species-images/bradypus-tridactylus/thumb.webp",
+      "medium": "/species-images/bradypus-tridactylus/medium.webp",
+      "full": "/species-images/bradypus-tridactylus/full.webp",
+      "attribution": "Stefan Laube (Tauchgurke), Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Bradypus.jpg"
+    },
+    "bradypus-pygmaeus": {
+      "thumb": "/species-images/bradypus-pygmaeus/thumb.webp",
+      "medium": "/species-images/bradypus-pygmaeus/medium.webp",
+      "full": "/species-images/bradypus-pygmaeus/full.webp",
+      "attribution": "Chermundy, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Pygmy_Three-toed_Sloth_area.png"
+    },
+    "choloepus-hoffmanni": {
+      "thumb": "/species-images/choloepus-hoffmanni/thumb.webp",
+      "medium": "/species-images/choloepus-hoffmanni/medium.webp",
+      "full": "/species-images/choloepus-hoffmanni/full.webp",
+      "attribution": "Geoff Gallice, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Choloepus_hoffmanni_(Puerto_Viejo,_CR)_crop.jpg"
+    },
+    "choloepus-didactylus": {
+      "thumb": "/species-images/choloepus-didactylus/thumb.webp",
+      "medium": "/species-images/choloepus-didactylus/medium.webp",
+      "full": "/species-images/choloepus-didactylus/full.webp",
+      "attribution": "Dave Pape, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Choloepus_didactylus_2_-_Buffalo_Zoo.jpg"
+    },
+    "myrmecophaga-tridactyla": {
+      "thumb": "/species-images/myrmecophaga-tridactyla/thumb.webp",
+      "medium": "/species-images/myrmecophaga-tridactyla/medium.webp",
+      "full": "/species-images/myrmecophaga-tridactyla/full.webp",
+      "attribution": "Museum of Veterinary Anatomy FMVZ USP / Wagner Souza e Silva, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Giant_anteater_at_MAV-USP.jpg"
+    },
+    "tamandua-tetradactyla": {
+      "thumb": "/species-images/tamandua-tetradactyla/thumb.webp",
+      "medium": "/species-images/tamandua-tetradactyla/medium.webp",
+      "full": "/species-images/tamandua-tetradactyla/full.webp",
+      "attribution": "Quartl, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Tamandua_tetradactyla_qtl1.jpg"
+    },
+    "cyclopes-didactylus": {
+      "thumb": "/species-images/cyclopes-didactylus/thumb.webp",
+      "medium": "/species-images/cyclopes-didactylus/medium.webp",
+      "full": "/species-images/cyclopes-didactylus/full.webp",
+      "attribution": "Quinten Questel, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Silky_Anteater.jpg"
+    },
+    "dasypus-novemcinctus": {
+      "thumb": "/species-images/dasypus-novemcinctus/thumb.webp",
+      "medium": "/species-images/dasypus-novemcinctus/medium.webp",
+      "full": "/species-images/dasypus-novemcinctus/full.webp",
+      "attribution": "Jairmoreirafotografia, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Tatu-galinha.jpg"
+    },
+    "tolypeutes-tricinctus": {
+      "thumb": "/species-images/tolypeutes-tricinctus/thumb.webp",
+      "medium": "/species-images/tolypeutes-tricinctus/medium.webp",
+      "full": "/species-images/tolypeutes-tricinctus/full.webp",
+      "attribution": "John Cummings, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Brazilian_three-banded_armadillo_(Tolypeutes_tricinctus)_2,_Natural_History_Museum,_London,_Mammals_Gallery.JPG"
+    },
+    "priodontes-maximus": {
+      "thumb": "/species-images/priodontes-maximus/thumb.webp",
+      "medium": "/species-images/priodontes-maximus/medium.webp",
+      "full": "/species-images/priodontes-maximus/full.webp",
+      "attribution": "HTO, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Priodontes_maximus,_museum_02.JPG"
+    },
+    "atelerix-albiventris": {
+      "thumb": "/species-images/atelerix-albiventris/thumb.webp",
+      "medium": "/species-images/atelerix-albiventris/medium.webp",
+      "full": "/species-images/atelerix-albiventris/full.webp",
+      "attribution": "Nacaru, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Atelerix_albiventris_in_Spain.jpg"
+    },
+    "suncus-etruscus": {
+      "thumb": "/species-images/suncus-etruscus/thumb.webp",
+      "medium": "/species-images/suncus-etruscus/medium.webp",
+      "full": "/species-images/suncus-etruscus/full.webp",
+      "attribution": "Trebol-a, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Suncus_etruscus.jpg"
+    },
+    "talpa-europaea": {
+      "thumb": "/species-images/talpa-europaea/thumb.webp",
+      "medium": "/species-images/talpa-europaea/medium.webp",
+      "full": "/species-images/talpa-europaea/full.webp",
+      "attribution": "Didier Descouens, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Talpa_europaea_MHNT_Tete.jpg"
+    },
+    "scalopus-aquaticus": {
+      "thumb": "/species-images/scalopus-aquaticus/thumb.webp",
+      "medium": "/species-images/scalopus-aquaticus/medium.webp",
+      "full": "/species-images/scalopus-aquaticus/full.webp",
+      "attribution": "Kenneth Catania, Vanderbilt University, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:ScalopusAquaticus.jpg"
+    },
+    "solenodon-paradoxus": {
+      "thumb": "/species-images/solenodon-paradoxus/thumb.webp",
+      "medium": "/species-images/solenodon-paradoxus/medium.webp",
+      "full": "/species-images/solenodon-paradoxus/full.webp",
+      "attribution": "Sandstein, Wikimedia Commons, CC BY 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Solenodon_paradoxus,_Naturhistorisches_Museum_Wien.jpg"
+    },
+    "manis-javanica": {
+      "thumb": "/species-images/manis-javanica/thumb.webp",
+      "medium": "/species-images/manis-javanica/medium.webp",
+      "full": "/species-images/manis-javanica/full.webp",
+      "attribution": "Piekfrosch at German Wikipedia\n\n(Original text: Piekfrosch (Wikipedia-User)), Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Pangolin_borneo.jpg"
+    },
+    "manis-pentadactyla": {
+      "thumb": "/species-images/manis-pentadactyla/thumb.webp",
+      "medium": "/species-images/manis-pentadactyla/medium.webp",
+      "full": "/species-images/manis-pentadactyla/full.webp",
+      "attribution": "U.S. Fish and Wildlife Service Headquarters, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Manis_pentadactyla_(29054818144).jpg"
+    },
+    "smutsia-gigantea": {
+      "thumb": "/species-images/smutsia-gigantea/thumb.webp",
+      "medium": "/species-images/smutsia-gigantea/medium.webp",
+      "full": "/species-images/smutsia-gigantea/full.webp",
+      "attribution": "Liné1, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Manis_gigantea_01_by_Line1.JPG"
+    },
+    "trichechus-manatus": {
+      "thumb": "/species-images/trichechus-manatus/thumb.webp",
+      "medium": "/species-images/trichechus-manatus/medium.webp",
+      "full": "/species-images/trichechus-manatus/full.webp",
+      "attribution": "NASA, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Manatee_photo.jpg"
+    },
+    "trichechus-senegalensis": {
+      "thumb": "/species-images/trichechus-senegalensis/thumb.webp",
+      "medium": "/species-images/trichechus-senegalensis/medium.webp",
+      "full": "/species-images/trichechus-senegalensis/full.webp",
+      "attribution": "Daiju Azuma, Wikimedia Commons, CC BY-SA 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Trichechus_senegalensis.jpg"
+    },
+    "trichechus-inunguis": {
+      "thumb": "/species-images/trichechus-inunguis/thumb.webp",
+      "medium": "/species-images/trichechus-inunguis/medium.webp",
+      "full": "/species-images/trichechus-inunguis/full.webp",
+      "attribution": "KCO3, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Trichechus_inunguis.jpg"
+    },
+    "dugong-dugon": {
+      "thumb": "/species-images/dugong-dugon/thumb.webp",
+      "medium": "/species-images/dugong-dugon/medium.webp",
+      "full": "/species-images/dugong-dugon/full.webp",
+      "attribution": "Julien Willem, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Dugong_Marsa_Alam.jpg"
+    },
+    "procavia-capensis": {
+      "thumb": "/species-images/procavia-capensis/thumb.webp",
+      "medium": "/species-images/procavia-capensis/medium.webp",
+      "full": "/species-images/procavia-capensis/full.webp",
+      "attribution": "Hans Hillewaert, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Procavia_capensis.jpg"
+    },
+    "dendrohyrax-arboreus": {
+      "thumb": "/species-images/dendrohyrax-arboreus/thumb.webp",
+      "medium": "/species-images/dendrohyrax-arboreus/medium.webp",
+      "full": "/species-images/dendrohyrax-arboreus/full.webp",
+      "attribution": "Hans Hillewaert, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Dendrohyrax_arboreus.jpg"
+    },
+    "orycteropus-afer": {
+      "thumb": "/species-images/orycteropus-afer/thumb.webp",
+      "medium": "/species-images/orycteropus-afer/medium.webp",
+      "full": "/species-images/orycteropus-afer/full.webp",
+      "attribution": "Masur, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Orycteropus_afer_stuffed.jpg"
+    },
+    "galeopterus-variegatus": {
+      "thumb": "/species-images/galeopterus-variegatus/thumb.webp",
+      "medium": "/species-images/galeopterus-variegatus/medium.webp",
+      "full": "/species-images/galeopterus-variegatus/full.webp",
+      "attribution": "Nina Holopainen, Wikimedia Commons, CC BY 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Kaguaani_02.jpg"
+    },
+    "cynocephalus-volans": {
+      "thumb": "/species-images/cynocephalus-volans/thumb.webp",
+      "medium": "/species-images/cynocephalus-volans/medium.webp",
+      "full": "/species-images/cynocephalus-volans/full.webp",
+      "attribution": "Unknown, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Kaguang-drawing.jpg"
+    },
+    "corvus-corax": {
+      "thumb": "/species-images/corvus-corax/thumb.webp",
+      "medium": "/species-images/corvus-corax/medium.webp",
+      "full": "/species-images/corvus-corax/full.webp",
+      "attribution": "Diliff, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Corvus_corax_(Common_Raven),_Yosemite_NP,_CA,_US_-_Diliff.jpg"
+    },
+    "corvus-brachyrhynchos": {
+      "thumb": "/species-images/corvus-brachyrhynchos/thumb.webp",
+      "medium": "/species-images/corvus-brachyrhynchos/medium.webp",
+      "full": "/species-images/corvus-brachyrhynchos/full.webp",
+      "attribution": "Ianaré Sévi, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Corvus_caurinus_(profile).jpg"
+    },
+    "corvus-corone": {
+      "thumb": "/species-images/corvus-corone/thumb.webp",
+      "medium": "/species-images/corvus-corone/medium.webp",
+      "full": "/species-images/corvus-corone/full.webp",
+      "attribution": "Danrok, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Carrion_Crow_in_Jersey.jpg"
+    },
+    "pica-pica": {
+      "thumb": "/species-images/pica-pica/thumb.webp",
+      "medium": "/species-images/pica-pica/medium.webp",
+      "full": "/species-images/pica-pica/full.webp",
+      "attribution": "H. Zell, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cittarium_pica_01.JPG"
+    },
+    "cyanocitta-cristata": {
+      "thumb": "/species-images/cyanocitta-cristata/thumb.webp",
+      "medium": "/species-images/cyanocitta-cristata/medium.webp",
+      "full": "/species-images/cyanocitta-cristata/full.webp",
+      "attribution": "Mdf, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cyanocitta-cristata-004.jpg"
+    },
+    "aquila-chrysaetos": {
+      "thumb": "/species-images/aquila-chrysaetos/thumb.webp",
+      "medium": "/species-images/aquila-chrysaetos/medium.webp",
+      "full": "/species-images/aquila-chrysaetos/full.webp",
+      "attribution": "Richard Bartz, Munich aka Makro Freak, Wikimedia Commons, CC BY-SA 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Steinadler_Aquila_chrysaetos_closeup2_Richard_Bartz.jpg"
+    },
+    "haliaeetus-leucocephalus": {
+      "thumb": "/species-images/haliaeetus-leucocephalus/thumb.webp",
+      "medium": "/species-images/haliaeetus-leucocephalus/medium.webp",
+      "full": "/species-images/haliaeetus-leucocephalus/full.webp",
+      "attribution": "Paul Friel, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Bald_Eagle_-_%22Helga%22_-_Haliaeetus_leucocephalus2.jpg"
+    },
+    "haliaeetus-albicilla": {
+      "thumb": "/species-images/haliaeetus-albicilla/thumb.webp",
+      "medium": "/species-images/haliaeetus-albicilla/medium.webp",
+      "full": "/species-images/haliaeetus-albicilla/full.webp",
+      "attribution": "Yathin S Krishnappa, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Haliaeetus_albicilla_(Svolv%C3%A6r,_2012).jpg"
+    },
+    "accipiter-gentilis": {
+      "thumb": "/species-images/accipiter-gentilis/thumb.webp",
+      "medium": "/species-images/accipiter-gentilis/medium.webp",
+      "full": "/species-images/accipiter-gentilis/full.webp",
+      "attribution": "Norbert Kenntner, Berlin, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Northern_Goshawk_ad_M2.jpg"
+    },
+    "accipiter-nisus": {
+      "thumb": "/species-images/accipiter-nisus/thumb.webp",
+      "medium": "/species-images/accipiter-nisus/medium.webp",
+      "full": "/species-images/accipiter-nisus/full.webp",
+      "attribution": "Pierre Dalous, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Accipiter_nisus_edit.jpg"
+    },
+    "buteo-jamaicensis": {
+      "thumb": "/species-images/buteo-jamaicensis/thumb.webp",
+      "medium": "/species-images/buteo-jamaicensis/medium.webp",
+      "full": "/species-images/buteo-jamaicensis/full.webp",
+      "attribution": "Steve Jurvetson, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Hawk_eating_prey.jpg"
+    },
+    "falco-peregrinus": {
+      "thumb": "/species-images/falco-peregrinus/thumb.webp",
+      "medium": "/species-images/falco-peregrinus/medium.webp",
+      "full": "/species-images/falco-peregrinus/full.webp",
+      "attribution": "Carlos Delgado, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Falco_peregrinus_-_01.jpg"
+    },
+    "falco-rusticolus": {
+      "thumb": "/species-images/falco-rusticolus/thumb.webp",
+      "medium": "/species-images/falco-rusticolus/medium.webp",
+      "full": "/species-images/falco-rusticolus/full.webp",
+      "attribution": "Falco_rusticolus_white.jpg: Ólafur Larsen\nderivative work: Bogbumper (talk), Wikimedia Commons, CC BY-SA 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Falco_rusticolus_white_cropped.jpg"
+    },
+    "falco-sparverius": {
+      "thumb": "/species-images/falco-sparverius/thumb.webp",
+      "medium": "/species-images/falco-sparverius/medium.webp",
+      "full": "/species-images/falco-sparverius/full.webp",
+      "attribution": "Charles J. Sharp, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:American_kestrel_(Falco_sparverius).jpg"
+    },
+    "falco-columbarius": {
+      "thumb": "/species-images/falco-columbarius/thumb.webp",
+      "medium": "/species-images/falco-columbarius/medium.webp",
+      "full": "/species-images/falco-columbarius/full.webp",
+      "attribution": "Raj Boora from Edmonton, Canada, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Falco_columbarius_Male.jpg"
+    },
+    "caracara-plancus": {
+      "thumb": "/species-images/caracara-plancus/thumb.webp",
+      "medium": "/species-images/caracara-plancus/medium.webp",
+      "full": "/species-images/caracara-plancus/full.webp",
+      "attribution": "Andreas Trepte, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Schopfkarakara.jpg"
+    },
+    "bubo-bubo": {
+      "thumb": "/species-images/bubo-bubo/thumb.webp",
+      "medium": "/species-images/bubo-bubo/medium.webp",
+      "full": "/species-images/bubo-bubo/full.webp",
+      "attribution": "Flickr user indygnome, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Bubo_bubo_portrait.jpg"
+    },
+    "bubo-virginianus": {
+      "thumb": "/species-images/bubo-virginianus/thumb.webp",
+      "medium": "/species-images/bubo-virginianus/medium.webp",
+      "full": "/species-images/bubo-virginianus/full.webp",
+      "attribution": "Carlos Delgado, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Bubo_bubo_sibiricus_-_01.JPG"
+    },
+    "bubo-scandiacus": {
+      "thumb": "/species-images/bubo-scandiacus/thumb.webp",
+      "medium": "/species-images/bubo-scandiacus/medium.webp",
+      "full": "/species-images/bubo-scandiacus/full.webp",
+      "attribution": "Michael Gäbler, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Bubo_scandiacus_(Linnaeus,_1758)_Male.jpg"
+    },
+    "strix-aluco": {
+      "thumb": "/species-images/strix-aluco/thumb.webp",
+      "medium": "/species-images/strix-aluco/medium.webp",
+      "full": "/species-images/strix-aluco/full.webp",
+      "attribution": "K.-M. Hansche - Edited by: Arad, Wikimedia Commons, CC BY-SA 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Tawny_wiki_edit1.jpg"
+    },
+    "strix-nebulosa": {
+      "thumb": "/species-images/strix-nebulosa/thumb.webp",
+      "medium": "/species-images/strix-nebulosa/medium.webp",
+      "full": "/species-images/strix-nebulosa/full.webp",
+      "attribution": "Another one of my pictures:\n\n\n\nThis photograph was taken by Medium69 (William Crochot) and released under the license stated below. You are free to use it for any purpose as long as you credit the author (William Crochot), the Source (Wikimedia Commons) and the license (CC-BY-SA 4.0) in close relation to the image.\n\n\n\n\n\nPlease do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source RAW. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract., Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Strix_nebulosa_(Chouette_lapone)_-_393.jpg"
+    },
+    "strix-varia": {
+      "thumb": "/species-images/strix-varia/thumb.webp",
+      "medium": "/species-images/strix-varia/medium.webp",
+      "full": "/species-images/strix-varia/full.webp",
+      "attribution": "Mdf, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Strix-varia-005.jpg"
+    },
+    "athene-cunicularia": {
+      "thumb": "/species-images/athene-cunicularia/thumb.webp",
+      "medium": "/species-images/athene-cunicularia/medium.webp",
+      "full": "/species-images/athene-cunicularia/full.webp",
+      "attribution": "Dori, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Burrowing_Owl_4354.jpg"
+    },
+    "asio-otus": {
+      "thumb": "/species-images/asio-otus/thumb.webp",
+      "medium": "/species-images/asio-otus/medium.webp",
+      "full": "/species-images/asio-otus/full.webp",
+      "attribution": "Wolfgang Wander, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Eastern_Screech_Owl.jpg"
+    },
+    "asio-flammeus": {
+      "thumb": "/species-images/asio-flammeus/thumb.webp",
+      "medium": "/species-images/asio-flammeus/medium.webp",
+      "full": "/species-images/asio-flammeus/full.webp",
+      "attribution": "Stephan Sprinz, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sumpfohreule_(asio_flammeus)_-_Spiekeroog,_Nationalpark_nieders%C3%A4chsisches_Wattenmeer.jpg"
+    },
+    "tyto-alba": {
+      "thumb": "/species-images/tyto-alba/thumb.webp",
+      "medium": "/species-images/tyto-alba/medium.webp",
+      "full": "/species-images/tyto-alba/full.webp",
+      "attribution": "Luc Viatour, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Tyto_alba_1_Luc_Viatour.jpg"
+    },
+    "ara-macao": {
+      "thumb": "/species-images/ara-macao/thumb.webp",
+      "medium": "/species-images/ara-macao/medium.webp",
+      "full": "/species-images/ara-macao/full.webp",
+      "attribution": "Roger Culos, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Ara_macao_MHNT.ZOO.2010.11.148.26.jpg"
+    },
+    "ara-ararauna": {
+      "thumb": "/species-images/ara-ararauna/thumb.webp",
+      "medium": "/species-images/ara-ararauna/medium.webp",
+      "full": "/species-images/ara-ararauna/full.webp",
+      "attribution": "Luc Viatour, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Ara_ararauna_Luc_Viatour.jpg"
+    },
+    "ara-chloropterus": {
+      "thumb": "/species-images/ara-chloropterus/thumb.webp",
+      "medium": "/species-images/ara-chloropterus/medium.webp",
+      "full": "/species-images/ara-chloropterus/full.webp",
+      "attribution": "Charles J. Sharp, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Red-and-green_macaw_(Ara_chloropterus)_juvenile.JPG"
+    },
+    "amazona-aestiva": {
+      "thumb": "/species-images/amazona-aestiva/thumb.webp",
+      "medium": "/species-images/amazona-aestiva/medium.webp",
+      "full": "/species-images/amazona-aestiva/full.webp",
+      "attribution": "Charles J. Sharp, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Turquoise-fronted_amazon_(Amazona_aestiva)_older_adult.JPG"
+    },
+    "melopsittacus-undulatus": {
+      "thumb": "/species-images/melopsittacus-undulatus/thumb.webp",
+      "medium": "/species-images/melopsittacus-undulatus/medium.webp",
+      "full": "/species-images/melopsittacus-undulatus/full.webp",
+      "attribution": "Carlos Valenzuela, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Melopsittacus_undulatus_mex180102.jpg"
+    },
+    "strigops-habroptila": {
+      "thumb": "/species-images/strigops-habroptila/thumb.webp",
+      "medium": "/species-images/strigops-habroptila/medium.webp",
+      "full": "/species-images/strigops-habroptila/full.webp",
+      "attribution": "Gnomon at Hungarian Wikipedia, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Kakapo_(Strigops_habroptila)-6.jpg"
+    },
+    "cacatua-galerita": {
+      "thumb": "/species-images/cacatua-galerita/thumb.webp",
+      "medium": "/species-images/cacatua-galerita/medium.webp",
+      "full": "/species-images/cacatua-galerita/full.webp",
+      "attribution": "H. Zell, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cacatua_galerita_-_Vogelburg_Weilrod_01.jpg"
+    },
+    "cacatua-alba": {
+      "thumb": "/species-images/cacatua-alba/thumb.webp",
+      "medium": "/species-images/cacatua-alba/medium.webp",
+      "full": "/species-images/cacatua-alba/full.webp",
+      "attribution": "4028mdk09, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cacatua_alba_mit_Erdnuss.JPG"
+    },
+    "nymphicus-hollandicus": {
+      "thumb": "/species-images/nymphicus-hollandicus/thumb.webp",
+      "medium": "/species-images/nymphicus-hollandicus/medium.webp",
+      "full": "/species-images/nymphicus-hollandicus/full.webp",
+      "attribution": "Jana* (Jana und Thomas Kömpel), Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Nymphicus_hollandicus_-perching_on_wires_-Australia-6a.jpg"
+    },
+    "cygnus-olor": {
+      "thumb": "/species-images/cygnus-olor/thumb.webp",
+      "medium": "/species-images/cygnus-olor/medium.webp",
+      "full": "/species-images/cygnus-olor/full.webp",
+      "attribution": "Richard Bartz, Munich Makro Freak, Wikimedia Commons, CC BY-SA 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Cygnus_olor_flirt_edit.jpg"
+    },
+    "cygnus-atratus": {
+      "thumb": "/species-images/cygnus-atratus/thumb.webp",
+      "medium": "/species-images/cygnus-atratus/medium.webp",
+      "full": "/species-images/cygnus-atratus/full.webp",
+      "attribution": "Francis C. Franklin, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Black_Swan_at_Martin_Mere.JPG"
+    },
+    "cygnus-buccinator": {
+      "thumb": "/species-images/cygnus-buccinator/thumb.webp",
+      "medium": "/species-images/cygnus-buccinator/medium.webp",
+      "full": "/species-images/cygnus-buccinator/full.webp",
+      "attribution": "The Cosmonaut, Wikimedia Commons, CC BY-SA 2.5 ca",
+      "source": "https://commons.wikimedia.org/wiki/File:Cygnus_buccinator_-_Junction_Creek.jpg"
+    },
+    "anser-anser": {
+      "thumb": "/species-images/anser-anser/thumb.webp",
+      "medium": "/species-images/anser-anser/medium.webp",
+      "full": "/species-images/anser-anser/full.webp",
+      "attribution": "H005, denoised by Pro2, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Graugans_Anser_Anser.jpg"
+    },
+    "anser-caerulescens": {
+      "thumb": "/species-images/anser-caerulescens/thumb.webp",
+      "medium": "/species-images/anser-caerulescens/medium.webp",
+      "full": "/species-images/anser-caerulescens/full.webp",
+      "attribution": "Cephas, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Anser_caerulescens_CT4.jpg"
+    },
+    "branta-sandvicensis": {
+      "thumb": "/species-images/branta-sandvicensis/thumb.webp",
+      "medium": "/species-images/branta-sandvicensis/medium.webp",
+      "full": "/species-images/branta-sandvicensis/full.webp",
+      "attribution": "Brenda Zaun of  U.S. Fish and Wildlife Service Headquarters, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Branta_sandvicensis_-Kilauea_Point_National_Wildlife_Refuge,_Hawaii,_USA-8.jpg"
+    },
+    "anas-platyrhynchos": {
+      "thumb": "/species-images/anas-platyrhynchos/thumb.webp",
+      "medium": "/species-images/anas-platyrhynchos/medium.webp",
+      "full": "/species-images/anas-platyrhynchos/full.webp",
+      "attribution": "Acarpentier, Wikimedia Commons, CC BY 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Female_Mallard_Duck_Rest_3.jpg"
+    },
+    "anas-crecca": {
+      "thumb": "/species-images/anas-crecca/thumb.webp",
+      "medium": "/species-images/anas-crecca/medium.webp",
+      "full": "/species-images/anas-crecca/full.webp",
+      "attribution": "Jacek Halicki, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:2015_Cyraneczka_zwyczajna_(samiec).jpg"
+    },
+    "phasianus-colchicus": {
+      "thumb": "/species-images/phasianus-colchicus/thumb.webp",
+      "medium": "/species-images/phasianus-colchicus/medium.webp",
+      "full": "/species-images/phasianus-colchicus/full.webp",
+      "attribution": "Didier Descouens, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Phasianus_colchicus_MHNT.jpg"
+    },
+    "gallus-gallus": {
+      "thumb": "/species-images/gallus-gallus/thumb.webp",
+      "medium": "/species-images/gallus-gallus/medium.webp",
+      "full": "/species-images/gallus-gallus/full.webp",
+      "attribution": "H. Zell, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Lobatus_gallus_01.JPG"
+    },
+    "gallus-domesticus": {
+      "thumb": "/species-images/gallus-domesticus/thumb.webp",
+      "medium": "/species-images/gallus-domesticus/medium.webp",
+      "full": "/species-images/gallus-domesticus/full.webp",
+      "attribution": "Alvesgaspar, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Chicken_February_2009-1.jpg"
+    },
+    "pavo-muticus": {
+      "thumb": "/species-images/pavo-muticus/thumb.webp",
+      "medium": "/species-images/pavo-muticus/medium.webp",
+      "full": "/species-images/pavo-muticus/full.webp",
+      "attribution": "Crisco 1492, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Green_peafowl_(Pavo_muticus),_Gembira_Loka_Zoo,_Yogyakarta,_2015-03-15.jpg"
+    },
+    "meleagris-gallopavo": {
+      "thumb": "/species-images/meleagris-gallopavo/thumb.webp",
+      "medium": "/species-images/meleagris-gallopavo/medium.webp",
+      "full": "/species-images/meleagris-gallopavo/full.webp",
+      "attribution": "Quartl, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Meleagris_gallopavo_qtl1.jpg"
+    },
+    "coturnix-coturnix": {
+      "thumb": "/species-images/coturnix-coturnix/thumb.webp",
+      "medium": "/species-images/coturnix-coturnix/medium.webp",
+      "full": "/species-images/coturnix-coturnix/full.webp",
+      "attribution": "Mnolf, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Coturnix_coturnix_eggs.jpg"
+    },
+    "perdix-perdix": {
+      "thumb": "/species-images/perdix-perdix/thumb.webp",
+      "medium": "/species-images/perdix-perdix/medium.webp",
+      "full": "/species-images/perdix-perdix/full.webp",
+      "attribution": "H. Zell, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cyclophorus_perdix_01.JPG"
+    },
+    "callipepla-californica": {
+      "thumb": "/species-images/callipepla-californica/thumb.webp",
+      "medium": "/species-images/callipepla-californica/medium.webp",
+      "full": "/species-images/callipepla-californica/full.webp",
+      "attribution": "Didier Descouens, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Colin_de_Californie_MHNT.jpg"
+    },
+    "columba-livia": {
+      "thumb": "/species-images/columba-livia/thumb.webp",
+      "medium": "/species-images/columba-livia/medium.webp",
+      "full": "/species-images/columba-livia/full.webp",
+      "attribution": "Laitche, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Rock_doves_in_flight.jpg"
+    },
+    "columba-palumbus": {
+      "thumb": "/species-images/columba-palumbus/thumb.webp",
+      "medium": "/species-images/columba-palumbus/medium.webp",
+      "full": "/species-images/columba-palumbus/full.webp",
+      "attribution": "Alexis LOURS, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Common_Wood_Pigeon_facing_left.jpg"
+    },
+    "streptopelia-decaocto": {
+      "thumb": "/species-images/streptopelia-decaocto/thumb.webp",
+      "medium": "/species-images/streptopelia-decaocto/medium.webp",
+      "full": "/species-images/streptopelia-decaocto/full.webp",
+      "attribution": "Zeynel Cebeci, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Streptopelia_decaocto,_Mersin_2017-07-15_01-1.jpg"
+    },
+    "goura-victoria": {
+      "thumb": "/species-images/goura-victoria/thumb.webp",
+      "medium": "/species-images/goura-victoria/medium.webp",
+      "full": "/species-images/goura-victoria/full.webp",
+      "attribution": "Quartl, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Goura_victoria_qtl1.jpg"
+    },
+    "zenaida-macroura": {
+      "thumb": "/species-images/zenaida-macroura/thumb.webp",
+      "medium": "/species-images/zenaida-macroura/medium.webp",
+      "full": "/species-images/zenaida-macroura/full.webp",
+      "attribution": "Aitor, Wikimedia Commons, CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Zenaida_macroura_macroura,_Santo_Domingo,_Dominican_Republic.jpg"
+    },
+    "struthio-camelus": {
+      "thumb": "/species-images/struthio-camelus/thumb.webp",
+      "medium": "/species-images/struthio-camelus/medium.webp",
+      "full": "/species-images/struthio-camelus/full.webp",
+      "attribution": "William Warby, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Struthio_camelus_portrait_Whipsnade_Zoo.jpg"
+    },
+    "struthio-molybdophanes": {
+      "thumb": "/species-images/struthio-molybdophanes/thumb.webp",
+      "medium": "/species-images/struthio-molybdophanes/medium.webp",
+      "full": "/species-images/struthio-molybdophanes/full.webp",
+      "attribution": "Christiaan Kooyman, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Somali_ostrich.jpg"
+    },
+    "casuarius-casuarius": {
+      "thumb": "/species-images/casuarius-casuarius/thumb.webp",
+      "medium": "/species-images/casuarius-casuarius/medium.webp",
+      "full": "/species-images/casuarius-casuarius/full.webp",
+      "attribution": "22Kartika, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Double-wattled_Cassowary,_Kasuari_(Casuarius_casuarius).jpg"
+    },
+    "dromaius-novaehollandiae": {
+      "thumb": "/species-images/dromaius-novaehollandiae/thumb.webp",
+      "medium": "/species-images/dromaius-novaehollandiae/medium.webp",
+      "full": "/species-images/dromaius-novaehollandiae/full.webp",
+      "attribution": "William Warby, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Dromaius_novaehollandiae_(head)_Battersea_Park_Children%27s_Zoo.jpg"
+    },
+    "apteryx-mantelli": {
+      "thumb": "/species-images/apteryx-mantelli/thumb.webp",
+      "medium": "/species-images/apteryx-mantelli/medium.webp",
+      "full": "/species-images/apteryx-mantelli/full.webp",
+      "attribution": "The.Rohit, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Apteryx_mantelli_-Rotorua,_North_Island,_New_Zealand-8a.jpg"
+    },
+    "rhea-americana": {
+      "thumb": "/species-images/rhea-americana/thumb.webp",
+      "medium": "/species-images/rhea-americana/medium.webp",
+      "full": "/species-images/rhea-americana/full.webp",
+      "attribution": "Quartl, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Rhea_americana_qtl2.jpg"
+    },
+    "rhea-pennata": {
+      "thumb": "/species-images/rhea-pennata/thumb.webp",
+      "medium": "/species-images/rhea-pennata/medium.webp",
+      "full": "/species-images/rhea-pennata/full.webp",
+      "attribution": "CHUCAO, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Rhea_pennata_pennata_(6).JPG"
+    },
+    "phoenicopterus-roseus": {
+      "thumb": "/species-images/phoenicopterus-roseus/thumb.webp",
+      "medium": "/species-images/phoenicopterus-roseus/medium.webp",
+      "full": "/species-images/phoenicopterus-roseus/full.webp",
+      "attribution": "Yathin S Krishnappa, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Phoenicopterus_roseus_flight_(Walvis_bay).jpg"
+    },
+    "phoenicopterus-ruber": {
+      "thumb": "/species-images/phoenicopterus-ruber/thumb.webp",
+      "medium": "/species-images/phoenicopterus-ruber/medium.webp",
+      "full": "/species-images/phoenicopterus-ruber/full.webp",
+      "attribution": "Wilfredor, Wikimedia Commons, CC0",
+      "source": "https://commons.wikimedia.org/wiki/File:Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg"
+    },
+    "phoenicopterus-chilensis": {
+      "thumb": "/species-images/phoenicopterus-chilensis/thumb.webp",
+      "medium": "/species-images/phoenicopterus-chilensis/medium.webp",
+      "full": "/species-images/phoenicopterus-chilensis/full.webp",
+      "attribution": "Luc Viatour, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Phoenicopterus_roseus_Luc_Viatour.jpg"
+    },
+    "phoeniconaias-minor": {
+      "thumb": "/species-images/phoeniconaias-minor/thumb.webp",
+      "medium": "/species-images/phoeniconaias-minor/medium.webp",
+      "full": "/species-images/phoeniconaias-minor/full.webp",
+      "attribution": "H. Zell, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Phoeniconaias_minor_01.jpg"
+    },
+    "pelecanus-onocrotalus": {
+      "thumb": "/species-images/pelecanus-onocrotalus/thumb.webp",
+      "medium": "/species-images/pelecanus-onocrotalus/medium.webp",
+      "full": "/species-images/pelecanus-onocrotalus/full.webp",
+      "attribution": "Charles J. Sharp, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Great_white_pelican_(Pelecanus_onocrotalus)_head.jpg"
+    },
+    "pelecanus-occidentalis": {
+      "thumb": "/species-images/pelecanus-occidentalis/thumb.webp",
+      "medium": "/species-images/pelecanus-occidentalis/medium.webp",
+      "full": "/species-images/pelecanus-occidentalis/full.webp",
+      "attribution": "Mike Baird from Morro Bay, USA, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Brown_Pelican,_Pelagic_Boat_Trip.jpg"
+    },
+    "ardea-cinerea": {
+      "thumb": "/species-images/ardea-cinerea/thumb.webp",
+      "medium": "/species-images/ardea-cinerea/medium.webp",
+      "full": "/species-images/ardea-cinerea/full.webp",
+      "attribution": "Luc Viatour, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Ardea_cinerea_Luc_Viatour.jpg"
+    },
+    "ardea-herodias": {
+      "thumb": "/species-images/ardea-herodias/thumb.webp",
+      "medium": "/species-images/ardea-herodias/medium.webp",
+      "full": "/species-images/ardea-herodias/full.webp",
+      "attribution": "Acarpentier, Wikimedia Commons, CC BY 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Le_Grand_Heron_Profil.jpg"
+    },
+    "ardea-alba": {
+      "thumb": "/species-images/ardea-alba/thumb.webp",
+      "medium": "/species-images/ardea-alba/medium.webp",
+      "full": "/species-images/ardea-alba/full.webp",
+      "attribution": "Calibas, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Ardea_alba4.jpg"
+    },
+    "egretta-garzetta": {
+      "thumb": "/species-images/egretta-garzetta/thumb.webp",
+      "medium": "/species-images/egretta-garzetta/medium.webp",
+      "full": "/species-images/egretta-garzetta/full.webp",
+      "attribution": "Francis C. Franklin, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Egretta_gularis_oman.jpg"
+    },
+    "egretta-thula": {
+      "thumb": "/species-images/egretta-thula/thumb.webp",
+      "medium": "/species-images/egretta-thula/medium.webp",
+      "full": "/species-images/egretta-thula/full.webp",
+      "attribution": "Frank Schulenburg, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Egretta_thula_at_Las_Gallinas_Wildlife_Ponds.jpg"
+    },
+    "nycticorax-nycticorax": {
+      "thumb": "/species-images/nycticorax-nycticorax/thumb.webp",
+      "medium": "/species-images/nycticorax-nycticorax/medium.webp",
+      "full": "/species-images/nycticorax-nycticorax/full.webp",
+      "attribution": "Calibas, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Young_night_heron.jpg"
+    },
+    "platalea-ajaja": {
+      "thumb": "/species-images/platalea-ajaja/thumb.webp",
+      "medium": "/species-images/platalea-ajaja/medium.webp",
+      "full": "/species-images/platalea-ajaja/full.webp",
+      "attribution": "Hans Stieglitz, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Rosa_L%C3%B6ffler_(Platalea_ajaja)-001.jpg"
+    },
+    "eudocimus-ruber": {
+      "thumb": "/species-images/eudocimus-ruber/thumb.webp",
+      "medium": "/species-images/eudocimus-ruber/medium.webp",
+      "full": "/species-images/eudocimus-ruber/full.webp",
+      "attribution": "Charles J. Sharp, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Scarlet_ibis_(Eudocimus_ruber)_roosting.jpg"
+    },
+    "ciconia-ciconia": {
+      "thumb": "/species-images/ciconia-ciconia/thumb.webp",
+      "medium": "/species-images/ciconia-ciconia/medium.webp",
+      "full": "/species-images/ciconia-ciconia/full.webp",
+      "attribution": "Richard Bartz, Wikimedia Commons, CC BY-SA 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:White_Stork_Wei%C3%9Fstorch_Ciconia_ciconia.jpg"
+    },
+    "ciconia-nigra": {
+      "thumb": "/species-images/ciconia-nigra/thumb.webp",
+      "medium": "/species-images/ciconia-nigra/medium.webp",
+      "full": "/species-images/ciconia-nigra/full.webp",
+      "attribution": "מינוזיג - MinoZig, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Ciconia_nigra,_juvenile.jpg"
+    },
+    "mycteria-americana": {
+      "thumb": "/species-images/mycteria-americana/thumb.webp",
+      "medium": "/species-images/mycteria-americana/medium.webp",
+      "full": "/species-images/mycteria-americana/full.webp",
+      "attribution": "Charles J. Sharp, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Wood_stork_(Mycteria_americana)_and_Yacare_caiman.jpg"
+    },
+    "leptoptilos-crumeniferus": {
+      "thumb": "/species-images/leptoptilos-crumeniferus/thumb.webp",
+      "medium": "/species-images/leptoptilos-crumeniferus/medium.webp",
+      "full": "/species-images/leptoptilos-crumeniferus/full.webp",
+      "attribution": "Carlos Delgado, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Leptoptilos_crumeniferus_-_02.jpg"
+    },
+    "grus-grus": {
+      "thumb": "/species-images/grus-grus/thumb.webp",
+      "medium": "/species-images/grus-grus/medium.webp",
+      "full": "/species-images/grus-grus/full.webp",
+      "attribution": "Luc Viatour, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Grus_antigone_Luc_viatour.jpg"
+    },
+    "grus-japonensis": {
+      "thumb": "/species-images/grus-japonensis/thumb.webp",
+      "medium": "/species-images/grus-japonensis/medium.webp",
+      "full": "/species-images/grus-japonensis/full.webp",
+      "attribution": "KongFu Wang from Beijing, China, Wikimedia Commons, CC BY-SA 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Grus_japonensis_Qiqihar.jpg"
+    },
+    "grus-americana": {
+      "thumb": "/species-images/grus-americana/thumb.webp",
+      "medium": "/species-images/grus-americana/medium.webp",
+      "full": "/species-images/grus-americana/full.webp",
+      "attribution": "Sasata, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Grus_americana_Sasata.jpg"
+    },
+    "antigone-antigone": {
+      "thumb": "/species-images/antigone-antigone/thumb.webp",
+      "medium": "/species-images/antigone-antigone/medium.webp",
+      "full": "/species-images/antigone-antigone/full.webp",
+      "attribution": "Luc Viatour, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Grus_antigone_Luc_viatour.jpg"
+    },
+    "fulica-americana": {
+      "thumb": "/species-images/fulica-americana/thumb.webp",
+      "medium": "/species-images/fulica-americana/medium.webp",
+      "full": "/species-images/fulica-americana/full.webp",
+      "attribution": "Rhododendrites, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:American_coot_in_Prospect_Park_(06152).jpg"
+    },
+    "gallinula-chloropus": {
+      "thumb": "/species-images/gallinula-chloropus/thumb.webp",
+      "medium": "/species-images/gallinula-chloropus/medium.webp",
+      "full": "/species-images/gallinula-chloropus/full.webp",
+      "attribution": "Laitche, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Common_moorhen_in_Suita,_Osaka,_December_2016_-_689.jpg"
+    },
+    "larus-argentatus": {
+      "thumb": "/species-images/larus-argentatus/thumb.webp",
+      "medium": "/species-images/larus-argentatus/medium.webp",
+      "full": "/species-images/larus-argentatus/full.webp",
+      "attribution": "Lukasz Lukomski, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Larus_argentatus_argenteus01.jpg"
+    },
+    "larus-marinus": {
+      "thumb": "/species-images/larus-marinus/thumb.webp",
+      "medium": "/species-images/larus-marinus/medium.webp",
+      "full": "/species-images/larus-marinus/full.webp",
+      "attribution": "Tim, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Great_Black-backed_Gull_Juvenile.jpg"
+    },
+    "sterna-hirundo": {
+      "thumb": "/species-images/sterna-hirundo/thumb.webp",
+      "medium": "/species-images/sterna-hirundo/medium.webp",
+      "full": "/species-images/sterna-hirundo/full.webp",
+      "attribution": "Hans Hillewaert, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sterna_hirundo_(adult).jpg"
+    },
+    "sterna-paradisaea": {
+      "thumb": "/species-images/sterna-paradisaea/thumb.webp",
+      "medium": "/species-images/sterna-paradisaea/medium.webp",
+      "full": "/species-images/sterna-paradisaea/full.webp",
+      "attribution": "AWeith, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Arctic_tern_(Sterna_paradisaea)_attacking,_Amsterdam_island,_Svalbard.jpg"
+    },
+    "numenius-arquata": {
+      "thumb": "/species-images/numenius-arquata/thumb.webp",
+      "medium": "/species-images/numenius-arquata/medium.webp",
+      "full": "/species-images/numenius-arquata/full.webp",
+      "attribution": "AngMoKio, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Numenius_arquata_amk.jpg"
+    },
+    "charadrius-hiaticula": {
+      "thumb": "/species-images/charadrius-hiaticula/thumb.webp",
+      "medium": "/species-images/charadrius-hiaticula/medium.webp",
+      "full": "/species-images/charadrius-hiaticula/full.webp",
+      "attribution": "Arnoldius, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Charadrius_hiaticula_2_breeding.jpg"
+    },
+    "vanellus-vanellus": {
+      "thumb": "/species-images/vanellus-vanellus/thumb.webp",
+      "medium": "/species-images/vanellus-vanellus/medium.webp",
+      "full": "/species-images/vanellus-vanellus/full.webp",
+      "attribution": "Toby Hudson, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Vanellus_miles_miles.jpg"
+    },
+    "fratercula-arctica": {
+      "thumb": "/species-images/fratercula-arctica/thumb.webp",
+      "medium": "/species-images/fratercula-arctica/medium.webp",
+      "full": "/species-images/fratercula-arctica/full.webp",
+      "attribution": "Andreas Trepte, Wikimedia Commons, CC BY-SA 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Atlantic_Puffin_Fratercula_arctica.jpg"
+    },
+    "archilochus-colubris": {
+      "thumb": "/species-images/archilochus-colubris/thumb.webp",
+      "medium": "/species-images/archilochus-colubris/medium.webp",
+      "full": "/species-images/archilochus-colubris/full.webp",
+      "attribution": "Joe Schneid, Louisville, Kentucky, Wikimedia Commons, CC BY 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:RubyThroatedHummingbird(Crop).jpg"
+    },
+    "mellisuga-helenae": {
+      "thumb": "/species-images/mellisuga-helenae/thumb.webp",
+      "medium": "/species-images/mellisuga-helenae/medium.webp",
+      "full": "/species-images/mellisuga-helenae/full.webp",
+      "attribution": "Marcial4, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Colibr%C3%AD_Cola_de_Oro_(Golden-tailed_Sapphire_Hummingbird)_Bigger_File.jpg"
+    },
+    "patagona-gigas": {
+      "thumb": "/species-images/patagona-gigas/thumb.webp",
+      "medium": "/species-images/patagona-gigas/medium.webp",
+      "full": "/species-images/patagona-gigas/full.webp",
+      "attribution": "Arturo Nahum, Wikimedia Commons, CC BY-SA 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Patagona_gigas.jpg"
+    },
+    "apus-apus": {
+      "thumb": "/species-images/apus-apus/thumb.webp",
+      "medium": "/species-images/apus-apus/medium.webp",
+      "full": "/species-images/apus-apus/full.webp",
+      "attribution": "Didier Descouens, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Apus_apus_MHNT_ZOO_2011_11_159_Le_Louvres_Paris.jpg"
+    },
+    "chaetura-pelagica": {
+      "thumb": "/species-images/chaetura-pelagica/thumb.webp",
+      "medium": "/species-images/chaetura-pelagica/medium.webp",
+      "full": "/species-images/chaetura-pelagica/full.webp",
+      "attribution": "Unknown authorUnknown author, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Chaetura_pelagica_1900.jpg"
+    },
+    "alcedo-atthis": {
+      "thumb": "/species-images/alcedo-atthis/thumb.webp",
+      "medium": "/species-images/alcedo-atthis/medium.webp",
+      "full": "/species-images/alcedo-atthis/full.webp",
+      "attribution": "Pierre Dalous, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Alcedo_atthis_eating_a_tadpole.jpg"
+    },
+    "megaceryle-alcyon": {
+      "thumb": "/species-images/megaceryle-alcyon/thumb.webp",
+      "medium": "/species-images/megaceryle-alcyon/medium.webp",
+      "full": "/species-images/megaceryle-alcyon/full.webp",
+      "attribution": "mikebaird, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Megaceryle_alcyon_femelle.jpg"
+    },
+    "dacelo-novaeguineae": {
+      "thumb": "/species-images/dacelo-novaeguineae/thumb.webp",
+      "medium": "/species-images/dacelo-novaeguineae/medium.webp",
+      "full": "/species-images/dacelo-novaeguineae/full.webp",
+      "attribution": "JJ Harrison (https://www.jjharrison.com.au/), Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Dacelo_novaeguineae_waterworks.jpg"
+    },
+    "merops-apiaster": {
+      "thumb": "/species-images/merops-apiaster/thumb.webp",
+      "medium": "/species-images/merops-apiaster/medium.webp",
+      "full": "/species-images/merops-apiaster/full.webp",
+      "attribution": "Pierre Dalous, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Merops_apiaster_04.jpg"
+    },
+    "coracias-garrulus": {
+      "thumb": "/species-images/coracias-garrulus/thumb.webp",
+      "medium": "/species-images/coracias-garrulus/medium.webp",
+      "full": "/species-images/coracias-garrulus/full.webp",
+      "attribution": "Didier Descouens, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Coracias_garrulus_MHNT_ZOO_2010_11_161_Seville_HdB.jpg"
+    },
+    "dryocopus-pileatus": {
+      "thumb": "/species-images/dryocopus-pileatus/thumb.webp",
+      "medium": "/species-images/dryocopus-pileatus/medium.webp",
+      "full": "/species-images/dryocopus-pileatus/full.webp",
+      "attribution": "Cephas, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Dryocopus_pileatus_MP2.jpg"
+    },
+    "dryocopus-martius": {
+      "thumb": "/species-images/dryocopus-martius/thumb.webp",
+      "medium": "/species-images/dryocopus-martius/medium.webp",
+      "full": "/species-images/dryocopus-martius/full.webp",
+      "attribution": "Alastair Rae from London, United Kingdom, Wikimedia Commons, CC BY-SA 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:BlackWoods.jpg"
+    },
+    "melanerpes-erythrocephalus": {
+      "thumb": "/species-images/melanerpes-erythrocephalus/thumb.webp",
+      "medium": "/species-images/melanerpes-erythrocephalus/medium.webp",
+      "full": "/species-images/melanerpes-erythrocephalus/full.webp",
+      "attribution": "Mdf, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Melanerpes-erythrocephalus-003.jpg"
+    },
+    "ramphastos-toco": {
+      "thumb": "/species-images/ramphastos-toco/thumb.webp",
+      "medium": "/species-images/ramphastos-toco/medium.webp",
+      "full": "/species-images/ramphastos-toco/full.webp",
+      "attribution": "Charles J. Sharp, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Toco_toucan_(Ramphastos_toco)_in_flight_composite.jpg"
+    },
+    "ramphastos-sulfuratus": {
+      "thumb": "/species-images/ramphastos-sulfuratus/thumb.webp",
+      "medium": "/species-images/ramphastos-sulfuratus/medium.webp",
+      "full": "/species-images/ramphastos-sulfuratus/full.webp",
+      "attribution": "Charles J. Sharp, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Keel-billed_toucan_(Ramphastos_sulfuratus_sulfuratus)_in_flight_Peten.jpg"
+    },
+    "buceros-rhinoceros": {
+      "thumb": "/species-images/buceros-rhinoceros/thumb.webp",
+      "medium": "/species-images/buceros-rhinoceros/medium.webp",
+      "full": "/species-images/buceros-rhinoceros/full.webp",
+      "attribution": "Steve Wilson, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Buceros_rhinoceros_-Chester_Zoo-8a.jpg"
+    },
+    "buceros-bicornis": {
+      "thumb": "/species-images/buceros-bicornis/thumb.webp",
+      "medium": "/species-images/buceros-bicornis/medium.webp",
+      "full": "/species-images/buceros-bicornis/full.webp",
+      "attribution": "Eric Kilby, Wikimedia Commons, CC BY-SA 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Buceros_bicornis_-Stone_Zoo,_Stoneham,_Massachusetts,_USA-8a.jpg"
+    },
+    "upupa-epops": {
+      "thumb": "/species-images/upupa-epops/thumb.webp",
+      "medium": "/species-images/upupa-epops/medium.webp",
+      "full": "/species-images/upupa-epops/full.webp",
+      "attribution": "Charles J. Sharp, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Eurasian_hoopoe_(Upupa_epops)_juvenile_in_nest_box.jpg"
+    },
+    "diomedea-exulans": {
+      "thumb": "/species-images/diomedea-exulans/thumb.webp",
+      "medium": "/species-images/diomedea-exulans/medium.webp",
+      "full": "/species-images/diomedea-exulans/full.webp",
+      "attribution": "JJ Harrison (https://www.jjharrison.com.au/), Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Diomedea_exulans_-_SE_Tasmania.jpg"
+    },
+    "diomedea-epomophora": {
+      "thumb": "/species-images/diomedea-epomophora/thumb.webp",
+      "medium": "/species-images/diomedea-epomophora/medium.webp",
+      "full": "/species-images/diomedea-epomophora/full.webp",
+      "attribution": "JJ Harrison (https://www.jjharrison.com.au/), Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Diomedea_epomophora_-_SE_Tasmania.jpg"
+    },
+    "thalassarche-melanophris": {
+      "thumb": "/species-images/thalassarche-melanophris/thumb.webp",
+      "medium": "/species-images/thalassarche-melanophris/medium.webp",
+      "full": "/species-images/thalassarche-melanophris/full.webp",
+      "attribution": "JJ Harrison (https://www.jjharrison.com.au/), Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Thalassarche_melanophrys_-_SE_Tasmania.jpg"
+    },
+    "puffinus-puffinus": {
+      "thumb": "/species-images/puffinus-puffinus/thumb.webp",
+      "medium": "/species-images/puffinus-puffinus/medium.webp",
+      "full": "/species-images/puffinus-puffinus/full.webp",
+      "attribution": "JJ Harrison (https://www.jjharrison.com.au/), Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Puffinus_tenuirostris_-_SE_Tasmania.jpg"
+    },
+    "cuculus-canorus": {
+      "thumb": "/species-images/cuculus-canorus/thumb.webp",
+      "medium": "/species-images/cuculus-canorus/medium.webp",
+      "full": "/species-images/cuculus-canorus/full.webp",
+      "attribution": "Roger Culos, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cuculus_canorus_canorus_MHNT.ZOO.2010.11.150.21.jpg"
+    },
+    "geococcyx-californianus": {
+      "thumb": "/species-images/geococcyx-californianus/thumb.webp",
+      "medium": "/species-images/geococcyx-californianus/medium.webp",
+      "full": "/species-images/geococcyx-californianus/full.webp",
+      "attribution": "drumguy8800 (xvisionx.com), Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Geococcyx_californianus.jpg"
+    },
+    "aptenodytes-forsteri": {
+      "thumb": "/species-images/aptenodytes-forsteri/thumb.webp",
+      "medium": "/species-images/aptenodytes-forsteri/medium.webp",
+      "full": "/species-images/aptenodytes-forsteri/full.webp",
+      "attribution": "Hannes Grobe, Alfred Wegener Institute for Polar and Marine Research, Wikimedia Commons, CC BY-SA 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Aptenodytes_forsteri_egg_hg.jpg"
+    },
+    "aptenodytes-patagonicus": {
+      "thumb": "/species-images/aptenodytes-patagonicus/thumb.webp",
+      "medium": "/species-images/aptenodytes-patagonicus/medium.webp",
+      "full": "/species-images/aptenodytes-patagonicus/full.webp",
+      "attribution": "User:Pismire, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Colony_of_aptenodytes_patagonicus.jpg"
+    },
+    "pygoscelis-adeliae": {
+      "thumb": "/species-images/pygoscelis-adeliae/thumb.webp",
+      "medium": "/species-images/pygoscelis-adeliae/medium.webp",
+      "full": "/species-images/pygoscelis-adeliae/full.webp",
+      "attribution": "Jason Auch, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Adelie_Penguins_on_iceberg.jpg"
+    },
+    "pygoscelis-papua": {
+      "thumb": "/species-images/pygoscelis-papua/thumb.webp",
+      "medium": "/species-images/pygoscelis-papua/medium.webp",
+      "full": "/species-images/pygoscelis-papua/full.webp",
+      "attribution": "Godot13, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:SouthShetland-2016-Livingston_Island_(Hannah_Point)%E2%80%93Gentoo_penguin_(Pygoscelis_papua)_05.jpg"
+    },
+    "spheniscus-demersus": {
+      "thumb": "/species-images/spheniscus-demersus/thumb.webp",
+      "medium": "/species-images/spheniscus-demersus/medium.webp",
+      "full": "/species-images/spheniscus-demersus/full.webp",
+      "attribution": "Sander Spek, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Sander-pinguins.jpg"
+    },
+    "spheniscus-humboldti": {
+      "thumb": "/species-images/spheniscus-humboldti/thumb.webp",
+      "medium": "/species-images/spheniscus-humboldti/medium.webp",
+      "full": "/species-images/spheniscus-humboldti/full.webp",
+      "attribution": "Another one of my pictures:\n\n\n\nThis photograph was taken by Medium69 (William Crochot) and released under the license stated below. You are free to use it for any purpose as long as you credit the author (William Crochot), the Source (Wikimedia Commons) and the license (CC-BY-SA 4.0) in close relation to the image.\n\n\n\n\n\nPlease do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source RAW. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract., Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Spheniscus_humboldti_(Manchot_de_Humboldt)_-_467.jpg"
+    },
+    "pantherophis-guttatus": {
+      "thumb": "/species-images/pantherophis-guttatus/thumb.webp",
+      "medium": "/species-images/pantherophis-guttatus/medium.webp",
+      "full": "/species-images/pantherophis-guttatus/full.webp",
+      "attribution": "Linda Tanner from Los Osos, California, U.S.A., Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Pantherophis_guttatus_Head.jpg"
+    },
+    "pantherophis-obsoletus": {
+      "thumb": "/species-images/pantherophis-obsoletus/thumb.webp",
+      "medium": "/species-images/pantherophis-obsoletus/medium.webp",
+      "full": "/species-images/pantherophis-obsoletus/full.webp",
+      "attribution": "Furryscaly, Wikimedia Commons, CC BY-SA 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sunlit_Snake.jpg"
+    },
+    "pantherophis-alleghaniensis": {
+      "thumb": "/species-images/pantherophis-alleghaniensis/thumb.webp",
+      "medium": "/species-images/pantherophis-alleghaniensis/medium.webp",
+      "full": "/species-images/pantherophis-alleghaniensis/full.webp",
+      "attribution": "Jasper Shide, Wikimedia Commons, CC0",
+      "source": "https://commons.wikimedia.org/wiki/File:Complex_Pantherophis_alleghaniensis_-_Eastern_%26_Gray_Ratsnake_Complex_05.jpg"
+    },
+    "thamnophis-sirtalis": {
+      "thumb": "/species-images/thamnophis-sirtalis/thumb.webp",
+      "medium": "/species-images/thamnophis-sirtalis/medium.webp",
+      "full": "/species-images/thamnophis-sirtalis/full.webp",
+      "attribution": "Wilson44691, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Thamnophis_sirtalis_sirtalis_Wooster.jpg"
+    },
+    "thamnophis-elegans": {
+      "thumb": "/species-images/thamnophis-elegans/thumb.webp",
+      "medium": "/species-images/thamnophis-elegans/medium.webp",
+      "full": "/species-images/thamnophis-elegans/full.webp",
+      "attribution": "Steve Jurvetson from Menlo Park, USA, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Coast_Garter_Snake.jpg"
+    },
+    "lampropeltis-getula": {
+      "thumb": "/species-images/lampropeltis-getula/thumb.webp",
+      "medium": "/species-images/lampropeltis-getula/medium.webp",
+      "full": "/species-images/lampropeltis-getula/full.webp",
+      "attribution": "en:User:Dawson, Wikimedia Commons, CC BY-SA 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Lampropeltis_getula_getula.jpg"
+    },
+    "lampropeltis-californiae": {
+      "thumb": "/species-images/lampropeltis-californiae/thumb.webp",
+      "medium": "/species-images/lampropeltis-californiae/medium.webp",
+      "full": "/species-images/lampropeltis-californiae/full.webp",
+      "attribution": "Calibas, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Californiakingsnake.jpg"
+    },
+    "natrix-natrix": {
+      "thumb": "/species-images/natrix-natrix/thumb.webp",
+      "medium": "/species-images/natrix-natrix/medium.webp",
+      "full": "/species-images/natrix-natrix/full.webp",
+      "attribution": "Bernie, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:AD2009Aug07_Natrix_helvetica_01.jpg"
+    },
+    "nerodia-sipedon": {
+      "thumb": "/species-images/nerodia-sipedon/thumb.webp",
+      "medium": "/species-images/nerodia-sipedon/medium.webp",
+      "full": "/species-images/nerodia-sipedon/full.webp",
+      "attribution": "Patrick Coin (Patrick Coin), Wikimedia Commons, CC BY-SA 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Nerodia_sipedonPCSL02111B1.jpg"
+    },
+    "pituophis-catenifer": {
+      "thumb": "/species-images/pituophis-catenifer/thumb.webp",
+      "medium": "/species-images/pituophis-catenifer/medium.webp",
+      "full": "/species-images/pituophis-catenifer/full.webp",
+      "attribution": "Rick Farwell, Wikimedia Commons, CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Pituophis_catenifer_sayi_174206522.jpg"
+    },
+    "pituophis-melanoleucus": {
+      "thumb": "/species-images/pituophis-melanoleucus/thumb.webp",
+      "medium": "/species-images/pituophis-melanoleucus/medium.webp",
+      "full": "/species-images/pituophis-melanoleucus/full.webp",
+      "attribution": "Unknown, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Pithuophis_melanoleucus_annectens_-_Chris_Brown.jpg"
+    },
+    "crotalus-atrox": {
+      "thumb": "/species-images/crotalus-atrox/thumb.webp",
+      "medium": "/species-images/crotalus-atrox/medium.webp",
+      "full": "/species-images/crotalus-atrox/full.webp",
+      "attribution": "Gary Stolz (original), Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Crotalus_atrox_USFWS.jpg"
+    },
+    "crotalus-adamanteus": {
+      "thumb": "/species-images/crotalus-adamanteus/thumb.webp",
+      "medium": "/species-images/crotalus-adamanteus/medium.webp",
+      "full": "/species-images/crotalus-adamanteus/full.webp",
+      "attribution": "TimVickers, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Crotalus_adamanteus_(5).jpg"
+    },
+    "crotalus-cerastes": {
+      "thumb": "/species-images/crotalus-cerastes/thumb.webp",
+      "medium": "/species-images/crotalus-cerastes/medium.webp",
+      "full": "/species-images/crotalus-cerastes/full.webp",
+      "attribution": "derivative work: Victorrocha (talk · contribs)\nCrotalus_cerastes_mesquite_springs_CA.JPG: Tigerhawkvok (talk · contribs), Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Crotalus_cerastes_mesquite_springs_CA-2.jpg"
+    },
+    "vipera-aspis": {
+      "thumb": "/species-images/vipera-aspis/thumb.webp",
+      "medium": "/species-images/vipera-aspis/medium.webp",
+      "full": "/species-images/vipera-aspis/full.webp",
+      "attribution": "Orchi, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Vipera_aspis_Lothringen_044.jpg"
+    },
+    "bothrops-atrox": {
+      "thumb": "/species-images/bothrops-atrox/thumb.webp",
+      "medium": "/species-images/bothrops-atrox/medium.webp",
+      "full": "/species-images/bothrops-atrox/full.webp",
+      "attribution": "Danleo, Wikimedia Commons, CC BY 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Common_lancehead.jpg"
+    },
+    "bitis-gabonica": {
+      "thumb": "/species-images/bitis-gabonica/thumb.webp",
+      "medium": "/species-images/bitis-gabonica/medium.webp",
+      "full": "/species-images/bitis-gabonica/full.webp",
+      "attribution": "H. Zell, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Bitis_gabonica_01.jpg"
+    },
+    "daboia-russelii": {
+      "thumb": "/species-images/daboia-russelii/thumb.webp",
+      "medium": "/species-images/daboia-russelii/medium.webp",
+      "full": "/species-images/daboia-russelii/full.webp",
+      "attribution": "AChawla, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Daboia_russelii_A_Chawla01.jpg"
+    },
+    "naja-naja": {
+      "thumb": "/species-images/naja-naja/thumb.webp",
+      "medium": "/species-images/naja-naja/medium.webp",
+      "full": "/species-images/naja-naja/full.webp",
+      "attribution": "Holger Krisp, Wikimedia Commons, CC BY 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Naja-naja-kobra-kopf.jpg"
+    },
+    "naja-nigricollis": {
+      "thumb": "/species-images/naja-nigricollis/thumb.webp",
+      "medium": "/species-images/naja-nigricollis/medium.webp",
+      "full": "/species-images/naja-nigricollis/full.webp",
+      "attribution": "Marius Burger, Wikimedia Commons, CC0",
+      "source": "https://commons.wikimedia.org/wiki/File:Naja_nigricollis_112273141.jpg"
+    },
+    "ophiophagus-hannah": {
+      "thumb": "/species-images/ophiophagus-hannah/thumb.webp",
+      "medium": "/species-images/ophiophagus-hannah/medium.webp",
+      "full": "/species-images/ophiophagus-hannah/full.webp",
+      "attribution": "en:User:Dawson, Wikimedia Commons, CC BY-SA 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Ophiophagus_hannah_(2).jpg"
+    },
+    "dendroaspis-polylepis": {
+      "thumb": "/species-images/dendroaspis-polylepis/thumb.webp",
+      "medium": "/species-images/dendroaspis-polylepis/medium.webp",
+      "full": "/species-images/dendroaspis-polylepis/full.webp",
+      "attribution": "Bill Love/Blue Chameleon Ventures, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Dendroaspis_polylepis_by_Bill_Love.jpg"
+    },
+    "dendroaspis-angusticeps": {
+      "thumb": "/species-images/dendroaspis-angusticeps/thumb.webp",
+      "medium": "/species-images/dendroaspis-angusticeps/medium.webp",
+      "full": "/species-images/dendroaspis-angusticeps/full.webp",
+      "attribution": "Danleo~commonswiki, Wikimedia Commons, CC BY 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Eastern_Green_Mamba_02.jpg"
+    },
+    "micrurus-fulvius": {
+      "thumb": "/species-images/micrurus-fulvius/thumb.webp",
+      "medium": "/species-images/micrurus-fulvius/medium.webp",
+      "full": "/species-images/micrurus-fulvius/full.webp",
+      "attribution": "Norman.benton, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Coral_009.jpg"
+    },
+    "bungarus-fasciatus": {
+      "thumb": "/species-images/bungarus-fasciatus/thumb.webp",
+      "medium": "/species-images/bungarus-fasciatus/medium.webp",
+      "full": "/species-images/bungarus-fasciatus/full.webp",
+      "attribution": "Dr. Raju Kasambe, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Banded_Krait_Bungarus_fasciatus_by_Dr._Raju_Kasambe_DSCN7256_(2)_01.jpg"
+    },
+    "oxyuranus-microlepidotus": {
+      "thumb": "/species-images/oxyuranus-microlepidotus/thumb.webp",
+      "medium": "/species-images/oxyuranus-microlepidotus/medium.webp",
+      "full": "/species-images/oxyuranus-microlepidotus/full.webp",
+      "attribution": "Photo by XLerate, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Fierce_Snake-Oxyuranus_microlepidotus.jpg"
+    },
+    "laticauda-colubrina": {
+      "thumb": "/species-images/laticauda-colubrina/thumb.webp",
+      "medium": "/species-images/laticauda-colubrina/medium.webp",
+      "full": "/species-images/laticauda-colubrina/full.webp",
+      "attribution": "Jens Petersen, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Laticauda_colubrina_Lembeh2.jpg"
+    },
+    "python-reticulatus": {
+      "thumb": "/species-images/python-reticulatus/thumb.webp",
+      "medium": "/species-images/python-reticulatus/medium.webp",
+      "full": "/species-images/python-reticulatus/full.webp",
+      "attribution": "This photography was created by Mariluna. Other photos see here., Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Python_reticulatus_%D1%81%D0%B5%D1%82%D1%87%D0%B0%D1%82%D1%8B%D0%B9_%D0%BF%D0%B8%D1%82%D0%BE%D0%BD-2.jpg"
+    },
+    "python-molurus": {
+      "thumb": "/species-images/python-molurus/thumb.webp",
+      "medium": "/species-images/python-molurus/medium.webp",
+      "full": "/species-images/python-molurus/full.webp",
+      "attribution": "Tigerpython, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Python_molurus_molurus_2.jpg"
+    },
+    "python-bivittatus": {
+      "thumb": "/species-images/python-bivittatus/thumb.webp",
+      "medium": "/species-images/python-bivittatus/medium.webp",
+      "full": "/species-images/python-bivittatus/full.webp",
+      "attribution": "Cvmontuy, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Python_bivittatus_1701.jpg"
+    },
+    "python-regius": {
+      "thumb": "/species-images/python-regius/thumb.webp",
+      "medium": "/species-images/python-regius/medium.webp",
+      "full": "/species-images/python-regius/full.webp",
+      "attribution": "Mokele (talk), Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Ball_python_lucy.JPG"
+    },
+    "morelia-viridis": {
+      "thumb": "/species-images/morelia-viridis/thumb.webp",
+      "medium": "/species-images/morelia-viridis/medium.webp",
+      "full": "/species-images/morelia-viridis/full.webp",
+      "attribution": "Holger Krisp, Wikimedia Commons, CC BY 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Morelia-viridis-baumpython.jpg"
+    },
+    "morelia-spilota": {
+      "thumb": "/species-images/morelia-spilota/thumb.webp",
+      "medium": "/species-images/morelia-spilota/medium.webp",
+      "full": "/species-images/morelia-spilota/full.webp",
+      "attribution": "LiquidGhoul, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Morelia_spilota_head.jpg"
+    },
+    "eunectes-murinus": {
+      "thumb": "/species-images/eunectes-murinus/thumb.webp",
+      "medium": "/species-images/eunectes-murinus/medium.webp",
+      "full": "/species-images/eunectes-murinus/full.webp",
+      "attribution": "TimVickers, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Eunectes_murinus_(1).jpg"
+    },
+    "eunectes-notaeus": {
+      "thumb": "/species-images/eunectes-notaeus/thumb.webp",
+      "medium": "/species-images/eunectes-notaeus/medium.webp",
+      "full": "/species-images/eunectes-notaeus/full.webp",
+      "attribution": "Ben P, Wikimedia Commons, CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Eunectes_notaeus_97939876.jpg"
+    },
+    "eublepharis-macularius": {
+      "thumb": "/species-images/eublepharis-macularius/thumb.webp",
+      "medium": "/species-images/eublepharis-macularius/medium.webp",
+      "full": "/species-images/eublepharis-macularius/full.webp",
+      "attribution": "George Chernilevsky, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Eublepharis_macularius_2009_G5.jpg"
+    },
+    "phelsuma-madagascariensis": {
+      "thumb": "/species-images/phelsuma-madagascariensis/thumb.webp",
+      "medium": "/species-images/phelsuma-madagascariensis/medium.webp",
+      "full": "/species-images/phelsuma-madagascariensis/full.webp",
+      "attribution": "No machine-readable author provided. BS Thurner Hof assumed (based on copyright claims)., Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Taggecko_Phelsuma_madagascariensis_060114_1.jpg"
+    },
+    "cyclura-cornuta": {
+      "thumb": "/species-images/cyclura-cornuta/thumb.webp",
+      "medium": "/species-images/cyclura-cornuta/medium.webp",
+      "full": "/species-images/cyclura-cornuta/full.webp",
+      "attribution": "Richard Bartz, Munich aka Makro Freak, Wikimedia Commons, CC BY-SA 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Nashornleguan_Cyclura_cornuta_Richard_Bartz.jpg"
+    },
+    "draco-volans": {
+      "thumb": "/species-images/draco-volans/thumb.webp",
+      "medium": "/species-images/draco-volans/medium.webp",
+      "full": "/species-images/draco-volans/full.webp",
+      "attribution": "Charles J. Sharp, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Flying_lizard_(Draco_volans)_male.jpg"
+    },
+    "varanus-salvator": {
+      "thumb": "/species-images/varanus-salvator/thumb.webp",
+      "medium": "/species-images/varanus-salvator/medium.webp",
+      "full": "/species-images/varanus-salvator/full.webp",
+      "attribution": "Carlos Delgado, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Varanus_salvator_-_01.jpg"
+    },
+    "varanus-exanthematicus": {
+      "thumb": "/species-images/varanus-exanthematicus/thumb.webp",
+      "medium": "/species-images/varanus-exanthematicus/medium.webp",
+      "full": "/species-images/varanus-exanthematicus/full.webp",
+      "attribution": "Shizhao, Wikimedia Commons, CC BY 1.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Varanus_exanthematicus_at_beijingzoo.jpg"
+    },
+    "plestiodon-fasciatus": {
+      "thumb": "/species-images/plestiodon-fasciatus/thumb.webp",
+      "medium": "/species-images/plestiodon-fasciatus/medium.webp",
+      "full": "/species-images/plestiodon-fasciatus/full.webp",
+      "attribution": "Patrick Coin, Wikimedia Commons, CC BY-SA 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Eumeces_fasciatusPCCA20040425-1563A.jpg"
+    },
+    "aspidoscelis-sexlineatus": {
+      "thumb": "/species-images/aspidoscelis-sexlineatus/thumb.webp",
+      "medium": "/species-images/aspidoscelis-sexlineatus/medium.webp",
+      "full": "/species-images/aspidoscelis-sexlineatus/full.webp",
+      "attribution": "Hans Hillewaert, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Aspidoscelis_sexlineata_(male).jpg"
+    },
+    "ophisaurus-ventralis": {
+      "thumb": "/species-images/ophisaurus-ventralis/thumb.webp",
+      "medium": "/species-images/ophisaurus-ventralis/medium.webp",
+      "full": "/species-images/ophisaurus-ventralis/full.webp",
+      "attribution": "en:user:Fl295, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Eastern_Glass_Lizard.jpg"
+    },
+    "pseudopus-apodus": {
+      "thumb": "/species-images/pseudopus-apodus/thumb.webp",
+      "medium": "/species-images/pseudopus-apodus/medium.webp",
+      "full": "/species-images/pseudopus-apodus/full.webp",
+      "attribution": "Amirekul, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Pseudopus_apodus_54.jpg"
+    },
+    "amphisbaena-alba": {
+      "thumb": "/species-images/amphisbaena-alba/thumb.webp",
+      "medium": "/species-images/amphisbaena-alba/medium.webp",
+      "full": "/species-images/amphisbaena-alba/full.webp",
+      "attribution": "Diogo B. Provete, Wikimedia Commons, CC BY-SA 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Amphisbaena_alba03.jpg"
+    },
+    "phrynosoma-cornutum": {
+      "thumb": "/species-images/phrynosoma-cornutum/thumb.webp",
+      "medium": "/species-images/phrynosoma-cornutum/medium.webp",
+      "full": "/species-images/phrynosoma-cornutum/full.webp",
+      "attribution": "Ben Goodwyn, Wikimedia Commons, CC BY 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:TexasHornedLizard.jpg"
+    },
+    "phrynosoma-platyrhinos": {
+      "thumb": "/species-images/phrynosoma-platyrhinos/thumb.webp",
+      "medium": "/species-images/phrynosoma-platyrhinos/medium.webp",
+      "full": "/species-images/phrynosoma-platyrhinos/full.webp",
+      "attribution": "Churnice, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Desert_Horned_Lizard.jpg"
+    },
+    "phrynosoma-solare": {
+      "thumb": "/species-images/phrynosoma-solare/thumb.webp",
+      "medium": "/species-images/phrynosoma-solare/medium.webp",
+      "full": "/species-images/phrynosoma-solare/full.webp",
+      "attribution": "brdavids, Wikimedia Commons, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Brdavis_-_Phrynosoma_solare.jpg"
+    },
+    "sceloporus-occidentalis": {
+      "thumb": "/species-images/sceloporus-occidentalis/thumb.webp",
+      "medium": "/species-images/sceloporus-occidentalis/medium.webp",
+      "full": "/species-images/sceloporus-occidentalis/full.webp",
+      "attribution": "Walter Siegmund (talk), Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sceloporus_occidentalis_8089.JPG"
+    },
+    "uma-notata": {
+      "thumb": "/species-images/uma-notata/thumb.webp",
+      "medium": "/species-images/uma-notata/medium.webp",
+      "full": "/species-images/uma-notata/full.webp",
+      "attribution": "U.S. Fish and Wildlife Service, Wikimedia Commons, Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Coachella_Valley_Fringe-toed_Lizard.JPG"
+    },
+    "xantusia-riversiana": {
+      "thumb": "/species-images/xantusia-riversiana/thumb.webp",
+      "medium": "/species-images/xantusia-riversiana/medium.webp",
+      "full": "/species-images/xantusia-riversiana/full.webp",
+      "attribution": "Tsirtalis, Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Island_Night_Lizard,_San_Nicolas_Island,_California..JPG"
+    },
+    "malpolon-monspessulanus": {
+      "thumb": "/species-images/malpolon-monspessulanus/thumb.webp",
+      "medium": "/species-images/malpolon-monspessulanus/medium.webp",
+      "full": "/species-images/malpolon-monspessulanus/full.webp",
+      "attribution": "Diego Delso, Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Culebra_bastarda_(Malpolon_monspessulanus),_Nig%C3%BCella,_Zaragoza,_Espa%C3%B1a,_2017-05-24,_DD_06.jpg"
+    },
+    "heterodon-nasicus": {
+      "thumb": "/species-images/heterodon-nasicus/thumb.webp",
+      "medium": "/species-images/heterodon-nasicus/medium.webp",
+      "full": "/species-images/heterodon-nasicus/full.webp",
+      "attribution": "The original uploader was Dawson at English Wikipedia., Wikimedia Commons, CC BY-SA 2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Heterodon_nasicus.jpg"
+    }
+  }
+}
