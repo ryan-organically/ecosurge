@@ -451,9 +451,18 @@ export function SidebarClient({ currentTaxonId }: { currentTaxonId?: string }) {
       }
     }
 
+    // Close mobile sidebar when backdrop is clicked
+    const backdrop = document.querySelector('.sidebar-backdrop')
+    function handleBackdropClick() {
+      document.querySelector('.sidebar')?.classList.remove('open')
+      backdrop?.classList.remove('visible')
+    }
+    backdrop?.addEventListener('click', handleBackdropClick)
+
     return () => {
       document.querySelector('.sidebar')?.removeEventListener('click', handleExpandClick)
       document.querySelector('.sidebar')?.removeEventListener('click', handleHeaderClick)
+      backdrop?.removeEventListener('click', handleBackdropClick)
     }
   }, [currentTaxonId])
 

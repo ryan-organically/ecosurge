@@ -47,7 +47,7 @@ function TaxonTreeNode({ node, depth, basePath, maxDepth = MAX_DEPTH }: {
       <a
         href={url}
         className={`taxonomy-header`}
-        style={{ paddingLeft: `${depth * 12 + 8}px` }}
+        style={{ paddingLeft: `${Math.min(depth * 12, 72) + 8}px` }}
       >
         {hasChildren ? (
           <button
