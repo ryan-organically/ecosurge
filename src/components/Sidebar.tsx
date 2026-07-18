@@ -14,12 +14,10 @@ function countDescendants(node: TaxonNode): number {
   return node.children.reduce((sum, child) => sum + 1 + countDescendants(child), 0)
 }
 
-// Serialize tree to JSON for client-side search/lazy-load
-function serializeTree(nodes: TaxonNode[]): string {
-  return JSON.stringify(nodes)
-}
-
-const MAX_DEPTH = 4 // domain/kingdom/phylum/class/order rendered, deeper nodes lazy-loaded
+// Only the domains are server-rendered; every deeper level lazy-loads on expand
+// from the tree the client imports (see SidebarClient). Rendering to depth 4 put
+// ~1,778 nodes (~710KB HTML + ~1.2MB RSC) into every one of ~7,471 pages.
+const MAX_DEPTH = 1
 
 function TaxonTreeNode({ node, depth, basePath, maxDepth = MAX_DEPTH }: {
   node: TaxonNode
@@ -106,17 +104,12 @@ function TaxonTreeNode({ node, depth, basePath, maxDepth = MAX_DEPTH }: {
 }
 
 export function Sidebar({ currentTaxonId }: { currentTaxonId?: string }) {
-  // Embed full tree as JSON for client-side search and lazy loading
-  const treeJson = serializeTree(treeOfLife)
-
+  // The full tree is NOT inlined per page anymore. SidebarClient imports it as
+  // a shared, cached client chunk. Inlining it here embedded ~1.9MB of JSON in
+  // every one of the ~7,471 exported pages (twice, counting the RSC payload) —
+  // a 66GB export. See SidebarClient.
   return (
     <aside className="sidebar" data-current-taxon={currentTaxonId}>
-      <script
-        id="taxonomy-data"
-        type="application/json"
-        dangerouslySetInnerHTML={{ __html: treeJson }}
-      />
-
       <div className="sidebar-search">
         <input
           type="text"

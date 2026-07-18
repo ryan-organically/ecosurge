@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  // Hosted on Vercel with on-demand rendering. NOT a static export — the taxon
+  // route has ~7,425 pages; pre-rendering them all produced a 2.7GB output that
+  // no static host could serve. Instead only a shallow backbone is pre-rendered
+  // (see src/app/(archive)/taxon/[...slug]/page.tsx) and deeper taxa render on
+  // demand with ISR caching.
   trailingSlash: true,
   images: {
     unoptimized: true,
@@ -8,14 +12,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: false,
   },
-  // The taxon route statically exports ~7,460 pages. The default worker pool
-  // (one per core) loads three.js + d3 + ~10MB of parsed taxonomy/enrichment
-  // per worker, which exhausts RAM on smaller machines and pushes pages into
-  // swap — where they blow past the per-page timeout. Cap the pool and give a
-  // generous timeout so the export is memory-bound-safe and completes.
-  experimental: {
-    cpus: Number(process.env.NEXT_EXPORT_CPUS) || 4,
-  },
+  // Generous per-page timeout for the backbone pages we do pre-render.
   staticPageGenerationTimeout: 300,
 }
 

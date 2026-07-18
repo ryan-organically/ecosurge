@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import { treeOfLife } from '@/lib/taxonomy'
 
 interface TaxonNode {
   id: string
@@ -215,17 +216,12 @@ export function SidebarClient({ currentTaxonId }: { currentTaxonId?: string }) {
   const flatDataRef = useRef<Array<{ node: TaxonNode; path: string }> | null>(null)
 
   useEffect(() => {
-    // Load taxonomy data from embedded JSON
-    const dataScript = document.getElementById('taxonomy-data')
-    if (dataScript) {
-      try {
-        const parsedData: TaxonNode[] = JSON.parse(dataScript.textContent || '[]')
-        taxonomyDataRef.current = parsedData
-        flatDataRef.current = flattenTree(parsedData)
-      } catch {
-        console.error('Failed to parse taxonomy data')
-      }
-    }
+    // The tree is imported directly and bundled once into a shared client chunk
+    // (downloaded once, cached across pages) instead of being inlined as JSON in
+    // every page's HTML — which had ballooned the static export to 66GB.
+    const parsedData = treeOfLife as unknown as TaxonNode[]
+    taxonomyDataRef.current = parsedData
+    flatDataRef.current = flattenTree(parsedData)
 
     // Expand/collapse handler with lazy-load support
     function handleExpandClick(e: Event) {

@@ -22,11 +22,19 @@ import { getBiomeById } from '@/data/biomes'
 
 type PageProps = { params: Promise<{ slug: string[] }> }
 
+// Pre-render only the shallow backbone (domain / kingdom / phylum). The ~7,425
+// deeper taxa render on demand and are cached (ISR) — pre-rendering all of them
+// produced a 2.7GB build no static host could serve.
 export function generateStaticParams() {
-  return getTaxonPaths(treeOfLife).map(entry => ({
-    slug: entry.params.slug.split('/')
-  }))
+  return getTaxonPaths(treeOfLife)
+    .map(entry => entry.params.slug.split('/'))
+    .filter(slug => slug.length <= 3)
+    .map(slug => ({ slug }))
 }
+
+// Render taxa outside the pre-rendered backbone on demand, then cache.
+export const dynamicParams = true
+export const revalidate = 86400
 
 function findNodeByPath(nodes: TaxonNode[], slugParts: string[]): TaxonNode | null {
   let current = nodes
