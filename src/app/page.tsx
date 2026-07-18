@@ -10,6 +10,7 @@ import LivingRecordSection from '@/components/landing/LivingRecordSection'
 import OceanTechSection from '@/components/landing/OceanTechSection'
 import CryosphereSection from '@/components/landing/CryosphereSection'
 import TerrestrialSection from '@/components/landing/TerrestrialSection'
+import FireWatchSection from '@/components/landing/FireWatchSection'
 import ThesisSection from '@/components/landing/ThesisSection'
 import ImpactSection from '@/components/landing/ImpactSection'
 import ResearchSection from '@/components/landing/ResearchSection'
@@ -98,6 +99,7 @@ export default function LandingPage() {
       <OceanTechSection />
       <CryosphereSection />
       <TerrestrialSection />
+      <FireWatchSection />
       <ThesisSection />
       <ImpactSection />
       <ResearchSection />

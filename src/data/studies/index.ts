@@ -9,11 +9,19 @@ import { permafrostCarbon } from './permafrost-carbon'
 import { operationalBlueprint } from './operational-blueprint'
 import { localModelLab } from './local-model-lab'
 import { zenGardener } from './zen-gardener'
+import { roboticVision } from './robotic-vision'
+import { gaussianSplatting } from './gaussian-splatting'
+import { generativeCad } from './generative-cad'
+import { fireWatch } from './fire-watch'
 
 export * from './types'
 
 /** All studies, newest first. */
 export const studies: Study[] = [
+  fireWatch,
+  roboticVision,
+  gaussianSplatting,
+  generativeCad,
   zenGardener,
   convexPlanet,
   localModelLab,

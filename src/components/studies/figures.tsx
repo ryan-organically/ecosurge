@@ -586,6 +586,272 @@ function StairClimb() {
   )
 }
 
+// 10. Depth uncertainty vs range: monocular error grows as Z², LIDAR fusion
+//     collapses it back to a near-constant floor (inverse-variance weighting).
+function DepthUncertainty() {
+  const w = 640,
+    h = 360,
+    pad = 46
+  const sx = scale([0, 30], [pad, w - pad / 2])
+  const sy = scale([0, 120], [h - pad, pad / 2])
+  // Triangulation error: σ_Z = Z²·σ_d /(f·B) → quadratic in range.
+  const mono = (Z: number) => Math.min(120, 0.12 * Z * Z)
+  // Fused with a metric LIDAR return: a small constant floor + residual.
+  const fused = (Z: number) => 2 + 0.01 * Z * Z
+  const mk = (f: (z: number) => number) =>
+    series((Z) => Z, 0, 30, 60).map((_, i) => {
+      const Z = (30 * i) / 60
+      return [sx(Z), sy(f(Z))] as Pt
+    })
+  const yTicks = [0, 30, 60, 90, 120].map((v) => ({ at: sy(v), label: `${v}` }))
+  const xTicks = [0, 10, 20, 30].map((v) => ({ at: sx(v), label: `${v}m` }))
+  return (
+    <Frame
+      w={w}
+      h={h}
+      pad={pad}
+      xTicks={xTicks}
+      yTicks={yTicks}
+      xLabel="Range to target Z"
+      yLabel="Depth 1σ uncertainty (cm)"
+    >
+      <defs>
+        <linearGradient id="gDepth" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={C.red} stopOpacity={0.32} />
+          <stop offset="100%" stopColor={C.red} stopOpacity={0.02} />
+        </linearGradient>
+      </defs>
+      <path d={area(mk(mono), h - pad)} fill="url(#gDepth)" />
+      <path d={line(mk(mono))} fill="none" stroke={C.red} strokeWidth={2.6} />
+      <path d={line(mk(fused))} fill="none" stroke={C.green} strokeWidth={2.6} />
+      <g fontSize={11}>
+        <rect x={pad + 8} y={pad / 2} width={12} height={4} fill={C.red} />
+        <text x={pad + 24} y={pad / 2 + 6} fill={C.label}>
+          Monocular σ_Z ∝ Z²
+        </text>
+        <rect x={pad + 8} y={pad / 2 + 16} width={12} height={4} fill={C.green} />
+        <text x={pad + 24} y={pad / 2 + 22} fill={C.label}>
+          RGB + LIDAR fused
+        </text>
+      </g>
+    </Frame>
+  )
+}
+
+// 11. Promptable segmentation: mask IoU rises with the number of point prompts
+//     and saturates — one or two clicks already carry most of the quality.
+function SamIoU() {
+  const w = 640,
+    h = 360,
+    pad = 46
+  const sx = scale([0, 8], [pad, w - pad / 2])
+  const sy = scale([0, 1], [h - pad, pad / 2])
+  const iou = (n: number) => 0.55 + 0.42 * (1 - Math.exp(-0.6 * n))
+  const pts = series((n) => n, 0, 8, 64).map((_, i) => {
+    const n = (8 * i) / 64
+    return [sx(n), sy(iou(n))] as Pt
+  })
+  const yTicks = [0, 0.25, 0.5, 0.75, 1].map((v) => ({ at: sy(v), label: v.toFixed(2) }))
+  const xTicks = [0, 2, 4, 6, 8].map((v) => ({ at: sx(v), label: `${v}` }))
+  return (
+    <Frame
+      w={w}
+      h={h}
+      pad={pad}
+      xTicks={xTicks}
+      yTicks={yTicks}
+      xLabel="Point prompts per object"
+      yLabel="Mask IoU vs ground truth"
+    >
+      <line x1={pad} y1={sy(0.9)} x2={w - pad / 2} y2={sy(0.9)} stroke={C.axis} strokeDasharray="2 4" />
+      <text x={w - pad / 2} y={sy(0.9) - 6} textAnchor="end" fontSize={11} fill={C.label}>
+        field-usable ≥ 0.90
+      </text>
+      <path d={line(pts)} fill="none" stroke={C.teal} strokeWidth={2.6} />
+      {[1, 2, 3].map((n) => (
+        <circle key={n} cx={sx(n)} cy={sy(iou(n))} r={3.5} fill={C.teal} />
+      ))}
+    </Frame>
+  )
+}
+
+// 12. Gaussian-splatting fidelity: PSNR climbs with the number of splats and
+//     saturates; the knee is the sweet spot for an on-robot bandwidth budget.
+function SplatPsnr() {
+  const w = 640,
+    h = 360,
+    pad = 46
+  const sx = scale([0, 5], [pad, w - pad / 2])
+  const sy = scale([20, 40], [h - pad, pad / 2])
+  // PSNR(N) = 38 − 14·e^{−N/0.9}, N in millions of Gaussians.
+  const psnr = (N: number) => 38 - 14 * Math.exp(-N / 0.9)
+  const pts = series((N) => N, 0, 5, 64).map((_, i) => {
+    const N = (5 * i) / 64
+    return [sx(N), sy(psnr(N))] as Pt
+  })
+  const yTicks = [20, 25, 30, 35, 40].map((v) => ({ at: sy(v), label: `${v}` }))
+  const xTicks = [0, 1, 2, 3, 4, 5].map((v) => ({ at: sx(v), label: `${v}M` }))
+  const knee = 1.1
+  return (
+    <Frame
+      w={w}
+      h={h}
+      pad={pad}
+      xTicks={xTicks}
+      yTicks={yTicks}
+      xLabel="Gaussians in scene N"
+      yLabel="Reconstruction PSNR (dB)"
+    >
+      <defs>
+        <linearGradient id="gSplat" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={C.violet} stopOpacity={0.3} />
+          <stop offset="100%" stopColor={C.violet} stopOpacity={0.02} />
+        </linearGradient>
+      </defs>
+      <path d={area(pts, h - pad)} fill="url(#gSplat)" />
+      <path d={line(pts)} fill="none" stroke={C.violet} strokeWidth={2.6} />
+      <line x1={sx(knee)} y1={sy(psnr(knee))} x2={sx(knee)} y2={h - pad} stroke={C.teal} strokeDasharray="4 4" />
+      <circle cx={sx(knee)} cy={sy(psnr(knee))} r={4} fill={C.teal} />
+      <text x={sx(knee) + 8} y={sy(psnr(knee)) + 4} fontSize={11} fill={C.label}>
+        streaming knee ≈ 1.1M splats
+      </text>
+    </Frame>
+  )
+}
+
+// 13. Level-of-detail: streamed splats per frame fall off as 1/d² with viewer
+//     distance, holding the on-wire bandwidth inside a fixed budget.
+function LodBandwidth() {
+  const w = 640,
+    h = 360,
+    pad = 46
+  const sx = scale([1, 20], [pad, w - pad / 2])
+  const sy = scale([0, 30], [h - pad, pad / 2])
+  // Screen-space footprint ∝ 1/d²; bytes/frame track visible-splat count.
+  const mbps = (d: number) => Math.min(30, 28 / (d * d) + 0.6)
+  const pts = series((d) => d, 1, 20, 64).map((_, i) => {
+    const d = 1 + (19 * i) / 64
+    return [sx(d), sy(mbps(d))] as Pt
+  })
+  const yTicks = [0, 10, 20, 30].map((v) => ({ at: sy(v), label: `${v}` }))
+  const xTicks = [1, 5, 10, 15, 20].map((v) => ({ at: sx(v), label: `${v}m` }))
+  return (
+    <Frame
+      w={w}
+      h={h}
+      pad={pad}
+      xTicks={xTicks}
+      yTicks={yTicks}
+      xLabel="Viewer distance to splat cluster d"
+      yLabel="Streamed rate (Mbit·s⁻¹)"
+    >
+      <rect x={pad} y={sy(12)} width={w - pad - pad / 2} height={h - pad - sy(12)} fill={C.green} opacity={0.06} />
+      <line x1={pad} y1={sy(12)} x2={w - pad / 2} y2={sy(12)} stroke={C.green} strokeDasharray="3 4" />
+      <text x={w - pad / 2} y={sy(12) - 6} textAnchor="end" fontSize={11} fill={C.label}>
+        12 Mbit·s⁻¹ link budget
+      </text>
+      <path d={line(pts)} fill="none" stroke={C.blue} strokeWidth={2.6} />
+    </Frame>
+  )
+}
+
+// 14. Topology-optimization trade-off: structural compliance falls as the
+//     volume-fraction budget grows — a convex, diminishing-returns frontier.
+function TopoptPareto() {
+  const w = 640,
+    h = 360,
+    pad = 46
+  const sx = scale([0.1, 0.6], [pad, w - pad / 2])
+  const sy = scale([0, 100], [h - pad, pad / 2])
+  // Compliance c(V) ∝ V^{−q}, normalized to 100 at V = 0.1.
+  const q = 1.35
+  const comp = (V: number) => 100 * Math.pow(0.1 / V, q)
+  const pts = series((V) => V, 0.1, 0.6, 64).map((_, i) => {
+    const V = 0.1 + (0.5 * i) / 64
+    return [sx(V), sy(comp(V))] as Pt
+  })
+  const yTicks = [0, 25, 50, 75, 100].map((v) => ({ at: sy(v), label: `${v}` }))
+  const xTicks = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6].map((v) => ({ at: sx(v), label: v.toFixed(1) }))
+  const pick = 0.3
+  return (
+    <Frame
+      w={w}
+      h={h}
+      pad={pad}
+      xTicks={xTicks}
+      yTicks={yTicks}
+      xLabel="Volume fraction V"
+      yLabel="Compliance c = uᵀKu (normalized)"
+    >
+      <defs>
+        <linearGradient id="gTopo" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={C.green} stopOpacity={0.28} />
+          <stop offset="100%" stopColor={C.green} stopOpacity={0.02} />
+        </linearGradient>
+      </defs>
+      <path d={area(pts, h - pad)} fill="url(#gTopo)" />
+      <path d={line(pts)} fill="none" stroke={C.green} strokeWidth={2.6} />
+      <line x1={sx(pick)} y1={sy(comp(pick))} x2={sx(pick)} y2={h - pad} stroke={C.amber} strokeDasharray="4 4" />
+      <circle cx={sx(pick)} cy={sy(comp(pick))} r={4} fill={C.amber} />
+      <text x={sx(pick) + 8} y={sy(comp(pick)) - 8} fontSize={11} fill={C.label}>
+        chosen V = 0.30
+      </text>
+    </Frame>
+  )
+}
+
+// 15. Biomimetic density lattice: a SIMP density field ρ(x) rendered as a grid
+//     of struts whose thickness tracks ρ — dense where stressed, hollow where free.
+function LatticeDensity() {
+  const w = 640,
+    h = 360
+  const cols = 16
+  const rows = 9
+  const x0 = 24
+  const y0 = 24
+  const cw = (w - 2 * x0) / cols
+  const ch = (h - 2 * y0) / rows
+  // Density field: a diagonal load path — dense along a corner-to-corner band.
+  const rho = (i: number, j: number) => {
+    const u = i / (cols - 1)
+    const v = j / (rows - 1)
+    const band = 1 - Math.min(1, Math.abs(u - v) * 2.1)
+    const anchor = Math.exp(-((u * u + v * v)) * 1.2) * 0.5
+    return Math.max(0.08, Math.min(1, 0.25 + 0.75 * band + anchor))
+  }
+  const cells: ReactNode[] = []
+  for (let j = 0; j < rows; j++) {
+    for (let i = 0; i < cols; i++) {
+      const r = rho(i, j)
+      const cx = x0 + cw * (i + 0.5)
+      const cy = y0 + ch * (j + 0.5)
+      const rad = Math.min(cw, ch) * 0.5 * (0.25 + 0.75 * r)
+      const col = r > 0.66 ? C.green : r > 0.4 ? C.teal : C.blue
+      cells.push(
+        <rect
+          key={`${i}-${j}`}
+          x={cx - rad}
+          y={cy - rad}
+          width={rad * 2}
+          height={rad * 2}
+          rx={rad * 0.35}
+          fill={col}
+          opacity={0.25 + 0.6 * r}
+        />
+      )
+    }
+  }
+  return (
+    <svg viewBox={`0 0 ${w} ${h}`} className="figure-svg" role="img" preserveAspectRatio="xMidYMid meet">
+      <rect x={8} y={8} width={w - 16} height={h - 16} rx={10} fill="#0f1613" stroke={C.grid} />
+      {cells}
+      <text x={20} y={h - 14} fontSize={11} fill={C.label}>
+        ρ(x) → material where load flows, void where it does not — bone, solved
+      </text>
+    </svg>
+  )
+}
+
 // ---------------------------------------------------------------------------
 // Registry
 // ---------------------------------------------------------------------------
@@ -605,6 +871,12 @@ export const FIGURES: Record<string, FigureDef> = {
   'vram-budget': { title: '12 GB VRAM allocation for a 24/7 inference node', Component: VramBudget },
   'zen-pattern': { title: 'Zen-garden coverage: raked passes and rings around obstacles', Component: ZenPattern },
   'stair-climb': { title: 'Stair-climb geometry: wheel radius vs step rise', Component: StairClimb },
+  'depth-uncertainty': { title: 'Depth uncertainty vs range: monocular vs LIDAR-fused', Component: DepthUncertainty },
+  'sam-iou': { title: 'Promptable segmentation: mask IoU vs point prompts', Component: SamIoU },
+  'splat-psnr': { title: 'Gaussian-splatting fidelity: PSNR vs splat count', Component: SplatPsnr },
+  'lod-bandwidth': { title: 'Level-of-detail: streamed rate vs viewer distance', Component: LodBandwidth },
+  'topopt-pareto': { title: 'Topology optimization: compliance vs volume fraction', Component: TopoptPareto },
+  'lattice-density': { title: 'Biomimetic SIMP density lattice', Component: LatticeDensity },
 }
 
 export function StudyFigure({ viz, caption }: { viz: string; caption?: string }) {

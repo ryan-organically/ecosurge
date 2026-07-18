@@ -727,3 +727,184 @@
   font-size: 1rem;
   font-weight: 700;
 }
+
+/* ================================================================
+   Fire Watch — Northern Hemisphere wildfire & smoke tracker
+   ================================================================ */
+.section-firewatch {
+  background: #0a1018;
+  color: #e6ecf2;
+}
+.section-firewatch .section-label { color: #ff9800; }
+.section-firewatch .section-headline { color: #fff; }
+.section-firewatch .section-body {
+  color: #9fb0c0;
+  max-width: 760px;
+}
+
+.firewatch-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+  align-items: stretch;
+}
+
+.firewatch-globe {
+  position: relative;
+  min-height: 460px;
+  border-radius: 16px;
+  overflow: hidden;
+  background:
+    radial-gradient(120% 90% at 50% 20%, rgba(255, 87, 34, 0.14), transparent 60%),
+    #070c14;
+  border: 1px solid rgba(255, 152, 0, 0.16);
+}
+.firewatch-globe-placeholder {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(60% 50% at 50% 40%, rgba(255, 87, 34, 0.12), transparent 70%);
+}
+
+.firewatch-status {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(7, 12, 20, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.78rem;
+  color: #cdd8e2;
+  backdrop-filter: blur(6px);
+}
+.firewatch-updated { color: #7a8898; }
+.firewatch-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #7a8898;
+  box-shadow: 0 0 8px currentColor;
+}
+.firewatch-dot--eonet { background: #4caf50; color: #4caf50; }
+.firewatch-dot--snapshot { background: #ff9800; color: #ff9800; }
+.firewatch-dot--empty { background: #f44336; color: #f44336; }
+.firewatch-dot--loading { background: #7a8898; color: #7a8898; }
+
+.firewatch-count {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(7, 12, 20, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.78rem;
+  color: #9fb0c0;
+  backdrop-filter: blur(6px);
+}
+.firewatch-count strong { color: #ff9800; }
+
+.firewatch-panel {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background: #0d141d;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  overflow: hidden;
+}
+.firewatch-panel-head {
+  padding: 1.25rem 1.25rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.firewatch-panel-head h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 0.35rem;
+}
+.firewatch-panel-head p {
+  font-size: 0.82rem;
+  color: #8494a4;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.firewatch-notice {
+  margin: 0.75rem 1.25rem 0;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  background: rgba(255, 152, 0, 0.1);
+  border: 1px solid rgba(255, 152, 0, 0.25);
+  font-size: 0.78rem;
+  color: #ffcc80;
+}
+
+.firewatch-feed {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem;
+  overflow-y: auto;
+  max-height: 420px;
+  flex: 1;
+}
+.firewatch-empty {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: #7a8898;
+  font-size: 0.85rem;
+}
+.firewatch-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.7rem 0.75rem;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.firewatch-item:hover,
+.firewatch-item.is-active {
+  background: rgba(255, 87, 34, 0.08);
+  border-color: rgba(255, 152, 0, 0.3);
+}
+.firewatch-item-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.firewatch-flame {
+  flex: 0 0 auto;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px currentColor;
+}
+.firewatch-title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #e6ecf2;
+  line-height: 1.35;
+}
+.firewatch-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.3rem;
+  padding-left: 1.05rem;
+  font-size: 0.74rem;
+  color: #7a8898;
+}
+
+@media (max-width: 900px) {
+  .firewatch-grid {
+    grid-template-columns: 1fr;
+  }
+  .firewatch-globe { min-height: 380px; }
+}

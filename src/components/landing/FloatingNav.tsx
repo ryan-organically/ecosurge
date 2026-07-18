@@ -9,6 +9,7 @@ const sections = [
   { id: 'ocean-tech', label: 'Ocean' },
   { id: 'cryosphere', label: 'Ice' },
   { id: 'terrestrial', label: 'Land' },
+  { id: 'firewatch', label: 'Fire' },
   { id: 'thesis', label: 'Thesis' },
   { id: 'impact', label: 'Impact' },
   { id: 'research', label: 'Research' },
