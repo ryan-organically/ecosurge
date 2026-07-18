@@ -5,9 +5,9 @@ export default function ArchiveLayout({ children }: { children: React.ReactNode 
   return (
     <>
       <NavBar />
+      <div className="sidebar-backdrop" />
       <div className="archive-layout">
         <Sidebar />
-        <div className="sidebar-backdrop" />
         <main className="main-content">
           {children}
         </main>

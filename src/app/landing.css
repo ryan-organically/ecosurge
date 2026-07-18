@@ -1,0 +1,720 @@
+/* ================================================================
+   EcoSurge Landing — Unified Theme
+   ================================================================ */
+
+.landing {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #1a1a2e;
+  background: #fff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- Scroll Progress --- */
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #4CAF50;
+  z-index: 300;
+  transition: width 0.05s linear;
+}
+
+/* --- Section Primitives --- */
+.landing-section {
+  position: relative;
+  width: 100%;
+}
+
+.section-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 10vh 2rem;
+}
+
+.section-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #4CAF50;
+  margin-bottom: 1.2rem;
+}
+
+.section-headline {
+  font-weight: 800;
+  font-size: 2.6rem;
+  line-height: 1.12;
+  color: #1a1a2e;
+  margin-bottom: 1.2rem;
+  letter-spacing: -0.02em;
+}
+
+.headline-feature {
+  font-size: 3.2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-body {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.75;
+  max-width: 620px;
+  margin-bottom: 1rem;
+}
+
+.text-center { text-align: center; }
+
+.text-cta {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4CAF50;
+  text-decoration: none;
+  margin-top: 0.75rem;
+  transition: opacity 0.2s;
+}
+.text-cta:hover { opacity: 0.7; }
+
+/* ================================================================
+   1. Hero
+   ================================================================ */
+.section-hero { min-height: 180vh; }
+
+.section-hero .video-section {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.section-hero .bg-video {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.section-hero .video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.section-hero .hero {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+}
+
+.section-hero .hero h1 {
+  font-size: 11rem;
+  font-weight: 800;
+  line-height: 0.88;
+  margin: 0;
+  letter-spacing: -0.03em;
+}
+
+.section-hero .hero h1 .char {
+  display: inline-block;
+  opacity: 0;
+  padding-bottom: 16px;
+}
+
+.section-hero .hero-subheading {
+  opacity: 0;
+  transform: translateY(30px);
+  position: absolute;
+  bottom: 10vh;
+  left: 6vw;
+  text-align: left;
+  max-width: 400px;
+}
+
+.section-hero .tagline {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.hero-cta {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+.hero-cta:hover { color: #fff; }
+
+/* ================================================================
+   2. Mission
+   ================================================================ */
+.section-mission { background: #fff; }
+.section-mission .section-headline { max-width: 780px; }
+
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  margin-top: 3rem;
+  background: #eee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.stat-item {
+  background: #fafafa;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  letter-spacing: -0.02em;
+}
+
+.stat-desc {
+  display: block;
+  font-size: 0.78rem;
+  color: #888;
+  margin-top: 0.3rem;
+  line-height: 1.3;
+}
+
+/* ================================================================
+   3. Living Record
+   ================================================================ */
+.section-living-record { background: #fafafa; }
+
+.record-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.record-text p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.record-chart { text-align: center; }
+
+.donut-chart text {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* ================================================================
+   4. Ocean Tech
+   ================================================================ */
+.section-ocean-tech { background: #fff; }
+
+.tech-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.tech-card {
+  padding: 2rem;
+  background: #fafafa;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  transition: border-color 0.2s;
+}
+
+.tech-card:hover { border-color: #ccc; }
+
+.tech-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  color: #1a1a2e;
+}
+
+.tech-card p {
+  font-size: 0.92rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.tech-phases {
+  font-size: 0.75rem;
+  color: #aaa;
+  font-weight: 600;
+}
+
+.phase { margin-right: 0.2rem; }
+.phase-active { color: #4CAF50; }
+
+/* ================================================================
+   5. Cryosphere (dark)
+   ================================================================ */
+.section-cryosphere {
+  background: #0a1628;
+  color: #e0e8f0;
+}
+
+.section-cryosphere .section-label { color: #81d4fa; }
+.section-cryosphere .section-headline { color: #fff; }
+.section-cryosphere .section-body { color: #a0b0c0; }
+
+.cryo-timeline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.cryo-step { position: relative; }
+
+.step-marker {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgba(129, 212, 250, 0.2);
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.cryo-step h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.cryo-step p {
+  font-size: 0.88rem;
+  color: #8899aa;
+  line-height: 1.6;
+}
+
+/* ================================================================
+   6. Terrestrial
+   ================================================================ */
+.section-terrestrial { background: #fafafa; }
+.section-terrestrial .section-inner { text-align: center; }
+.section-terrestrial .section-body { margin-left: auto; margin-right: auto; }
+
+.tri-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.tri-card {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  transition: border-color 0.2s;
+}
+
+.tri-card:hover { border-color: #ccc; }
+
+.tri-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #e0e0e0;
+  margin-bottom: 0.75rem;
+  line-height: 1;
+}
+
+.tri-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #1a1a2e;
+}
+
+.tri-card p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ================================================================
+   7. Thesis
+   ================================================================ */
+.section-thesis {
+  background: #fff;
+}
+
+.section-thesis .section-inner {
+  padding: 14vh 2rem;
+}
+
+/* ================================================================
+   8. Impact
+   ================================================================ */
+.section-impact { background: #fafafa; }
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 2.5rem;
+  align-items: start;
+}
+
+.metric-row {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.metric-value {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  min-width: 120px;
+}
+
+.metric-label {
+  font-size: 0.88rem;
+  color: #888;
+}
+
+.bar-chart { display: block; }
+
+/* ================================================================
+   9. Research
+   ================================================================ */
+.section-research { background: #fff; }
+
+.research-layout {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.research-featured {
+  padding: 2rem;
+  background: #fafafa;
+  border-radius: 10px;
+  border-left: 4px solid #4CAF50;
+}
+
+.research-tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #fff;
+  background: #4CAF50;
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+.research-featured h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  color: #1a1a2e;
+  line-height: 1.3;
+}
+
+.research-featured p {
+  font-size: 0.92rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.research-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.research-item {
+  padding: 1.5rem;
+  background: #fafafa;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.research-item h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: #1a1a2e;
+}
+
+.research-item p {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+/* ================================================================
+   10. Join (dark closing)
+   ================================================================ */
+.section-join {
+  background: #0f1923;
+  color: #c8d6e0;
+}
+
+.section-join .section-headline {
+  color: #fff;
+  max-width: 700px;
+  font-size: 2.4rem;
+}
+
+.section-join .section-body { color: #8899aa; }
+
+.join-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.join-col h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.join-col p {
+  font-size: 0.9rem;
+  color: #8899aa;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.join-col .text-cta { color: #81d4fa; }
+
+.role-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.role-tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #a0b0c0;
+}
+
+.join-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.join-metrics span {
+  font-size: 0.85rem;
+  color: #a0b0c0;
+}
+
+.join-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.join-cta {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4CAF50;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.join-cta:hover { opacity: 0.7; }
+
+.join-tagline {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #556;
+}
+
+/* ================================================================
+   Floating Nav
+   ================================================================ */
+.floating-nav {
+  position: fixed;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 250;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.nav-dots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+}
+
+.nav-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,0.12);
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0;
+}
+
+.nav-dot:hover {
+  background: rgba(0,0,0,0.3);
+  transform: scale(1.5);
+}
+
+.nav-dot.active {
+  background: #4CAF50;
+  transform: scale(1.8);
+}
+
+/* Invert dots on dark sections */
+.nav-arrow {
+  background: none;
+  border: none;
+  font-size: 0.85rem;
+  color: rgba(0,0,0,0.25);
+  cursor: pointer;
+  padding: 2px;
+  transition: color 0.2s;
+}
+
+.nav-arrow:hover { color: #4CAF50; }
+
+/* ================================================================
+   Footer
+   ================================================================ */
+.landing-footer {
+  background: #0a1118;
+  color: #556;
+}
+
+.landing-footer .section-inner {
+  padding: 2.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landing-footer p {
+  font-size: 0.8rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  font-size: 0.8rem;
+  color: #667;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: #4CAF50; }
+
+/* ================================================================
+   Responsive
+   ================================================================ */
+@media (max-width: 900px) {
+  .section-hero .hero h1 { font-size: 5rem; }
+  .section-headline { font-size: 2rem; }
+  .headline-feature { font-size: 2.4rem; }
+
+  .stat-row,
+  .record-grid,
+  .tech-cards,
+  .cryo-timeline,
+  .tri-grid,
+  .impact-grid,
+  .research-layout,
+  .join-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-row { gap: 0; }
+
+  .floating-nav { right: 0.5rem; }
+  .nav-dot { width: 5px; height: 5px; }
+
+  .landing-footer .section-inner {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-hero .hero h1 { font-size: 3.5rem; }
+  .section-inner { padding: 8vh 1.2rem; }
+}

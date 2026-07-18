@@ -169,17 +169,19 @@ a {
     left: 0;
     box-shadow: 4px 0 24px rgba(0, 0, 0, 0.5);
   }
-  .sidebar-backdrop {
-    display: none;
-    position: fixed;
-    inset: 0;
-    top: 52px;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 89;
-  }
-  .sidebar-backdrop.visible {
-    display: block;
-  }
+}
+
+.sidebar-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  top: 52px;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 89;
+}
+
+.sidebar-backdrop.visible {
+  display: block;
 }
 
 /* Sidebar */
@@ -1827,4 +1829,134 @@ a.distribution-badge:hover {
     height: 60vh;
     min-height: 400px;
   }
+}
+
+/* ================================================================
+   Blog
+   ================================================================ */
+.blog-layout {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #fff;
+  color: #1a1a2e;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-header {
+  border-bottom: 1px solid #eee;
+}
+
+.blog-header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-brand {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.blog-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.blog-nav a {
+  font-size: 0.85rem;
+  color: #888;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.blog-nav a:hover {
+  color: #4CAF50;
+}
+
+.blog-main {
+  flex: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  width: 100%;
+}
+
+.blog-intro h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.blog-intro p {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 3rem;
+}
+
+.blog-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.blog-post-card {
+  padding: 2rem;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  transition: border-color 0.2s;
+}
+
+.blog-post-card:hover {
+  border-color: #ccc;
+}
+
+.post-tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #4CAF50;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post-card h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  line-height: 1.3;
+}
+
+.blog-post-card p {
+  font-size: 0.92rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.post-meta {
+  margin-top: 0.75rem;
+}
+
+.post-meta time {
+  font-size: 0.78rem;
+  color: #aaa;
+}
+
+.blog-footer {
+  border-top: 1px solid #eee;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.blog-footer p {
+  font-size: 0.78rem;
+  color: #aaa;
 }
