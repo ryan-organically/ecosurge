@@ -690,14 +690,16 @@
 }
 
 .nav-dot {
+  position: relative;
   width: 6px;
   height: 6px;
   border-radius: 50%;
   border: none;
   background: var(--line-strong);
   cursor: pointer;
-  transition: all var(--dur-2) var(--ease-out);
+  transition: background var(--dur-2) var(--ease-out), transform var(--dur-2) var(--ease-out);
   padding: 0;
+  display: block;
 }
 
 .nav-dot:hover {
@@ -708,6 +710,37 @@
 .nav-dot.active {
   background: var(--accent);
   transform: scale(1.8);
+}
+
+/* Label is a tooltip to the LEFT of the dot; hidden until hover/active so the
+   raw text never spills out of the 6px dot. */
+.nav-label {
+  position: absolute;
+  right: calc(100% + 12px);
+  top: 50%;
+  transform: translateY(-50%) translateX(4px);
+  white-space: nowrap;
+  font-size: 0.72rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--text-1);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  padding: 5px 10px;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-1);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--dur-2) var(--ease-out), transform var(--dur-2) var(--ease-out);
+}
+
+.nav-dot:hover .nav-label,
+.nav-dot:focus-visible .nav-label,
+.nav-dot.active .nav-label {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
 }
 
 .nav-arrow {
