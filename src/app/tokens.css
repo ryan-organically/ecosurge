@@ -1,0 +1,224 @@
+/* ================================================================
+   EcoSurge Design Tokens — the single source of visual truth.
+
+   Layer 1: primitive scales (color ramps, type, space, radius,
+            shadow, motion). Never consumed directly by components.
+   Layer 2: semantic themes (dark forest / light paper) exposed as
+            --bg, --surface, --text-1 … and re-scoped per surface.
+   Layer 3: legacy aliases so every existing class keeps resolving.
+   ================================================================ */
+
+/* ----------------------------------------------------------------
+   Layer 1 — primitives
+   ---------------------------------------------------------------- */
+:root {
+  /* Brand green ramp (emerald) */
+  --green-100: #d1fae5;
+  --green-200: #a7f3d0;
+  --green-300: #6ee7b7;
+  --green-400: #34d399;
+  --green-500: #10b981;
+  --green-600: #059669;
+  --green-700: #047857;
+  --green-800: #065f46;
+
+  /* Secondary + signal hues */
+  --teal-300: #5eead4;
+  --teal-400: #2dd4bf;
+  --teal-500: #14b8a6;
+  --blue-400: #60a5fa;
+  --amber-400: #fbbf24;
+  --orange-400: #fb923c;
+  --red-400: #f87171;
+  --violet-400: #a78bfa;
+
+  /* Forest dark surfaces (green-cast blacks) */
+  --forest-950: #060d0a;
+  --forest-900: #0a1310;
+  --forest-850: #0d1915;
+  --forest-800: #111f19;
+  --forest-700: #16281f;
+
+  /* Paper light surfaces (green-cast whites) */
+  --paper-0: #ffffff;
+  --paper-50: #f6faf7;
+  --paper-100: #eef4ef;
+  --paper-200: #e2ece5;
+  --ink-900: #101b16;
+  --ink-700: #33443b;
+  --ink-500: #5c6b63;
+  --ink-300: #8fa096;
+
+  /* Typography */
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'SFMono-Regular', ui-monospace, 'JetBrains Mono', Menlo, monospace;
+
+  --text-display: clamp(2.6rem, 5.5vw, 4rem);
+  --text-h1: clamp(2rem, 4vw, 2.6rem);
+  --text-h2: clamp(1.35rem, 2.5vw, 1.6rem);
+  --text-h3: 1.12rem;
+  --text-body: 1rem;
+  --text-sm: 0.875rem;
+  --text-xs: 0.78rem;
+  --text-2xs: 0.7rem;
+
+  --tracking-tight: -0.025em;
+  --tracking-snug: -0.015em;
+  --tracking-caps: 0.16em;
+  --leading-tight: 1.12;
+  --leading-body: 1.7;
+
+  /* Spacing rhythm */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+
+  /* Radius */
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-full: 999px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-swift: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-1: 140ms;
+  --dur-2: 240ms;
+  --dur-3: 420ms;
+
+  /* Chrome */
+  --nav-h: 56px;
+  --glass-blur: blur(18px) saturate(1.5);
+}
+
+/* ----------------------------------------------------------------
+   Layer 2 — semantic themes
+   Dark forest is the default (app shell, archive, dark landing
+   sections). Light paper is scoped onto editorial surfaces.
+   ---------------------------------------------------------------- */
+:root,
+.theme-dark,
+.section-cryosphere,
+.section-firewatch,
+.section-join,
+.landing-footer,
+.blog-featured,
+.study-callout,
+.study-equation,
+.study-figure-frame,
+.doc-code {
+  --bg: var(--forest-950);
+  --bg-2: var(--forest-900);
+  --surface: var(--forest-850);
+  --surface-2: var(--forest-800);
+  --line: rgba(226, 240, 232, 0.09);
+  --line-strong: rgba(226, 240, 232, 0.17);
+  --text-1: #e9f2ec;
+  --text-2: #9fb2a7;
+  --text-3: #69796f;
+  --accent: var(--green-400);
+  --accent-strong: var(--green-500);
+  --accent-deep: var(--green-600);
+  --accent-soft: rgba(52, 211, 153, 0.13);
+  --accent-2: var(--teal-400);
+  --accent-2-soft: rgba(45, 212, 191, 0.14);
+  --link: var(--green-300);
+  --focus: var(--teal-300);
+  --glass-bg: rgba(8, 16, 12, 0.7);
+  --glass-border: rgba(233, 242, 236, 0.1);
+  --hover-wash: rgba(233, 242, 236, 0.05);
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.35), 0 10px 28px -14px rgba(0, 0, 0, 0.55);
+  --shadow-2: 0 24px 64px -28px rgba(0, 0, 0, 0.65);
+  --glow: 0 22px 56px -28px rgba(16, 185, 129, 0.5);
+}
+
+.theme-light,
+.landing,
+.blog-layout {
+  --bg: var(--paper-50);
+  --bg-2: var(--paper-0);
+  --surface: var(--paper-0);
+  --surface-2: var(--paper-100);
+  --line: rgba(16, 27, 22, 0.1);
+  --line-strong: rgba(16, 27, 22, 0.2);
+  --text-1: var(--ink-900);
+  --text-2: var(--ink-700);
+  --text-3: var(--ink-500);
+  --accent: var(--green-600);
+  --accent-strong: var(--green-700);
+  --accent-deep: var(--green-800);
+  --accent-soft: rgba(5, 150, 105, 0.09);
+  --accent-2: var(--teal-500);
+  --accent-2-soft: rgba(20, 184, 166, 0.12);
+  --link: var(--green-700);
+  --focus: var(--green-600);
+  --glass-bg: rgba(255, 255, 255, 0.72);
+  --glass-border: rgba(16, 27, 22, 0.08);
+  --hover-wash: rgba(16, 27, 22, 0.04);
+  --shadow-1: 0 1px 2px rgba(16, 27, 22, 0.05), 0 10px 30px -18px rgba(16, 27, 22, 0.18);
+  --shadow-2: 0 24px 60px -30px rgba(16, 27, 22, 0.25);
+  --glow: 0 22px 52px -28px rgba(5, 150, 105, 0.35);
+}
+
+/* ----------------------------------------------------------------
+   Layer 3 — legacy aliases (existing classes keep resolving,
+   theme-aware because they point at semantic vars)
+   ---------------------------------------------------------------- */
+:root {
+  --bg-dark: var(--bg);
+  --bg-card: var(--surface);
+  --bg-sidebar: var(--bg-2);
+  --text-primary: var(--text-1);
+  --text-secondary: var(--text-2);
+  --text-muted: var(--text-3);
+  --accent-green: var(--accent);
+  --accent-blue: var(--accent-2);
+  --accent-purple: var(--violet-400);
+  --border-color: var(--line);
+  --hover-bg: var(--hover-wash);
+}
+
+/* ----------------------------------------------------------------
+   Shared primitives every surface uses
+   ---------------------------------------------------------------- */
+
+/* Uppercase eyebrow label — the brand's editorial signature */
+.section-label,
+.blog-eyebrow,
+.post-tag,
+.abstract-label,
+.callout-title {
+  font-weight: 700;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+}
+
+/* Motion restraint */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Unified focus ring */
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: inherit;
+}
