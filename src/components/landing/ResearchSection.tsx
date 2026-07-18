@@ -37,6 +37,9 @@ export default function ResearchSection() {
           <Link className="text-cta" href="/blog">
             View all research &amp; whitepapers &rarr;
           </Link>
+          <Link className="text-cta" href="/docs">
+            Read the operational runbooks &rarr;
+          </Link>
         </div>
       </div>
     </div>

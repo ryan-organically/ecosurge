@@ -25,6 +25,8 @@ export function NavBar() {
     { href: '/taxon/eukaryota/fungi', label: 'Fungi' },
     { href: '/taxon/bacteria', label: 'Bacteria' },
     { href: '/taxon/archaea', label: 'Archaea' },
+    { href: '/blog', label: 'Research' },
+    { href: '/docs', label: 'Docs' },
   ]
 
   return (

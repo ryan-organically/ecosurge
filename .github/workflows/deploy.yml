@@ -1,0 +1,65 @@
+name: Deploy to GitHub Pages
+
+# Fixes the "Species Archive 404": the site is a Next.js static export, but no
+# workflow ever published it — GitHub Pages was serving the repo root (the old
+# standalone index.html), which has no /archive, /blog, or /taxon routes. This
+# builds the export and deploys out/ to Pages.
+#
+# One-time repo setting required: Settings → Pages → Build and deployment →
+# Source = "GitHub Actions" (not "Deploy from a branch").
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never run two deploys at once; let an in-progress run finish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      # prebuild builds species.db from source data, then next build exports out/
+      - name: Build static export
+        run: npm run build
+        env:
+          # The /taxon route exports ~7,460 pages. Cap export workers so CI
+          # runners (limited RAM) don't swap and blow the per-page timeout.
+          NEXT_EXPORT_CPUS: 2
+          NODE_OPTIONS: --max-old-space-size=4096
+
+      - name: Pages hygiene (nojekyll + custom domain)
+        run: |
+          touch out/.nojekyll
+          cp CNAME out/CNAME 2>/dev/null || true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

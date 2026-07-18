@@ -2522,3 +2522,135 @@ a.distribution-badge:hover {
     font-size: 0.95rem;
   }
 }
+
+/* ============================================================
+   Docs / runbooks
+   ============================================================ */
+.doc {
+  max-width: 46rem;
+  margin: 0 auto;
+}
+
+.doc-body {
+  margin-top: 1.5rem;
+  color: #1a1a2e;
+  line-height: 1.7;
+}
+
+.doc-body h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+.doc-body h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 2.25rem 0 0.75rem;
+}
+
+.doc-body h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 1.75rem 0 0.5rem;
+}
+
+.doc-body h4,
+.doc-body h5,
+.doc-body h6 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.doc-body p {
+  margin: 0 0 1rem;
+  font-size: 0.98rem;
+}
+
+.doc-body ul,
+.doc-body ol {
+  margin: 0 0 1rem 1.25rem;
+  padding: 0;
+}
+
+.doc-body li {
+  margin: 0.25rem 0;
+  font-size: 0.98rem;
+}
+
+.doc-body a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.doc-body a:hover {
+  text-decoration: underline;
+}
+
+.doc-body code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.86em;
+  background: #f2f4f2;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+
+.doc-body blockquote {
+  margin: 0 0 1rem;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid #4CAF50;
+  background: #f6faf6;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.doc-body hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 2rem 0;
+}
+
+.doc-code {
+  background: #1a1a2e;
+  color: #e8e8ec;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 0 0 1.25rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.doc-code code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+}
+
+.doc-table-wrap {
+  overflow-x: auto;
+  margin: 0 0 1.25rem;
+}
+
+.doc-body table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.88rem;
+}
+
+.doc-body th,
+.doc-body td {
+  border: 1px solid #e6e6e6;
+  padding: 0.5rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.doc-body th {
+  background: #f6faf6;
+  font-weight: 700;
+}

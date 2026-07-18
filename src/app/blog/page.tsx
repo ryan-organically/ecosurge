@@ -26,8 +26,28 @@ export default function BlogIndex() {
     [active]
   )
 
+  const blogLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: 'EcoSurge Research & Whitepapers',
+    url: 'https://ecosurge.co/blog',
+    publisher: { '@type': 'Organization', name: 'EcoSurge' },
+    blogPost: studies.map((s) => ({
+      '@type': 'BlogPosting',
+      headline: s.title,
+      description: s.subtitle,
+      datePublished: s.date,
+      url: `https://ecosurge.co/blog/${s.slug}`,
+      author: s.authors.map((name) => ({ '@type': 'Person', name })),
+    })),
+  }
+
   return (
     <div className="blog-index">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogLd) }}
+      />
       <div className="blog-intro">
         <span className="blog-eyebrow">OPEN SCIENCE</span>
         <h1>Research &amp; Whitepapers</h1>

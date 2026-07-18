@@ -1,0 +1,35 @@
+# EcoSurge
+
+> EcoSurge is a global climate-technology conglomerate building tools to save the world from the drastic effects of climate change, promote harmony between nature and agriculture, and stimulate a growing biomechanical and biotechnological ecosystem. The site pairs a research program (whitepapers, field studies, robotics notes) with The Species Archive — an interactive field guide to the tree of life — plus biome and global ecosystem-health dashboards.
+
+## Research & Whitepapers
+
+- [The Convex Planet](https://ecosurge.co/blog/convex-planet): On convexity as the hidden structure of planetary repair — and the physics of the natures we have not yet solved.
+- [The Age of Embodiment](https://ecosurge.co/blog/age-of-embodiment): On the global climate crisis, the failure of fragmented action, and the rise of a new model for planetary stewardship.
+- [Machine Sight: Robotic Vision for Ecological Fieldwork](https://ecosurge.co/blog/robotic-vision): How a field robot turns photons into decisions — pinhole geometry, promptable segmentation, monocular depth, and LIDAR–RGB fusion into a semantic occupancy map.
+- [Fire Watch: Reading the Planet's Burning from Orbit](https://ecosurge.co/blog/fire-watch): How thermal-anomaly satellites turn a smouldering forest into a pixel, that pixel into fire radiative power, and those into a live planetary fire map.
+- [Streaming Reality: 3D Gaussian Splatting from a Roving Robot](https://ecosurge.co/blog/gaussian-splatting): A Roomba-class robot builds a live radiance field of a room as it drives — millions of anisotropic Gaussians rasterized in real time.
+- [Advancing CAD: Generative, Differentiable, Biomimetic Design](https://ecosurge.co/blog/generative-cad): From parametric constraint-solving to topology optimization to gradient-driven shape search — how CAD stops drawing parts and starts discovering them.
+- [The Zen Gardener: A Stair-Climbing Robot That Rakes the Floor](https://ecosurge.co/blog/zen-gardener): Repurposing a spare motherboard into an autonomous cleaner that maps with LIDAR, sees with Meta's SAM, and leaves the floor raked like a karesansui garden.
+- [Managing the Permafrost Carbon Feedback](https://ecosurge.co/blog/permafrost-carbon): Turning a 1.6-trillion-tonne liability into a managed sink.
+- [Polar Ice Scaffolds: Biomineralized Lattices at Glacier Grounding Lines](https://ecosurge.co/blog/cryosphere-scaffold): Slowing basal melt with engineered aragonite microstructures.
+- [Autonomous Fleets for Planetary Restoration](https://ecosurge.co/blog/restoration-robotics): Reef-seeding AUVs, cryosphere guardians, and terrestrial pollinator swarms.
+- [Modeling Species Recovery Under Managed Intervention](https://ecosurge.co/blog/species-recovery): Logistic dynamics, minimum viable populations, and the economics of return.
+- [The Always-On Lab: Running Local Models 24/7](https://ecosurge.co/blog/local-model-lab): An operational specification for a continuous, self-directed research node on commodity hardware.
+- [On the Plausibility of Harnessing Ocean Dynamics](https://ecosurge.co/blog/ocean-dynamics): Bio-Integrated Wave Energy Converters and self-sustaining Rebirth Pods.
+- [Operational Blueprint: Initial Initiatives](https://ecosurge.co/blog/operational-blueprint): Bio-Dome, Ocean Rebirth, and Zero-Waste Nexus — a generative roadmap.
+
+## The Species Archive
+
+- [Species Archive home](https://ecosurge.co/archive): Interactive biodiversity platform — 3D globe, radial clade diagram, and featured species drawn from the complete tree of life.
+- [Biomes](https://ecosurge.co/biomes): Fourteen biome definitions with climate, threats, and trends, plus comparison charts and a 3D globe.
+- [Ecosystem dashboard](https://ecosurge.co/dashboard): Global ecosystem-health metrics across the archive.
+- [Eukaryota](https://ecosurge.co/taxon/eukaryota): Drill into animals, plants, fungi, and protists.
+- [Bacteria](https://ecosurge.co/taxon/bacteria): The bacterial domain.
+- [Archaea](https://ecosurge.co/taxon/archaea): The archaeal domain.
+
+## Docs & Runbooks
+
+- [Runbooks index](https://ecosurge.co/docs): Operational runbooks and build specifications from the EcoSurge lab.
+- [Always-On Lab runbook](https://ecosurge.co/docs/local-model-lab): 24/7 local-model operational spec — VRAM budgeting, model tiers, and scheduling on a single-GPU box.
+- [Zen Gardener build runbook](https://ecosurge.co/docs/zen-gardener-build): Bill of materials, wiring, and software stack for the stair-climbing raking robot.

@@ -28,8 +28,26 @@ export default async function StudyPage({ params }: PageProps) {
   const study = getStudy(slug)
   if (!study) notFound()
 
+  const articleLd = {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: study.title,
+    description: study.subtitle,
+    abstract: study.abstract,
+    datePublished: study.date,
+    keywords: study.keywords.join(', '),
+    author: study.authors.map((name) => ({ '@type': 'Person', name })),
+    publisher: { '@type': 'Organization', name: 'EcoSurge' },
+    mainEntityOfPage: `https://ecosurge.co/blog/${study.slug}`,
+    url: `https://ecosurge.co/blog/${study.slug}`,
+  }
+
   return (
     <article className="study">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }}
+      />
       <div className="study-header">
         <Link href="/blog" className="study-back">
           &larr; All studies

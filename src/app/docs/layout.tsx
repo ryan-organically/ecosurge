@@ -1,14 +1,14 @@
 import Link from 'next/link'
 
-export default function BlogLayout({ children }: { children: React.ReactNode }) {
+export default function DocsLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="blog-layout">
       <header className="blog-header">
         <div className="blog-header-inner">
           <Link href="/" className="blog-brand">EcoSurge</Link>
           <nav className="blog-nav">
-            <Link href="/blog">Blog</Link>
             <Link href="/docs">Docs</Link>
+            <Link href="/blog">Research</Link>
             <Link href="/archive">Species Archive</Link>
             <Link href="/">Home</Link>
           </nav>
