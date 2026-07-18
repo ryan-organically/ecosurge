@@ -814,16 +814,47 @@
   align-items: stretch;
 }
 
-.firewatch-globe {
+.firewatch-map {
   position: relative;
   min-height: 460px;
   border-radius: var(--radius-lg);
   overflow: hidden;
   background:
-    radial-gradient(120% 90% at 50% 20%, rgba(251, 146, 60, 0.13), transparent 60%),
+    radial-gradient(120% 90% at 50% 20%, rgba(251, 146, 60, 0.1), transparent 60%),
     var(--forest-900);
   border: 1px solid rgba(251, 146, 60, 0.18);
 }
+.firewatch-canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+.firewatch-legend {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+}
+.firewatch-legend-label {
+  font-size: var(--text-2xs);
+  color: var(--text-3);
+  letter-spacing: 0.04em;
+}
+.firewatch-legend-ramp {
+  width: 72px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(90deg, #ff5722, #fb923c, #ffe066, #fff7e6);
+}
+.firewatch-count-note { color: var(--text-3); }
 .firewatch-globe-placeholder {
   position: absolute;
   inset: 0;
@@ -985,7 +1016,7 @@
     grid-template-columns: 1fr;
   }
 
-  .firewatch-globe { min-height: 380px; }
+  .firewatch-map { min-height: 380px; }
 
   .floating-nav { right: 0.5rem; }
   .nav-dot { width: 5px; height: 5px; }
