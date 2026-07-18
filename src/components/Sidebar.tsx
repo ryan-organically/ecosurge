@@ -118,7 +118,13 @@ export function Sidebar({ currentTaxonId }: { currentTaxonId?: string }) {
       />
 
       <div className="sidebar-search">
-        <input type="text" className="search-input" placeholder="Search taxonomy..." />
+        <input
+          type="text"
+          className="search-input"
+          placeholder="Search taxonomy..."
+          aria-keyshortcuts="/ Control+K"
+        />
+        <kbd className="search-kbd" aria-hidden="true">/</kbd>
       </div>
 
       <div className="sidebar-nav-links">

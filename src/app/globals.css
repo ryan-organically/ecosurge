@@ -199,6 +199,27 @@ a {
 .sidebar-search {
   padding: 12px 14px;
   border-bottom: 1px solid var(--border-color);
+  position: relative;
+}
+
+.search-kbd {
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-family: 'SFMono-Regular', ui-monospace, monospace;
+  font-size: 0.7rem;
+  line-height: 1;
+  padding: 3px 6px;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 5px;
+}
+
+.sidebar-search input:focus + .search-kbd {
+  opacity: 0;
 }
 
 .sidebar-search input {
@@ -1959,4 +1980,545 @@ a.distribution-badge:hover {
 .blog-footer p {
   font-size: 0.78rem;
   color: #aaa;
+}
+
+/* ============================================================
+   Studies engine — blog index enhancements + study pages
+   ============================================================ */
+
+.blog-eyebrow {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #4CAF50;
+  margin-bottom: 0.75rem;
+}
+
+.blog-intro p {
+  max-width: 46rem;
+}
+
+.post-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #aaa;
+  font-size: 0.78rem;
+}
+
+.post-meta .dot {
+  color: #ccc;
+}
+
+/* Featured whitepaper */
+.blog-featured {
+  display: block;
+  margin-bottom: 3rem;
+  padding: 2.5rem;
+  border-radius: 16px;
+  color: #fff;
+  background:
+    radial-gradient(120% 140% at 100% 0%, rgba(52, 211, 153, 0.35), transparent 55%),
+    linear-gradient(135deg, #0f2c22 0%, #10231d 55%, #0a1512 100%);
+  border: 1px solid rgba(52, 211, 153, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.blog-featured:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 60px -30px rgba(16, 185, 129, 0.55);
+}
+
+.blog-featured .post-tag {
+  color: #6ee7b7;
+}
+
+.blog-featured h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0.4rem 0 0.6rem;
+}
+
+.blog-featured p {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 1.02rem;
+  line-height: 1.55;
+  max-width: 40rem;
+}
+
+.blog-featured .post-meta {
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 1rem;
+}
+
+.blog-featured .post-meta .dot {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.blog-featured-cta {
+  display: inline-block;
+  margin-top: 1.25rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #6ee7b7;
+}
+
+/* Tag filters */
+.blog-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.blog-filter {
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #e2e2e2;
+  background: #fff;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.blog-filter:hover {
+  border-color: #4CAF50;
+  color: #2e7d32;
+}
+
+.blog-filter.active {
+  background: #10231d;
+  border-color: #10231d;
+  color: #6ee7b7;
+}
+
+/* Card as link */
+.blog-post-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-post-card:hover {
+  border-color: #4CAF50;
+  box-shadow: 0 12px 30px -22px rgba(0, 0, 0, 0.4);
+}
+
+/* ---------- Study article ---------- */
+.study {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.study-back {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #4CAF50;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+}
+
+.study-header h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  margin: 0.5rem 0 0.75rem;
+}
+
+.study-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.45;
+  margin-bottom: 1.25rem;
+}
+
+.study-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: #999;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.study-meta .dot {
+  color: #ccc;
+}
+
+.study-abstract {
+  margin: 2.5rem 0;
+  padding: 1.75rem;
+  background: #f6faf7;
+  border-left: 3px solid #4CAF50;
+  border-radius: 0 10px 10px 0;
+}
+
+.abstract-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #4CAF50;
+  margin-bottom: 0.6rem;
+}
+
+.study-abstract p {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #374151;
+  margin: 0;
+}
+
+/* Body typography */
+.study-body {
+  font-size: 1.08rem;
+  line-height: 1.75;
+  color: #2a2a35;
+}
+
+.study-body h2 {
+  font-size: 1.6rem;
+  font-weight: 750;
+  letter-spacing: -0.015em;
+  margin: 2.75rem 0 1rem;
+  line-height: 1.2;
+}
+
+.study-body p {
+  margin: 0 0 1.35rem;
+}
+
+.study-lead {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #111;
+  font-weight: 500;
+  margin: 0 0 2rem;
+}
+
+.study-body ul,
+.study-body ol {
+  margin: 0 0 1.5rem;
+  padding-left: 1.4rem;
+}
+
+.study-body li {
+  margin-bottom: 0.6rem;
+}
+
+.study-body code {
+  font-family: 'SFMono-Regular', ui-monospace, 'JetBrains Mono', monospace;
+  font-size: 0.88em;
+  background: #eef2f0;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  color: #0f5132;
+}
+
+/* Callout */
+.study-callout {
+  margin: 2rem 0;
+  padding: 1.4rem 1.6rem;
+  background: linear-gradient(135deg, #0f2c22, #0a1512);
+  border-radius: 12px;
+  color: #e6fff4;
+}
+
+.study-callout .callout-title {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #6ee7b7;
+  margin-bottom: 0.5rem;
+}
+
+.study-callout p {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+/* Quote */
+.study-quote {
+  margin: 2.5rem 0;
+  padding-left: 1.5rem;
+  border-left: 3px solid #4CAF50;
+}
+
+.study-quote p {
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: #1a1a2e;
+  margin-bottom: 0.6rem;
+}
+
+.study-quote cite {
+  font-style: normal;
+  font-size: 0.85rem;
+  color: #999;
+  font-weight: 600;
+}
+
+/* Stats */
+.study-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.study-stat {
+  padding: 1.25rem;
+  background: #f6faf7;
+  border: 1px solid #e6efe8;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.study-stat-value {
+  display: block;
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #10231d;
+  letter-spacing: -0.02em;
+}
+
+.study-stat-label {
+  display: block;
+  font-size: 0.78rem;
+  color: #778;
+  margin-top: 0.35rem;
+  line-height: 1.3;
+}
+
+/* Equation */
+.study-equation {
+  margin: 2rem 0;
+  padding: 1.5rem 1.75rem;
+  background: #0d1b16;
+  border-radius: 12px;
+  overflow-x: auto;
+}
+
+.equation-display {
+  font-family: 'SFMono-Regular', ui-monospace, 'JetBrains Mono', monospace;
+  font-size: 1.15rem;
+  color: #a7f3d0;
+  text-align: center;
+  letter-spacing: 0.01em;
+  padding: 0.5rem 0 0.75rem;
+  white-space: nowrap;
+}
+
+.equation-where {
+  list-style: none;
+  padding: 0.9rem 0 0;
+  margin: 0.5rem 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.equation-where li {
+  font-size: 0.86rem;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.5;
+  margin-bottom: 0.3rem;
+}
+
+.equation-where code {
+  background: rgba(110, 231, 183, 0.14);
+  color: #6ee7b7;
+}
+
+.equation-note {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.55;
+  margin: 0.8rem 0 0;
+  font-style: italic;
+}
+
+/* Steps */
+.study-steps {
+  counter-reset: step;
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.study-steps li {
+  position: relative;
+  padding: 0 0 1.25rem 3rem;
+  border-left: 2px solid #e6efe8;
+  margin-left: 1rem;
+}
+
+.study-steps li:last-child {
+  border-left-color: transparent;
+  padding-bottom: 0;
+}
+
+.study-steps li::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: -1rem;
+  top: -0.2rem;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  background: #10231d;
+  color: #6ee7b7;
+  border-radius: 50%;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.study-steps .step-title {
+  display: block;
+  font-weight: 700;
+  font-size: 1.02rem;
+  margin-bottom: 0.2rem;
+}
+
+.study-steps .step-text {
+  display: block;
+  color: #555;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+/* Table */
+.study-table-wrap {
+  margin: 2rem 0;
+  overflow-x: auto;
+}
+
+.study-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.study-table th,
+.study-table td {
+  padding: 0.7rem 0.9rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.study-table thead th {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #10231d;
+  border-bottom: 2px solid #d7e6db;
+}
+
+.study-table tbody tr:hover {
+  background: #f6faf7;
+}
+
+.study-table-caption {
+  font-size: 0.82rem;
+  color: #999;
+  margin-top: 0.6rem;
+  font-style: italic;
+}
+
+/* Figure */
+.study-figure {
+  margin: 2.5rem 0;
+}
+
+.study-figure-frame {
+  padding: 1.25rem;
+  background: #0d1b16;
+  border-radius: 12px;
+}
+
+.figure-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.study-figure figcaption {
+  font-size: 0.85rem;
+  color: #778;
+  line-height: 1.5;
+  margin-top: 0.75rem;
+  padding-left: 0.25rem;
+}
+
+.study-figure .figure-label {
+  font-weight: 700;
+  color: #4CAF50;
+}
+
+.study-divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 2.5rem 0;
+}
+
+/* Keywords + footer nav */
+.study-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 3rem 0 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.study-keyword {
+  font-size: 0.75rem;
+  color: #667;
+  background: #f2f5f3;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+}
+
+.study-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.study-footer .text-cta {
+  color: #4CAF50;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .study-header h1 {
+    font-size: 1.9rem;
+  }
+  .blog-featured h2 {
+    font-size: 1.5rem;
+  }
+  .equation-display {
+    font-size: 0.95rem;
+  }
 }

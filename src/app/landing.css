@@ -718,3 +718,12 @@
   .section-hero .hero h1 { font-size: 3.5rem; }
   .section-inner { padding: 8vh 1.2rem; }
 }
+
+.research-all {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+.research-all .text-cta {
+  font-size: 1rem;
+  font-weight: 700;
+}

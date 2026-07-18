@@ -1,46 +1,82 @@
-import Link from 'next/link'
+'use client'
 
-const posts = [
-  {
-    slug: 'age-of-embodiment',
-    title: 'The Age of Embodiment',
-    subtitle: 'On the global climate crisis, the failure of fragmented action, and the rise of a new model for planetary stewardship.',
-    date: '2025-07-01',
-    tag: 'Whitepaper',
-  },
-  {
-    slug: 'ocean-dynamics',
-    title: 'On the Plausibility of Harnessing Ocean Dynamics',
-    subtitle: 'Bio-WEC feasibility assessment and Polar Ice Scaffold strategic roadmap.',
-    date: '2025-07-17',
-    tag: 'Research',
-  },
-  {
-    slug: 'operational-blueprint',
-    title: 'Operational Blueprint: Initial Initiatives',
-    subtitle: 'Bio-Dome, Ocean Rebirth, and Zero-Waste Nexus — a generative roadmap for planetary restoration.',
-    date: '2025-08-01',
-    tag: 'Strategy',
-  },
+import { useMemo, useState } from 'react'
+import Link from 'next/link'
+import { studies, featuredStudy, readingMinutes, type StudyTag } from '@/data/studies'
+
+function fmtDate(iso: string) {
+  return new Date(iso).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+}
+
+const TAGS: (StudyTag | 'All')[] = [
+  'All',
+  'Whitepaper',
+  'Research',
+  'Robotics',
+  'Field Study',
+  'Lab Note',
+  'Strategy',
 ]
 
 export default function BlogIndex() {
+  const [active, setActive] = useState<StudyTag | 'All'>('All')
+
+  const visible = useMemo(
+    () => studies.filter((s) => active === 'All' || s.tag === active),
+    [active]
+  )
+
   return (
     <div className="blog-index">
       <div className="blog-intro">
-        <h1>EcoSurge Blog</h1>
-        <p>Research, whitepapers, and operational updates from the frontier of climate technology.</p>
+        <span className="blog-eyebrow">OPEN SCIENCE</span>
+        <h1>Research &amp; Whitepapers</h1>
+        <p>
+          Procedures, equations, and deployment plans from the frontier of climate technology. Every
+          study is an engineering response — measured, reproducible, and built to scale.
+        </p>
       </div>
+
+      <Link href={`/blog/${featuredStudy.slug}`} className="blog-featured">
+        <div className="blog-featured-body">
+          <span className="post-tag">{featuredStudy.tag}</span>
+          <h2>{featuredStudy.title}</h2>
+          <p>{featuredStudy.subtitle}</p>
+          <div className="post-meta">
+            <time>{fmtDate(featuredStudy.date)}</time>
+            <span className="dot">·</span>
+            <span>{readingMinutes(featuredStudy)} min read</span>
+          </div>
+          <span className="blog-featured-cta">Read the whitepaper &rarr;</span>
+        </div>
+      </Link>
+
+      <div className="blog-filters" role="tablist" aria-label="Filter studies by type">
+        {TAGS.map((t) => (
+          <button
+            key={t}
+            role="tab"
+            aria-selected={active === t}
+            className={`blog-filter ${active === t ? 'active' : ''}`}
+            onClick={() => setActive(t)}
+          >
+            {t}
+          </button>
+        ))}
+      </div>
+
       <div className="blog-posts">
-        {posts.map((post) => (
-          <article key={post.slug} className="blog-post-card">
+        {visible.map((post) => (
+          <Link key={post.slug} href={`/blog/${post.slug}`} className="blog-post-card">
             <span className="post-tag">{post.tag}</span>
             <h2>{post.title}</h2>
             <p>{post.subtitle}</p>
             <div className="post-meta">
-              <time>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+              <time>{fmtDate(post.date)}</time>
+              <span className="dot">·</span>
+              <span>{readingMinutes(post)} min read</span>
             </div>
-          </article>
+          </Link>
         ))}
       </div>
     </div>
