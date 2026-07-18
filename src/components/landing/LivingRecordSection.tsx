@@ -44,7 +44,7 @@ export default function LivingRecordSection() {
                 cy="100"
                 r="80"
                 fill="none"
-                stroke="#4CAF50"
+                stroke="#059669"
                 strokeWidth="24"
                 strokeDasharray="301.6 201.05"
                 strokeDashoffset="0"
@@ -111,7 +111,7 @@ export default function LivingRecordSection() {
               <span className="legend-item">
                 <span
                   className="legend-dot"
-                  style={{ backgroundColor: '#4CAF50' }}
+                  style={{ backgroundColor: '#059669' }}
                 />
                 Least Concern
               </span>

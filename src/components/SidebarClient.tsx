@@ -153,9 +153,9 @@ const rankColors: Record<string, string> = {
   kingdom: '#9C27B0',
   phylum: '#673AB7',
   class: '#3F51B5',
-  order: '#2196F3',
+  order: '#2dd4bf',
   family: '#00BCD4',
-  genus: '#4CAF50',
+  genus: '#34d399',
   species: '#8BC34A'
 }
 

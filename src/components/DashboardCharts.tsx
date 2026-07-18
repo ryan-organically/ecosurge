@@ -132,7 +132,7 @@ function ExtinctionRiskChart({ biomes }: { biomes: Biome[] }) {
             {chartData.map((entry, i) => (
               <Cell
                 key={i}
-                fill={entry.threatened > 15 ? '#FF4500' : entry.threatened > 10 ? '#FFA500' : '#4CAF50'}
+                fill={entry.threatened > 15 ? '#FF4500' : entry.threatened > 10 ? '#FFA500' : '#34d399'}
                 fillOpacity={0.8}
               />
             ))}

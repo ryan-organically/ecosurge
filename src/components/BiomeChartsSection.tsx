@@ -108,7 +108,7 @@ function BiomeTrendChart({ biome }: { biome: Biome }) {
   const lastVal = biome.trendData[biome.trendData.length - 1]?.index ?? 100
   const trend = lastVal > firstVal ? 'increasing' : lastVal < firstVal ? 'decreasing' : 'stable'
 
-  const trendColor = trend === 'increasing' ? '#4CAF50' : trend === 'decreasing' ? '#FF5722' : '#2196F3'
+  const trendColor = trend === 'increasing' ? '#34d399' : trend === 'decreasing' ? '#FF5722' : '#2dd4bf'
   const trendLabel = trend === 'increasing' ? 'Improving' : trend === 'decreasing' ? 'Declining' : 'Stable'
 
   const changeVal = lastVal - firstVal

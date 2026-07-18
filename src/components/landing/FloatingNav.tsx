@@ -67,7 +67,7 @@ export default function FloatingNav() {
           top: 0,
           left: 0,
           height: 3,
-          background: '#4CAF50',
+          background: '#059669',
           zIndex: 9999,
           width: '0%',
           transition: 'width 0.1s linear',

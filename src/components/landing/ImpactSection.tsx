@@ -46,23 +46,23 @@ export default function ImpactSection() {
 
               <text x="0" y="45" fontSize="10" fill="#666">North Atlantic</text>
               <rect x="100" y="35" width="180" height="14" rx="2" fill="#e0e0e0" />
-              <rect className="bar-fill" x="100" y="35" width="144" height="14" rx="2" fill="#4CAF50" />
+              <rect className="bar-fill" x="100" y="35" width="144" height="14" rx="2" fill="#059669" />
 
               <text x="0" y="80" fontSize="10" fill="#666">Southeast Asia</text>
               <rect x="100" y="70" width="180" height="14" rx="2" fill="#e0e0e0" />
-              <rect className="bar-fill" x="100" y="70" width="108" height="14" rx="2" fill="#4CAF50" />
+              <rect className="bar-fill" x="100" y="70" width="108" height="14" rx="2" fill="#059669" />
 
               <text x="0" y="115" fontSize="10" fill="#666">East Africa</text>
               <rect x="100" y="105" width="180" height="14" rx="2" fill="#e0e0e0" />
-              <rect className="bar-fill" x="100" y="105" width="90" height="14" rx="2" fill="#4CAF50" />
+              <rect className="bar-fill" x="100" y="105" width="90" height="14" rx="2" fill="#059669" />
 
               <text x="0" y="150" fontSize="10" fill="#666">South Pacific</text>
               <rect x="100" y="140" width="180" height="14" rx="2" fill="#e0e0e0" />
-              <rect className="bar-fill" x="100" y="140" width="72" height="14" rx="2" fill="#4CAF50" />
+              <rect className="bar-fill" x="100" y="140" width="72" height="14" rx="2" fill="#059669" />
 
               <text x="0" y="185" fontSize="10" fill="#666">Arctic</text>
               <rect x="100" y="175" width="180" height="14" rx="2" fill="#e0e0e0" />
-              <rect className="bar-fill" x="100" y="175" width="54" height="14" rx="2" fill="#4CAF50" />
+              <rect className="bar-fill" x="100" y="175" width="54" height="14" rx="2" fill="#059669" />
             </svg>
           </div>
         </div>

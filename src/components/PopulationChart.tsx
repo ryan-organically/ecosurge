@@ -4,7 +4,7 @@ import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'rec
 import type { ConservationStatus } from '@/lib/taxonomy'
 
 const statusChartColors: Record<string, string> = {
-  LC: '#4CAF50', NT: '#8BC34A', VU: '#FFD700', EN: '#FFA500',
+  LC: '#34d399', NT: '#8BC34A', VU: '#FFD700', EN: '#FFA500',
   CR: '#FF4500', EW: '#8B0000', EX: '#666666', DD: '#808080', NE: '#A9A9A9',
 }
 

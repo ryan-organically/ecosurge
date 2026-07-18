@@ -24,8 +24,8 @@ const regionColors: Record<string, string> = {
   'Africa': '#E91E63',
   'Asia': '#FF5722',
   'Europe': '#3F51B5',
-  'North America': '#2196F3',
-  'South America': '#4CAF50',
+  'North America': '#2dd4bf',
+  'South America': '#34d399',
   'Oceania': '#FF9800',
   'Antarctica': '#78909C',
   'Worldwide': '#9C27B0',
@@ -118,9 +118,9 @@ export function ConservationChart({ data }: { data: TaxonEnrichment }) {
 export function TrendChart({ data, name }: { data: TaxonEnrichment; name: string }) {
   if (!data.trendData || data.trendData.length === 0) return null
 
-  const trendColor = data.populationTrend === 'increasing' ? '#4CAF50'
+  const trendColor = data.populationTrend === 'increasing' ? '#34d399'
     : data.populationTrend === 'decreasing' ? '#FF5722'
-    : data.populationTrend === 'stable' ? '#2196F3'
+    : data.populationTrend === 'stable' ? '#2dd4bf'
     : '#808080'
 
   const trendLabel = data.populationTrend === 'increasing' ? 'Increasing'
@@ -205,7 +205,7 @@ export function DistributionChart({ data }: { data: TaxonEnrichment }) {
           />
           <Bar dataKey="count" radius={[0, 4, 4, 0]}>
             {chartData.map((entry) => (
-              <Cell key={entry.region} fill={regionColors[entry.region] || '#2196F3'} fillOpacity={0.8} />
+              <Cell key={entry.region} fill={regionColors[entry.region] || '#2dd4bf'} fillOpacity={0.8} />
             ))}
           </Bar>
         </BarChart>
@@ -298,8 +298,8 @@ export function TaxonFactsPanel({ data }: { data: TaxonEnrichment }) {
           <div className="distribution-badges">
             {data.distribution.map(region => (
               <span key={region} className="distribution-badge" style={{
-                borderColor: regionColors[region] || '#2196F3',
-                color: regionColors[region] || '#2196F3',
+                borderColor: regionColors[region] || '#2dd4bf',
+                color: regionColors[region] || '#2dd4bf',
               }}>
                 {region}
               </span>

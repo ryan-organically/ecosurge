@@ -1,11 +1,13 @@
 /* ================================================================
-   EcoSurge Landing — Unified Theme
+   EcoSurge Landing — unified design system
+   Light paper editorial flow with cinematic forest-dark islands.
+   All values flow from tokens.css (imported via globals.css).
    ================================================================ */
 
 .landing {
-  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  color: #1a1a2e;
-  background: #fff;
+  font-family: var(--font-sans);
+  color: var(--text-1);
+  background: var(--bg);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
@@ -16,7 +18,7 @@
   top: 0;
   left: 0;
   height: 3px;
-  background: #4CAF50;
+  background: linear-gradient(90deg, var(--green-500), var(--teal-400));
   z-index: 300;
   transition: width 0.05s linear;
 }
@@ -35,25 +37,22 @@
 
 .section-label {
   display: block;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: #4CAF50;
+  font-size: var(--text-2xs);
+  color: var(--accent);
   margin-bottom: 1.2rem;
 }
 
 .section-headline {
   font-weight: 800;
-  font-size: 2.6rem;
-  line-height: 1.12;
-  color: #1a1a2e;
+  font-size: clamp(2rem, 4.2vw, 2.7rem);
+  line-height: var(--leading-tight);
+  color: var(--text-1);
   margin-bottom: 1.2rem;
-  letter-spacing: -0.02em;
+  letter-spacing: var(--tracking-tight);
 }
 
 .headline-feature {
-  font-size: 3.2rem;
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -61,7 +60,7 @@
 
 .section-body {
   font-size: 1.05rem;
-  color: #555;
+  color: var(--text-2);
   line-height: 1.75;
   max-width: 620px;
   margin-bottom: 1rem;
@@ -73,17 +72,17 @@
   display: inline-block;
   font-size: 0.9rem;
   font-weight: 600;
-  color: #4CAF50;
+  color: var(--accent);
   text-decoration: none;
   margin-top: 0.75rem;
-  transition: opacity 0.2s;
+  transition: color var(--dur-2) var(--ease-swift);
 }
-.text-cta:hover { opacity: 0.7; }
+.text-cta:hover { color: var(--accent-strong); }
 
 /* ================================================================
    1. Hero
    ================================================================ */
-.section-hero { min-height: 180vh; }
+.section-hero { min-height: 180vh; background: var(--forest-950); }
 
 .section-hero .video-section {
   position: sticky;
@@ -103,7 +102,8 @@
 .section-hero .video-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.45);
+  background:
+    linear-gradient(to top, rgba(6, 13, 10, 0.65), rgba(6, 13, 10, 0.25) 40%, rgba(6, 13, 10, 0.35));
   z-index: 2;
   pointer-events: none;
   opacity: 0;
@@ -122,11 +122,12 @@
 }
 
 .section-hero .hero h1 {
-  font-size: 11rem;
+  font-size: clamp(3.5rem, 12vw, 11rem);
   font-weight: 800;
   line-height: 0.88;
   margin: 0;
-  letter-spacing: -0.03em;
+  letter-spacing: var(--tracking-tight);
+  text-shadow: 0 2px 40px rgba(6, 13, 10, 0.45);
 }
 
 .section-hero .hero h1 .char {
@@ -135,50 +136,59 @@
   padding-bottom: 16px;
 }
 
+/* Frosted-glass hero subheading panel */
 .section-hero .hero-subheading {
   opacity: 0;
   transform: translateY(30px);
   position: absolute;
-  bottom: 10vh;
+  bottom: 8vh;
   left: 6vw;
   text-align: left;
-  max-width: 400px;
+  max-width: 420px;
+  padding: 1.4rem 1.6rem;
+  border-radius: var(--radius-lg);
+  background: rgba(8, 16, 12, 0.5);
+  border: 1px solid rgba(233, 242, 236, 0.14);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  box-shadow: var(--shadow-2);
 }
 
 .section-hero .tagline {
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 1.5rem;
-  opacity: 0.9;
+  margin-bottom: 1.25rem;
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .hero-cta {
   font-size: 0.85rem;
-  color: rgba(255,255,255,0.7);
+  font-weight: 600;
+  color: var(--green-300);
   text-decoration: none;
   letter-spacing: 0.05em;
-  transition: color 0.2s;
+  transition: color var(--dur-2) var(--ease-swift);
 }
 .hero-cta:hover { color: #fff; }
 
 /* ================================================================
    2. Mission
    ================================================================ */
-.section-mission { background: #fff; }
+.section-mission { background: var(--bg); }
 .section-mission .section-headline { max-width: 780px; }
 
 .stat-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
+  gap: 1rem;
   margin-top: 3rem;
-  background: #eee;
-  border-radius: 8px;
-  overflow: hidden;
 }
 
 .stat-item {
-  background: #fafafa;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-1);
   padding: 1.5rem;
   text-align: center;
 }
@@ -187,14 +197,14 @@
   display: block;
   font-size: 1.8rem;
   font-weight: 800;
-  color: #1a1a2e;
-  letter-spacing: -0.02em;
+  color: var(--text-1);
+  letter-spacing: var(--tracking-tight);
 }
 
 .stat-desc {
   display: block;
-  font-size: 0.78rem;
-  color: #888;
+  font-size: var(--text-xs);
+  color: var(--text-3);
   margin-top: 0.3rem;
   line-height: 1.3;
 }
@@ -202,7 +212,7 @@
 /* ================================================================
    3. Living Record
    ================================================================ */
-.section-living-record { background: #fafafa; }
+.section-living-record { background: var(--surface-2); }
 
 .record-grid {
   display: grid;
@@ -213,7 +223,7 @@
 
 .record-text p {
   font-size: 1rem;
-  color: #555;
+  color: var(--text-2);
   line-height: 1.7;
   margin-bottom: 1rem;
 }
@@ -221,7 +231,7 @@
 .record-chart { text-align: center; }
 
 .donut-chart text {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-sans);
 }
 
 .chart-legend {
@@ -237,7 +247,7 @@
   align-items: center;
   gap: 0.4rem;
   font-size: 0.75rem;
-  color: #888;
+  color: var(--text-3);
 }
 
 .legend-dot {
@@ -250,7 +260,7 @@
 /* ================================================================
    4. Ocean Tech
    ================================================================ */
-.section-ocean-tech { background: #fff; }
+.section-ocean-tech { background: var(--bg); }
 
 .tech-cards {
   display: grid;
@@ -261,48 +271,56 @@
 
 .tech-card {
   padding: 2rem;
-  background: #fafafa;
-  border-radius: 10px;
-  border: 1px solid #eee;
-  transition: border-color 0.2s;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-1);
+  transition: border-color var(--dur-2) var(--ease-swift), transform var(--dur-2) var(--ease-out), box-shadow var(--dur-2) var(--ease-swift);
 }
 
-.tech-card:hover { border-color: #ccc; }
+.tech-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: var(--glow);
+}
 
 .tech-card h3 {
   font-size: 1.15rem;
   font-weight: 700;
+  letter-spacing: var(--tracking-snug);
   margin-bottom: 0.6rem;
-  color: #1a1a2e;
+  color: var(--text-1);
 }
 
 .tech-card p {
   font-size: 0.92rem;
-  color: #666;
+  color: var(--text-2);
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
 .tech-phases {
   font-size: 0.75rem;
-  color: #aaa;
+  color: var(--text-3);
   font-weight: 600;
 }
 
 .phase { margin-right: 0.2rem; }
-.phase-active { color: #4CAF50; }
+.phase-active { color: var(--accent); }
 
 /* ================================================================
-   5. Cryosphere (dark)
+   5. Cryosphere (dark island)
    ================================================================ */
 .section-cryosphere {
-  background: #0a1628;
-  color: #e0e8f0;
+  background:
+    radial-gradient(80rem 34rem at 15% 0%, rgba(45, 212, 191, 0.09), transparent 60%),
+    var(--forest-950);
+  color: var(--text-1);
 }
 
-.section-cryosphere .section-label { color: #81d4fa; }
+.section-cryosphere .section-label { color: var(--teal-300); }
 .section-cryosphere .section-headline { color: #fff; }
-.section-cryosphere .section-body { color: #a0b0c0; }
+.section-cryosphere .section-body { color: var(--text-2); }
 
 .cryo-timeline {
   display: grid;
@@ -311,13 +329,19 @@
   margin-top: 3rem;
 }
 
-.cryo-step { position: relative; }
+.cryo-step {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  background: rgba(233, 242, 236, 0.03);
+  border: 1px solid var(--line);
+}
 
 .step-marker {
   display: block;
   font-size: 2.5rem;
   font-weight: 800;
-  color: rgba(129, 212, 250, 0.2);
+  color: rgba(94, 234, 212, 0.28);
   margin-bottom: 0.5rem;
   line-height: 1;
 }
@@ -331,14 +355,14 @@
 
 .cryo-step p {
   font-size: 0.88rem;
-  color: #8899aa;
+  color: var(--text-2);
   line-height: 1.6;
 }
 
 /* ================================================================
    6. Terrestrial
    ================================================================ */
-.section-terrestrial { background: #fafafa; }
+.section-terrestrial { background: var(--surface-2); }
 .section-terrestrial .section-inner { text-align: center; }
 .section-terrestrial .section-body { margin-left: auto; margin-right: auto; }
 
@@ -352,19 +376,25 @@
 
 .tri-card {
   padding: 2rem;
-  background: #fff;
-  border-radius: 10px;
-  border: 1px solid #eee;
-  transition: border-color 0.2s;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-1);
+  transition: border-color var(--dur-2) var(--ease-swift), transform var(--dur-2) var(--ease-out), box-shadow var(--dur-2) var(--ease-swift);
 }
 
-.tri-card:hover { border-color: #ccc; }
+.tri-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: var(--glow);
+}
 
 .tri-number {
   display: block;
   font-size: 2rem;
   font-weight: 800;
-  color: #e0e0e0;
+  color: var(--accent-soft);
+  -webkit-text-stroke: 1px var(--accent);
   margin-bottom: 0.75rem;
   line-height: 1;
 }
@@ -372,13 +402,14 @@
 .tri-card h3 {
   font-size: 1.1rem;
   font-weight: 700;
+  letter-spacing: var(--tracking-snug);
   margin-bottom: 0.5rem;
-  color: #1a1a2e;
+  color: var(--text-1);
 }
 
 .tri-card p {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-2);
   line-height: 1.6;
 }
 
@@ -386,7 +417,7 @@
    7. Thesis
    ================================================================ */
 .section-thesis {
-  background: #fff;
+  background: var(--bg);
 }
 
 .section-thesis .section-inner {
@@ -396,7 +427,7 @@
 /* ================================================================
    8. Impact
    ================================================================ */
-.section-impact { background: #fafafa; }
+.section-impact { background: var(--surface-2); }
 
 .impact-grid {
   display: grid;
@@ -411,19 +442,19 @@
   align-items: baseline;
   gap: 1rem;
   padding: 0.9rem 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--line);
 }
 
 .metric-value {
   font-size: 1.1rem;
   font-weight: 800;
-  color: #1a1a2e;
+  color: var(--text-1);
   min-width: 120px;
 }
 
 .metric-label {
   font-size: 0.88rem;
-  color: #888;
+  color: var(--text-3);
 }
 
 .bar-chart { display: block; }
@@ -431,7 +462,7 @@
 /* ================================================================
    9. Research
    ================================================================ */
-.section-research { background: #fff; }
+.section-research { background: var(--bg); }
 
 .research-layout {
   display: grid;
@@ -442,9 +473,18 @@
 
 .research-featured {
   padding: 2rem;
-  background: #fafafa;
-  border-radius: 10px;
-  border-left: 4px solid #4CAF50;
+  background:
+    radial-gradient(120% 140% at 100% 0%, rgba(52, 211, 153, 0.28), transparent 55%),
+    linear-gradient(135deg, var(--forest-700) 0%, var(--forest-850) 55%, var(--forest-950) 100%);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(52, 211, 153, 0.25);
+  box-shadow: var(--shadow-1);
+  transition: transform var(--dur-2) var(--ease-out), box-shadow var(--dur-2) var(--ease-swift);
+}
+
+.research-featured:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 26px 64px -30px rgba(16, 185, 129, 0.5);
 }
 
 .research-tag {
@@ -452,27 +492,32 @@
   font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.08em;
-  color: #fff;
-  background: #4CAF50;
+  text-transform: uppercase;
+  color: var(--forest-950);
+  background: var(--green-400);
   padding: 0.2rem 0.6rem;
-  border-radius: 3px;
+  border-radius: 4px;
   margin-bottom: 1rem;
 }
 
 .research-featured h3 {
   font-size: 1.25rem;
   font-weight: 700;
+  letter-spacing: var(--tracking-snug);
   margin-bottom: 0.6rem;
-  color: #1a1a2e;
+  color: #fff;
   line-height: 1.3;
 }
 
 .research-featured p {
   font-size: 0.92rem;
-  color: #666;
+  color: rgba(233, 242, 236, 0.75);
   line-height: 1.6;
   margin-bottom: 0.75rem;
 }
+
+.research-featured .text-cta { color: var(--green-300); }
+.research-featured .text-cta:hover { color: #fff; }
 
 .research-stack {
   display: flex;
@@ -482,39 +527,59 @@
 
 .research-item {
   padding: 1.5rem;
-  background: #fafafa;
-  border-radius: 10px;
-  border: 1px solid #eee;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-1);
+  transition: border-color var(--dur-2) var(--ease-swift), transform var(--dur-2) var(--ease-out);
+}
+
+.research-item:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
 }
 
 .research-item h4 {
   font-size: 0.95rem;
   font-weight: 700;
   margin-bottom: 0.3rem;
-  color: #1a1a2e;
+  color: var(--text-1);
 }
 
 .research-item p {
   font-size: 0.85rem;
-  color: #888;
+  color: var(--text-3);
   margin-bottom: 0.5rem;
 }
 
+.research-all {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+.research-all .text-cta {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 /* ================================================================
-   10. Join (dark closing)
+   10. Join (dark closing island)
    ================================================================ */
 .section-join {
-  background: #0f1923;
-  color: #c8d6e0;
+  background:
+    radial-gradient(90rem 40rem at 85% 100%, rgba(52, 211, 153, 0.1), transparent 60%),
+    var(--forest-950);
+  color: var(--text-2);
 }
+
+.section-join .section-label { color: var(--green-300); }
 
 .section-join .section-headline {
   color: #fff;
   max-width: 700px;
-  font-size: 2.4rem;
+  font-size: clamp(1.9rem, 3.8vw, 2.4rem);
 }
 
-.section-join .section-body { color: #8899aa; }
+.section-join .section-body { color: var(--text-2); }
 
 .join-grid {
   display: grid;
@@ -532,12 +597,13 @@
 
 .join-col p {
   font-size: 0.9rem;
-  color: #8899aa;
+  color: var(--text-2);
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
-.join-col .text-cta { color: #81d4fa; }
+.join-col .text-cta { color: var(--green-300); }
+.join-col .text-cta:hover { color: #fff; }
 
 .role-tags {
   display: flex;
@@ -550,10 +616,10 @@
   font-size: 0.75rem;
   font-weight: 500;
   padding: 0.35rem 0.8rem;
-  border-radius: 4px;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
-  color: #a0b0c0;
+  border-radius: var(--radius-full);
+  background: rgba(233, 242, 236, 0.05);
+  border: 1px solid var(--line);
+  color: var(--text-2);
 }
 
 .join-metrics {
@@ -565,13 +631,13 @@
 
 .join-metrics span {
   font-size: 0.85rem;
-  color: #a0b0c0;
+  color: var(--text-2);
 }
 
 .join-footer {
   margin-top: 4rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid var(--line);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -580,21 +646,21 @@
 .join-cta {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #4CAF50;
+  color: var(--green-300);
   text-decoration: none;
-  transition: opacity 0.2s;
+  transition: color var(--dur-2) var(--ease-swift);
 }
 
-.join-cta:hover { opacity: 0.7; }
+.join-cta:hover { color: #fff; }
 
 .join-tagline {
   font-size: 0.8rem;
   font-style: italic;
-  color: #556;
+  color: var(--text-3);
 }
 
 /* ================================================================
-   Floating Nav
+   Floating Nav — frosted rail
    ================================================================ */
 .floating-nav {
   position: fixed;
@@ -606,6 +672,13 @@
   flex-direction: column;
   align-items: center;
   gap: 3px;
+  padding: 8px 6px;
+  border-radius: var(--radius-full);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  box-shadow: var(--shadow-1);
 }
 
 .nav-dots {
@@ -621,41 +694,41 @@
   height: 6px;
   border-radius: 50%;
   border: none;
-  background: rgba(0,0,0,0.12);
+  background: var(--line-strong);
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all var(--dur-2) var(--ease-out);
   padding: 0;
 }
 
 .nav-dot:hover {
-  background: rgba(0,0,0,0.3);
+  background: var(--text-3);
   transform: scale(1.5);
 }
 
 .nav-dot.active {
-  background: #4CAF50;
+  background: var(--accent);
   transform: scale(1.8);
 }
 
-/* Invert dots on dark sections */
 .nav-arrow {
   background: none;
   border: none;
   font-size: 0.85rem;
-  color: rgba(0,0,0,0.25);
+  color: var(--text-3);
   cursor: pointer;
   padding: 2px;
-  transition: color 0.2s;
+  transition: color var(--dur-2) var(--ease-swift);
 }
 
-.nav-arrow:hover { color: #4CAF50; }
+.nav-arrow:hover { color: var(--accent); }
 
 /* ================================================================
-   Footer
+   Footer (dark island)
    ================================================================ */
 .landing-footer {
-  background: #0a1118;
-  color: #556;
+  background: var(--forest-950);
+  color: var(--text-3);
+  border-top: 1px solid var(--line);
 }
 
 .landing-footer .section-inner {
@@ -676,69 +749,27 @@
 
 .footer-links a {
   font-size: 0.8rem;
-  color: #667;
+  color: var(--text-2);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color var(--dur-2) var(--ease-swift);
 }
 
-.footer-links a:hover { color: #4CAF50; }
-
-/* ================================================================
-   Responsive
-   ================================================================ */
-@media (max-width: 900px) {
-  .section-hero .hero h1 { font-size: 5rem; }
-  .section-headline { font-size: 2rem; }
-  .headline-feature { font-size: 2.4rem; }
-
-  .stat-row,
-  .record-grid,
-  .tech-cards,
-  .cryo-timeline,
-  .tri-grid,
-  .impact-grid,
-  .research-layout,
-  .join-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .stat-row { gap: 0; }
-
-  .floating-nav { right: 0.5rem; }
-  .nav-dot { width: 5px; height: 5px; }
-
-  .landing-footer .section-inner {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-  }
-}
-
-@media (max-width: 600px) {
-  .section-hero .hero h1 { font-size: 3.5rem; }
-  .section-inner { padding: 8vh 1.2rem; }
-}
-
-.research-all {
-  margin-top: 2.5rem;
-  text-align: center;
-}
-.research-all .text-cta {
-  font-size: 1rem;
-  font-weight: 700;
-}
+.footer-links a:hover { color: var(--green-300); }
 
 /* ================================================================
    Fire Watch — Northern Hemisphere wildfire & smoke tracker
+   (dark island, amber signal accent)
    ================================================================ */
 .section-firewatch {
-  background: #0a1018;
-  color: #e6ecf2;
+  background:
+    radial-gradient(80rem 36rem at 80% 0%, rgba(251, 146, 60, 0.07), transparent 60%),
+    var(--forest-950);
+  color: var(--text-1);
 }
-.section-firewatch .section-label { color: #ff9800; }
+.section-firewatch .section-label { color: var(--orange-400); }
 .section-firewatch .section-headline { color: #fff; }
 .section-firewatch .section-body {
-  color: #9fb0c0;
+  color: var(--text-2);
   max-width: 760px;
 }
 
@@ -753,17 +784,17 @@
 .firewatch-globe {
   position: relative;
   min-height: 460px;
-  border-radius: 16px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
   background:
-    radial-gradient(120% 90% at 50% 20%, rgba(255, 87, 34, 0.14), transparent 60%),
-    #070c14;
-  border: 1px solid rgba(255, 152, 0, 0.16);
+    radial-gradient(120% 90% at 50% 20%, rgba(251, 146, 60, 0.13), transparent 60%),
+    var(--forest-900);
+  border: 1px solid rgba(251, 146, 60, 0.18);
 }
 .firewatch-globe-placeholder {
   position: absolute;
   inset: 0;
-  background: radial-gradient(60% 50% at 50% 40%, rgba(255, 87, 34, 0.12), transparent 70%);
+  background: radial-gradient(60% 50% at 50% 40%, rgba(251, 146, 60, 0.12), transparent 70%);
 }
 
 .firewatch-status {
@@ -774,51 +805,53 @@
   align-items: center;
   gap: 0.5rem;
   padding: 6px 12px;
-  border-radius: 999px;
-  background: rgba(7, 12, 20, 0.72);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  font-size: 0.78rem;
-  color: #cdd8e2;
-  backdrop-filter: blur(6px);
+  border-radius: var(--radius-full);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  font-size: var(--text-xs);
+  color: var(--text-2);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
 }
-.firewatch-updated { color: #7a8898; }
+.firewatch-updated { color: var(--text-3); }
 .firewatch-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #7a8898;
+  background: var(--text-3);
   box-shadow: 0 0 8px currentColor;
 }
-.firewatch-dot--eonet { background: #4caf50; color: #4caf50; }
-.firewatch-dot--snapshot { background: #ff9800; color: #ff9800; }
-.firewatch-dot--empty { background: #f44336; color: #f44336; }
-.firewatch-dot--loading { background: #7a8898; color: #7a8898; }
+.firewatch-dot--eonet { background: var(--green-400); color: var(--green-400); }
+.firewatch-dot--snapshot { background: var(--orange-400); color: var(--orange-400); }
+.firewatch-dot--empty { background: var(--red-400); color: var(--red-400); }
+.firewatch-dot--loading { background: var(--text-3); color: var(--text-3); }
 
 .firewatch-count {
   position: absolute;
   bottom: 14px;
   left: 14px;
   padding: 6px 12px;
-  border-radius: 999px;
-  background: rgba(7, 12, 20, 0.72);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  font-size: 0.78rem;
-  color: #9fb0c0;
-  backdrop-filter: blur(6px);
+  border-radius: var(--radius-full);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  font-size: var(--text-xs);
+  color: var(--text-2);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
 }
-.firewatch-count strong { color: #ff9800; }
+.firewatch-count strong { color: var(--orange-400); }
 
 .firewatch-panel {
   display: flex;
   flex-direction: column;
-  border-radius: 16px;
-  background: #0d141d;
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: var(--radius-lg);
+  background: var(--forest-850);
+  border: 1px solid var(--line);
   overflow: hidden;
 }
 .firewatch-panel-head {
   padding: 1.25rem 1.25rem 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid var(--line);
 }
 .firewatch-panel-head h3 {
   font-size: 1.05rem;
@@ -828,7 +861,7 @@
 }
 .firewatch-panel-head p {
   font-size: 0.82rem;
-  color: #8494a4;
+  color: var(--text-2);
   line-height: 1.5;
   margin: 0;
 }
@@ -836,10 +869,10 @@
 .firewatch-notice {
   margin: 0.75rem 1.25rem 0;
   padding: 0.6rem 0.8rem;
-  border-radius: 8px;
-  background: rgba(255, 152, 0, 0.1);
-  border: 1px solid rgba(255, 152, 0, 0.25);
-  font-size: 0.78rem;
+  border-radius: var(--radius-sm);
+  background: rgba(251, 146, 60, 0.1);
+  border: 1px solid rgba(251, 146, 60, 0.25);
+  font-size: var(--text-xs);
   color: #ffcc80;
 }
 
@@ -854,7 +887,7 @@
 .firewatch-empty {
   padding: 1.5rem 1rem;
   text-align: center;
-  color: #7a8898;
+  color: var(--text-3);
   font-size: 0.85rem;
 }
 .firewatch-item {
@@ -863,16 +896,17 @@
   text-align: left;
   padding: 0.7rem 0.75rem;
   border: 1px solid transparent;
-  border-radius: 10px;
+  border-radius: var(--radius-sm);
   background: transparent;
   color: inherit;
+  font-family: inherit;
   cursor: pointer;
-  transition: background 0.15s ease, border-color 0.15s ease;
+  transition: background var(--dur-1) var(--ease-swift), border-color var(--dur-1) var(--ease-swift);
 }
 .firewatch-item:hover,
 .firewatch-item.is-active {
-  background: rgba(255, 87, 34, 0.08);
-  border-color: rgba(255, 152, 0, 0.3);
+  background: rgba(251, 146, 60, 0.08);
+  border-color: rgba(251, 146, 60, 0.3);
 }
 .firewatch-item-head {
   display: flex;
@@ -889,7 +923,7 @@
 .firewatch-title {
   font-size: 0.88rem;
   font-weight: 600;
-  color: #e6ecf2;
+  color: var(--text-1);
   line-height: 1.35;
 }
 .firewatch-meta {
@@ -899,12 +933,42 @@
   margin-top: 0.3rem;
   padding-left: 1.05rem;
   font-size: 0.74rem;
-  color: #7a8898;
+  color: var(--text-3);
 }
 
+/* ================================================================
+   Responsive
+   ================================================================ */
 @media (max-width: 900px) {
+  .stat-row,
+  .record-grid,
+  .tech-cards,
+  .cryo-timeline,
+  .tri-grid,
+  .impact-grid,
+  .research-layout,
+  .join-grid,
   .firewatch-grid {
     grid-template-columns: 1fr;
   }
+
   .firewatch-globe { min-height: 380px; }
+
+  .floating-nav { right: 0.5rem; }
+  .nav-dot { width: 5px; height: 5px; }
+
+  .landing-footer .section-inner {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-inner { padding: 8vh 1.2rem; }
+  .section-hero .hero-subheading {
+    left: 1rem;
+    right: 1rem;
+    max-width: none;
+  }
 }

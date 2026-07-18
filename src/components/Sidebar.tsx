@@ -143,7 +143,7 @@ export function Sidebar({ currentTaxonId }: { currentTaxonId?: string }) {
         <p className="sidebar-subtitle">Complete Taxonomic Classification</p>
         <div className="rank-legend">
           {(['D', 'K', 'P', 'C', 'O', 'F', 'G', 'S'] as const).map((letter, i) => {
-            const colors = ['#E91E63', '#9C27B0', '#673AB7', '#3F51B5', '#2196F3', '#00BCD4', '#4CAF50', '#8BC34A']
+            const colors = ['#E91E63', '#9C27B0', '#673AB7', '#3F51B5', '#2dd4bf', '#00BCD4', '#34d399', '#8BC34A']
             return (
               <span key={letter} className="rank-badge-mini" style={{ backgroundColor: colors[i] }}>
                 {letter}

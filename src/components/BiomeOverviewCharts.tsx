@@ -304,7 +304,7 @@ export function BiomeDeclineRanking({ biomes }: { biomes: Biome[] }) {
                 -{d.decline.toFixed(1)}%
               </span>
             </div>
-            <span style={{ fontSize: '0.68rem', color: d.current >= 70 ? '#4CAF50' : d.current >= 50 ? '#FFD700' : '#FF5722', width: '36px', textAlign: 'right' }}>
+            <span style={{ fontSize: '0.68rem', color: d.current >= 70 ? '#34d399' : d.current >= 50 ? '#FFD700' : '#FF5722', width: '36px', textAlign: 'right' }}>
               {d.current}
             </span>
           </div>

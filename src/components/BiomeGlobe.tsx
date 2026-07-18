@@ -252,7 +252,7 @@ function LatitudeLines() {
       }
       const geom = new THREE.BufferGeometry().setFromPoints(points)
       const mat = new THREE.LineBasicMaterial({
-        color: li === 2 ? '#4CAF50' : '#ffffff',
+        color: li === 2 ? '#34d399' : '#ffffff',
         transparent: true,
         opacity: li === 2 ? 0.12 : 0.06,
       })
@@ -279,7 +279,7 @@ function GlobeSphere() {
       </mesh>
       <mesh>
         <sphereGeometry args={[1.002, 36, 18]} />
-        <meshBasicMaterial color="#4CAF50" wireframe transparent opacity={0.04} />
+        <meshBasicMaterial color="#34d399" wireframe transparent opacity={0.04} />
       </mesh>
     </>
   )
@@ -287,7 +287,7 @@ function GlobeSphere() {
 
 function AtmosphereGlow() {
   const uniforms = useMemo(
-    () => ({ glowColor: { value: new THREE.Color('#4CAF50') } }),
+    () => ({ glowColor: { value: new THREE.Color('#34d399') } }),
     [],
   )
   return (
@@ -428,7 +428,7 @@ export function BiomeGlobe({ height = 400 }: { height?: number }) {
         <CameraSetup />
         <ambientLight intensity={0.35} />
         <directionalLight position={[5, 3, 5]} intensity={0.9} />
-        <directionalLight position={[-5, -3, -5]} intensity={0.2} color="#4CAF50" />
+        <directionalLight position={[-5, -3, -5]} intensity={0.2} color="#34d399" />
         <OrbitControls
           enableZoom={false}
           enablePan={false}

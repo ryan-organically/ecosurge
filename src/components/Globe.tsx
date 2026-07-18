@@ -175,7 +175,7 @@ function GlobeSphere() {
       <mesh>
         <sphereGeometry args={[1.002, 36, 18]} />
         <meshBasicMaterial
-          color="#4CAF50"
+          color="#34d399"
           wireframe
           transparent
           opacity={0.06}
@@ -217,7 +217,7 @@ function ContinentLines() {
               args={[seg.positions, 3]}
             />
           </bufferGeometry>
-          <lineBasicMaterial color="#4CAF50" transparent opacity={0.35} />
+          <lineBasicMaterial color="#34d399" transparent opacity={0.35} />
         </lineSegments>
       ))}
     </>
@@ -230,7 +230,7 @@ function AtmosphereGlow() {
 
   const uniforms = useMemo(
     () => ({
-      glowColor: { value: new THREE.Color('#4CAF50') },
+      glowColor: { value: new THREE.Color('#34d399') },
     }),
     [],
   )
@@ -269,7 +269,7 @@ function Marker({
   lat,
   lng,
   label,
-  color = '#4CAF50',
+  color = '#34d399',
 }: GlobeMarker) {
   const meshRef = useRef<THREE.Mesh>(null)
   const glowRef = useRef<THREE.Mesh>(null)
@@ -382,7 +382,7 @@ function ParticleField() {
         <bufferAttribute attach="attributes-position" args={[positions, 3]} />
       </bufferGeometry>
       <pointsMaterial
-        color="#4CAF50"
+        color="#34d399"
         size={0.012}
         transparent
         opacity={0.4}
@@ -422,7 +422,7 @@ export function Globe({ markers = [], height = 400 }: GlobeProps) {
         <directionalLight
           position={[-5, -3, -5]}
           intensity={0.2}
-          color="#4CAF50"
+          color="#34d399"
         />
 
         {/* Interactive orbit controls */}

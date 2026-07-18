@@ -346,7 +346,7 @@ function NodeTooltip({ node }: { node: LayoutNode }) {
           <div
             style={{
               fontSize: '10px',
-              color: '#4CAF50',
+              color: '#34d399',
               marginTop: '3px',
             }}
           >
@@ -417,7 +417,7 @@ function ParticleField() {
         <bufferAttribute attach="attributes-position" args={[positions, 3]} />
       </bufferGeometry>
       <pointsMaterial
-        color="#4CAF50"
+        color="#34d399"
         size={0.04}
         transparent
         opacity={0.3}
@@ -496,8 +496,8 @@ function TreeScene({
       {/* Lighting */}
       <ambientLight intensity={0.4} />
       <pointLight position={[10, 10, 10]} intensity={0.8} color="#ffffff" />
-      <pointLight position={[-10, -5, -10]} intensity={0.3} color="#4CAF50" />
-      <pointLight position={[5, -10, 8]} intensity={0.2} color="#2196F3" />
+      <pointLight position={[-10, -5, -10]} intensity={0.3} color="#34d399" />
+      <pointLight position={[5, -10, 8]} intensity={0.2} color="#2dd4bf" />
 
       {/* Orbit controls */}
       <OrbitControls

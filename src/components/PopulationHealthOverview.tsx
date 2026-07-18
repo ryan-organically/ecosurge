@@ -141,7 +141,7 @@ function CurrentHealthChart({ kingdoms }: PopulationHealthProps) {
             {chartData.map((entry, i) => (
               <Cell
                 key={i}
-                fill={entry.index >= 80 ? '#4CAF50' : entry.index >= 50 ? '#FFD700' : '#FF5722'}
+                fill={entry.index >= 80 ? '#34d399' : entry.index >= 50 ? '#FFD700' : '#FF5722'}
                 fillOpacity={0.8}
               />
             ))}
@@ -161,11 +161,11 @@ function TrendSummaryCards({ kingdoms }: PopulationHealthProps) {
   return (
     <div className="welcome-stats" style={{ marginBottom: '1.5rem' }}>
       <div className="stat-card">
-        <div className="stat-number" style={{ color: '#4CAF50' }}>{avgIndex.toFixed(1)}</div>
+        <div className="stat-number" style={{ color: '#34d399' }}>{avgIndex.toFixed(1)}</div>
         <div className="stat-label">Avg Health Index</div>
       </div>
       <div className="stat-card">
-        <div className="stat-number" style={{ color: '#4CAF50' }}>{increasing}</div>
+        <div className="stat-number" style={{ color: '#34d399' }}>{increasing}</div>
         <div className="stat-label">Kingdoms Improving</div>
       </div>
       <div className="stat-card">
@@ -173,7 +173,7 @@ function TrendSummaryCards({ kingdoms }: PopulationHealthProps) {
         <div className="stat-label">Kingdoms Declining</div>
       </div>
       <div className="stat-card">
-        <div className="stat-number" style={{ color: '#2196F3' }}>{stable}</div>
+        <div className="stat-number" style={{ color: '#2dd4bf' }}>{stable}</div>
         <div className="stat-label">Kingdoms Stable</div>
       </div>
     </div>
