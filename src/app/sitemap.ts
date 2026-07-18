@@ -23,6 +23,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/biomes',
     '/dashboard',
     '/docs',
+    '/terms',
+    '/privacy',
     '/taxon/eukaryota',
     '/taxon/bacteria',
     '/taxon/archaea',

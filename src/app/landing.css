@@ -1036,3 +1036,28 @@
     max-width: none;
   }
 }
+
+/* --- Honest funding copy + legal footer --- */
+.join-disclaimer {
+  font-size: var(--text-xs);
+  color: var(--text-3);
+  line-height: 1.5;
+  margin-top: 0.75rem;
+  max-width: 440px;
+}
+.landing-footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.landing-footer .footer-disclaimer {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  font-size: var(--text-xs);
+  color: var(--text-3);
+  line-height: 1.6;
+  max-width: 760px;
+}

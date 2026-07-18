@@ -2749,3 +2749,8 @@ a.distribution-badge:hover {
   background: var(--surface-2);
   font-weight: 700;
 }
+
+/* Legal pages (Terms / Privacy) — reuse .doc-body prose, constrain width. */
+.legal-doc { max-width: 760px; margin: 0 auto; }
+.legal-doc h2 { margin-top: 2rem; font-size: 1.15rem; }
+.legal-doc em { color: var(--text-3, #888); }

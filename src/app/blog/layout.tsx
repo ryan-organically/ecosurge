@@ -18,7 +18,16 @@ export default function BlogLayout({ children }: { children: React.ReactNode }) 
         {children}
       </main>
       <footer className="blog-footer">
-        <p>&copy; 2025 EcoSurge. Emboldened by challenge.</p>
+        <p>
+          <Link href="/terms">Terms of Use</Link> &middot;{' '}
+          <Link href="/privacy">Privacy Policy</Link>
+        </p>
+        <p>
+          &copy; 2026 EcoSurge — a conceptual climate-technology project.
+          Studies, figures, and projections are illustrative and
+          forward-looking; not deployed or independently verified. Nothing here
+          is investment advice or an offer of securities.
+        </p>
       </footer>
     </div>
   )

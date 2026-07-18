@@ -31,18 +31,22 @@ export default function JoinSection() {
             </a>
           </div>
           <div className="join-col">
-            <h3>Invest in the Transition</h3>
+            <h3>Back the Transition</h3>
             <p>
-              $130 trillion capital reallocation over three decades. Energy,
-              agriculture, biodiversity — the defining sectors.
+              The climate transition is the defining capital reallocation of our
+              era — energy, agriculture, and biodiversity among its central
+              sectors. EcoSurge is an early-stage, mission-driven climate
+              venture. If you support bold, science-led restoration, we&rsquo;d
+              welcome a conversation.
             </p>
-            <div className="join-metrics">
-              <span>Series C &middot; $1.8B valuation</span>
-              <span>TAM: $4.2T by 2035</span>
-            </div>
-            <a className="text-cta" href="#">
-              Request investor deck &rarr;
-            </a>
+            <p className="join-disclaimer">
+              EcoSurge is a conceptual, pre-commercial project. Nothing here is
+              an offer or solicitation to buy or sell securities, or investment
+              advice.
+            </p>
+            <Link className="text-cta" href="/terms">
+              How we work &rarr;
+            </Link>
           </div>
         </div>
         <div className="join-footer">

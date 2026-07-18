@@ -1,30 +1,29 @@
 import Link from 'next/link'
 
-export default function DocsLayout({ children }: { children: React.ReactNode }) {
+export default function LegalLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="blog-layout">
       <header className="blog-header">
         <div className="blog-header-inner">
-          <Link href="/" className="blog-brand">EcoSurge</Link>
+          <Link href="/" className="blog-brand">
+            EcoSurge
+          </Link>
           <nav className="blog-nav">
-            <Link href="/docs">Docs</Link>
+            <Link href="/">Home</Link>
             <Link href="/blog">Research</Link>
             <Link href="/archive">Species Archive</Link>
-            <Link href="/">Home</Link>
           </nav>
         </div>
       </header>
-      <main className="blog-main">
-        {children}
-      </main>
+      <main className="blog-main">{children}</main>
       <footer className="blog-footer">
         <p>
           <Link href="/terms">Terms of Use</Link> &middot;{' '}
           <Link href="/privacy">Privacy Policy</Link>
         </p>
         <p>
-          &copy; 2026 EcoSurge — a conceptual climate-technology project.
-          Runbooks and specifications are illustrative and forward-looking.
+          &copy; 2026 EcoSurge — a conceptual climate-technology project. Content
+          is illustrative and forward-looking.
         </p>
       </footer>
     </div>

@@ -107,13 +107,24 @@ export default function LandingPage() {
 
       <footer className="landing-footer">
         <div className="section-inner">
-          <p>&copy; 2025 EcoSurge. Emboldened by challenge.</p>
-          <div className="footer-links">
-            <a href="/blog">Blog</a>
-            <a href="/archive">Species Archive</a>
-            <a href="#research">Research</a>
-            <a href="#join">Careers</a>
+          <div className="footer-top">
+            <p>&copy; 2026 EcoSurge. Emboldened by challenge.</p>
+            <div className="footer-links">
+              <a href="/blog">Research</a>
+              <a href="/archive">Species Archive</a>
+              <a href="/docs">Docs</a>
+              <a href="/terms">Terms</a>
+              <a href="/privacy">Privacy</a>
+            </div>
           </div>
+          <p className="footer-disclaimer">
+            EcoSurge is a conceptual climate-technology project. Technologies,
+            figures, timelines, and results shown here are illustrative and
+            forward-looking — they have not been deployed at scale or
+            independently verified. Nothing on this site is an offer or
+            solicitation of securities, or investment advice. Wildfire data
+            courtesy of NASA EONET/FIRMS; EcoSurge is not affiliated with NASA.
+          </p>
         </div>
       </footer>
     </div>
