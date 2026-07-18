@@ -8,11 +8,13 @@ import { speciesRecovery } from './species-recovery'
 import { permafrostCarbon } from './permafrost-carbon'
 import { operationalBlueprint } from './operational-blueprint'
 import { localModelLab } from './local-model-lab'
+import { zenGardener } from './zen-gardener'
 
 export * from './types'
 
 /** All studies, newest first. */
 export const studies: Study[] = [
+  zenGardener,
   convexPlanet,
   localModelLab,
   permafrostCarbon,

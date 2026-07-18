@@ -465,6 +465,127 @@ function VramBudget() {
   )
 }
 
+// 8. Zen-garden coverage pattern: raked parallel passes with concentric rings
+//    around obstacles — the signature output of the Zen Gardener robot.
+function ZenPattern() {
+  const w = 640,
+    h = 360
+  const rocks = [
+    { x: 190, y: 150, r: 26 },
+    { x: 300, y: 268, r: 18 },
+    { x: 452, y: 196, r: 34 },
+  ]
+  const rakeGap = 13
+  const lines: number[] = []
+  for (let y = 24; y < h - 16; y += rakeGap) lines.push(y)
+  const ringGap = 9
+  return (
+    <svg viewBox={`0 0 ${w} ${h}`} className="figure-svg" role="img" preserveAspectRatio="xMidYMid meet">
+      <rect x={8} y={8} width={w - 16} height={h - 16} rx={10} fill="#141b17" stroke={C.grid} />
+      <defs>
+        <mask id="zenMask">
+          <rect x={8} y={8} width={w - 16} height={h - 16} fill="white" />
+          {rocks.map((rk, i) => (
+            <circle key={i} cx={rk.x} cy={rk.y} r={rk.r + 6 * ringGap} fill="black" />
+          ))}
+        </mask>
+      </defs>
+      {/* Straight raked sand — parallel coverage passes */}
+      <g mask="url(#zenMask)" stroke={C.teal} strokeWidth={1.1} opacity={0.55}>
+        {lines.map((y, i) => (
+          <line key={i} x1={16} y1={y} x2={w - 16} y2={y} />
+        ))}
+      </g>
+      {/* Concentric raked rings flowing around each obstacle */}
+      {rocks.map((rk, i) => (
+        <g key={i}>
+          {[1, 2, 3, 4, 5].map((k) => (
+            <circle
+              key={k}
+              cx={rk.x}
+              cy={rk.y}
+              r={rk.r + k * ringGap}
+              fill="none"
+              stroke={C.green}
+              strokeWidth={1.1}
+              opacity={0.5}
+            />
+          ))}
+          <circle cx={rk.x} cy={rk.y} r={rk.r} fill="#2a3630" stroke={C.grid} />
+        </g>
+      ))}
+      <text x={20} y={h - 16} fontSize={11} fill={C.label}>
+        parallel passes = full coverage · rings = raked flow around obstacles
+      </text>
+    </svg>
+  )
+}
+
+// 9. Stair-climb geometry: whether a wheel of radius R clears a step of rise s.
+function StairClimb() {
+  const w = 640,
+    h = 360
+  // Staircase profile (rising right→left for a robot climbing up-right)
+  const baseY = h - 60
+  const stepH = 46
+  const stepD = 74
+  const originX = 90
+  const steps: string[] = [`M${originX} ${baseY}`]
+  let x = originX
+  let y = baseY
+  for (let i = 0; i < 3; i++) {
+    x += stepD
+    steps.push(`L${x} ${y}`)
+    y -= stepH
+    steps.push(`L${x} ${y}`)
+  }
+  steps.push(`L${x + 40} ${y}`)
+  // Wheel resting against the first riser
+  const R = 40
+  const wheelCx = originX + stepD - R * 0.62
+  const wheelCy = baseY - R
+  return (
+    <svg viewBox={`0 0 ${w} ${h}`} className="figure-svg" role="img" preserveAspectRatio="xMidYMid meet">
+      <path d={steps.join(' ')} fill="none" stroke={C.axis} strokeWidth={2.4} />
+      {/* Wheel */}
+      <circle cx={wheelCx} cy={wheelCy} r={R} fill="none" stroke={C.green} strokeWidth={2.6} />
+      <circle cx={wheelCx} cy={wheelCy} r={4} fill={C.green} />
+      {/* Contact point + step rise annotation */}
+      <line x1={originX + stepD} y1={baseY} x2={originX + stepD} y2={baseY - stepH} stroke={C.amber} strokeWidth={2} />
+      <text x={originX + stepD + 8} y={baseY - stepH / 2} fontSize={12} fill={C.amber}>
+        step rise s
+      </text>
+      {/* Radius */}
+      <line
+        x1={wheelCx}
+        y1={wheelCy}
+        x2={originX + stepD}
+        y2={baseY - stepH * 0.5}
+        stroke={C.teal}
+        strokeDasharray="4 3"
+      />
+      <text x={wheelCx - 8} y={wheelCy - R - 8} fontSize={12} fill={C.teal} textAnchor="middle">
+        wheel radius R
+      </text>
+      {/* Climb condition */}
+      <g transform={`translate(${w - 250}, 60)`}>
+        <text fontSize={13} fill={C.label}>
+          Passive climb limit:
+        </text>
+        <text y={26} fontSize={15} fill={C.green} fontFamily="monospace">
+          s ≤ R(1 − cos φ_max)
+        </text>
+        <text y={52} fontSize={12} fill={C.label}>
+          Tri-star (wheg) cluster
+        </text>
+        <text y={70} fontSize={12} fill={C.label}>
+          lifts this to s ≈ 2R.
+        </text>
+      </g>
+    </svg>
+  )
+}
+
 // ---------------------------------------------------------------------------
 // Registry
 // ---------------------------------------------------------------------------
@@ -482,6 +603,8 @@ export const FIGURES: Record<string, FigureDef> = {
   'robotics-fleet': { title: 'Autonomous restoration fleet deployment', Component: RoboticsFleet },
   'permafrost-carbon': { title: 'Managed permafrost carbon flux', Component: PermafrostCarbon },
   'vram-budget': { title: '12 GB VRAM allocation for a 24/7 inference node', Component: VramBudget },
+  'zen-pattern': { title: 'Zen-garden coverage: raked passes and rings around obstacles', Component: ZenPattern },
+  'stair-climb': { title: 'Stair-climb geometry: wheel radius vs step rise', Component: StairClimb },
 }
 
 export function StudyFigure({ viz, caption }: { viz: string; caption?: string }) {
