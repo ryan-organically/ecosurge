@@ -1,5 +1,11 @@
 # EcoSurge
 
+## Parent rails
+- **Motherboard** `~/dev/CLAUDE.md` governs here: session startup routine, tracker discipline, ticket-at-discovery, no-attribution rule.
+- **Protocol library** `~/Documents/` (index: `~/Documents/context-crumbs-protocol.md`): check the index before improvising a procedure for any domain; arm the domain doc first.
+- **Docs taxonomy** (`~/Documents/repo-docs-taxonomy-protocol.md`): `devlog/` = dated journal; `protocols/` = sparing arm-first project doctrine, each crumbed here; `docs/` = guides only.
+- **Bucket:** "EcoSurge" `3d1b9b32-767c-4279-800c-fb640b6d27a7` (top-level, not under Organically — own venture, no client reporting) — start the tracker here per the motherboard startup routine.
+
 ## Mission
 
 EcoSurge is building a global conglomerate to save the world from the drastic effects of climate change, promote harmony between nature and agriculture, and stimulate a growing biomechanical and biotechnological ecosystem. This is not a side project — it is an industry-leading, revenue-generating platform with global ambition.
@@ -12,7 +18,7 @@ EcoSurge has two web surfaces that will eventually share a unified design langua
 
 1. **Landing page** (`index.html`) — Green tech homepage with GSAP-animated hero, full-viewport video background (`assets/Concept video 1.mov`), and frosted-glass UI. This is the original EcoSurge root. Assets live in `assets/` (4 .MOV videos, DX Grafik font, logo). The Species Archive style will be redesigned to match this aesthetic.
 
-2. **The Species Archive** (Next.js app at `/archive`) — Interactive biodiversity platform with 3D globes, radial clade diagrams, species field guides, biome dashboards, and ecosystem health metrics. Statically exported.
+2. **The Species Archive** (Next.js app at `/archive`) — Interactive biodiversity platform with 3D globes, radial clade diagrams, species field guides, biome dashboards, and ecosystem health metrics. Server-rendered on Vercel (see Rendering below).
 
 ### Key Routes (Species Archive)
 
@@ -30,7 +36,7 @@ EcoSurge has two web surfaces that will eventually share a unified design langua
 - **Charts:** D3.js, Recharts
 - **Data:** Modular taxonomy trees (`src/data/taxonomy/`), enrichment metadata (`src/data/enrichment/`), biome definitions (`src/data/biomes.ts`)
 - **Database:** SQLite via sql.js (browser-side), better-sqlite3 (build-time), IndexedDB caching
-- **Static export:** `output: 'export'` in next.config.mjs
+- **Rendering:** Vercel on-demand rendering. **Not** a static export — `output: 'export'` was removed (the export hit 2.7GB, over GitHub Pages' 1GB limit; see `DEPLOYMENT.md`). ISR is used on `/taxon/[...slug]` (`revalidate = 86400`). Server code (API routes, edge functions) is available but currently unused — there are no `src/app/api/*` routes yet.
 
 ## Repository Structure
 
@@ -91,9 +97,33 @@ Claude Code adds species by editing `src/data/taxonomy/*.ts` and `src/data/enric
 npm install
 npm run dev          # Dev server on :3000
 npm run build:db     # Rebuild SQLite from source data
-npm run build        # Production static export
+npm run build        # Production build (Vercel on-demand rendering, not a static export)
 npm run fetch:images # Pull species images from Wikimedia
 ```
+
+## Session logging
+
+Substantive sessions write a `devlog/YYYY-MM-DD-<topic>.md` entry (what was
+directed, what shipped, what was decided, what was deliberately left open).
+Read `devlog/` at session start before touching anything. Project tracking runs
+on the Malleable bucket **EcoSurge** (`3d1b9b32-767c-4279-800c-fb640b6d27a7`),
+linked to this repo, so `mal` auto-resolves it from inside the directory —
+ticket-worthy work goes on the board, not just in chat.
+
+## Live data feeds
+
+Fire Watch is the working precedent and the house pattern for any feed of live
+external data (`src/lib/fireData.ts` → `FireTrackerMap.tsx`): poll a free,
+CORS-open public API from the browser, fall back to a build-time snapshot in
+`public/data/`, and fall back again to a **labeled** empty state. Never render
+a plausible-looking zero when a feed is down; say the feed is unavailable and
+show its last-updated time. Build-time fetches that need a key
+(`scripts/fetch-fires.mjs` / `FIRMS_MAP_KEY`) write an empty snapshot rather
+than failing the build when the key is absent.
+
+Planned expansion (idea captured, not yet spec'd): planetary distances, solar
+and planetary storms, Earth disasters, and trends. See
+`docs/live-feeds-idea.md` before designing anything feed-shaped.
 
 ## Working With This Codebase
 
@@ -105,3 +135,12 @@ npm run fetch:images # Pull species images from Wikimedia
 ## Known Issues
 
 - 5 species IDs are duplicated between `taxonomy/*.ts` and `species.ts` (panthera-leo, balaenoptera-musculus, apis-mellifera, sequoia-sempervirens, octopus-vulgaris). These are intentional (sample species reference the same entities) but could cause key collisions if both datasets are rendered together.
+
+## Hardware (roombot)
+
+`hardware/roombot/` holds the parametric OpenSCAD blueprints for the Zen
+Gardener deck plate, camera mast and LIDAR pedestal (`render.sh` → `stl/`,
+gitignored). Read `docs/roombot-vision-infra.md` before buying or
+benchmarking anything vision-shaped: the settled doctrine is thin robot, fat
+desktop (reflexes on an ESP32, semantics on the 4060 over WiFi), and it
+lists the dead ends so they are not re-researched.

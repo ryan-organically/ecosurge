@@ -35,8 +35,8 @@ hex_wall  = 3.2;
 // pattern; Create 3 has a documented faceplate grid (set create3 = true).
 strap_slot_w = 22; strap_slot_h = 5;
 create3 = false;
-create3_hole_d = 3.4;          // M3 clearance
-create3_pitch  = 20;           // TODO verify against iRobot Create 3 faceplate drawing
+create3_hole_d = 3.4;          // M3 clearance; Create 3 faceplate holes are 3 mm, M3 / #4
+create3_pitch  = 12;           // iRobot Create 3 mechanical docs: 12 mm grid (iroboteducation.github.io/create3_docs/hw/mechanical)
 
 // ---------- SBC standoffs ----------
 standoff_h  = 8;               // clearance under the board for airflow / the AI HAT+ underside
@@ -45,7 +45,7 @@ insert_d_m25 = 3.5;            // heat-set insert bore for M2.5 (Ruthex/CNC Kitc
 insert_d_m3  = 4.0;            // M3 insert bore
 sbc_offset = [-22, 0];         // where the SBC sits on the plate (X,Y)
 
-// Raspberry Pi 5: 85x56, holes 58x49 pitch, 2.7 mm, 3.5 mm from the corner
+// Raspberry Pi 5: 85x56, holes 58x49 pitch, 2.7 mm, 3.5 mm from the corner (the HAT+ spec depends on this pattern being unchanged from Pi 4)
 pi5_holes = [[-29, -24.5], [29, -24.5], [-29, 24.5], [29, 24.5]];
 // Orange Pi 5: 100x62, holes ~ 93.5x55 pitch (verify)
 opi5_holes = [[-46.75, -27.5], [46.75, -27.5], [-46.75, 27.5], [46.75, 27.5]];
@@ -54,13 +54,16 @@ jetson_holes = [[-43, -32], [43, -32], [-43, 32], [43, 32]];
 
 // ---------- LIDAR pedestal ----------
 lidar_offset = [40, 0];        // forward of center so the scan is not shadowed by the mast
-ped_h    = 35;                 // pedestal height; scan plane must clear the camera head
+// A1 body is ~60 tall (scan plane ~45 above its base), C1 is 41.3 tall (scan plane ~30 up):
+// the mast + head top out ~60 above the plate, so the pedestal is what keeps the scan clear.
+ped_h    = lidar=="c1" ? 45 : 30;
 ped_wall = 2.4;
-// RPLIDAR A1: base 70 x 98.5 mm footprint, 4 mounting holes — hole pitch is a
-// PARAMETER, verify against the A1M8 datasheet drawing before printing.
+// RPLIDAR A1: body 96.8 x 70.3 x 55 (slamtec.com), 4x M2.5 mounting holes on a
+// custom pattern. The pitch below is a PLACEHOLDER: open the A1M8 datasheet
+// drawing (bucket-download.slamtec.com ... rplidar_datasheet_A1M8_v3.0_en.pdf) and set it.
 a1_holes = [[-30, -20], [30, -20], [-30, 20], [30, 20]];
 a1_hole_d = 2.8;               // M2.5 clearance
-// RPLIDAR C1: circular base, 3 or 4 holes on a bolt circle — verify.
+// RPLIDAR C1: 55.6 x 55.6 x 41.3 (slamtec.com, waveshare wiki); hole pattern UNVERIFIED, set from the C1 datasheet.
 c1_bolt_circle = 46; c1_hole_n = 4; c1_hole_d = 2.8;
 
 // ---------- camera mast socket ----------
@@ -201,6 +204,6 @@ if (part=="all") {
   for (s=[-1,1]) translate([0, s*(plate_d/2), 0]) mirror([0, s<0?1:0, 0]) wing();
   // SBC ghost
   %translate([sbc_offset[0], sbc_offset[1], plate_t+standoff_h]) translate([-42.5,-28,0]) cube([85,56,1.6]);
-  // Roomba ghost (340 mm dia, 92 mm tall, top at z=0)
+  // Roomba ghost (338-353 mm dia, 86-94 mm tall across generations; 340 x 92 drawn)
   %translate([0,0,-92-rib_h]) cylinder(d=340, h=92, $fn=96);
 }

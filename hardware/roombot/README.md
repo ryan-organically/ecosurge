@@ -22,9 +22,10 @@ render.sh           renders every part to stl/ (needs `openscad` on PATH)
 | camera-head-picam3 / -xiao | PETG | 0.16 | 3 | 25% | yes (under the fork ears) | camera plate flat on the bed |
 
 PETG over PLA because the deck sits over a battery and a warm SBC; PLA creeps
-at 55 C. Every part fits a **180x180** bed (Bambu A1 mini class); the plate
-is 170x170 by design and the wings (70x120) reach the Roomba's 340 mm
-diameter when the payload outgrows the center.
+at 55 C. Every part fits a **180x180** bed (Bambu A1 mini, $299 in Aug 2026;
+the cheapest mainstream bed is the Ender 3 V3 SE at ~$219, 220x220). The
+plate is 170x170 by design and the wings (70x120) reach the Roomba's
+338-353 mm diameter when the payload outgrows the center.
 
 ## Hardware
 
@@ -32,9 +33,10 @@ diameter when the payload outgrows the center.
   `insert_d_m25`), M3 for the mast set screws (`mast_screw_d` 3.4 clearance).
 - Attachment to the Roomba: four 20 mm hook-and-loop straps through the
   corner slots, plus 3M VHB pads under the rib ring. No holes in the Roomba.
-  For an iRobot Create 3 set `create3 = true` and verify `create3_pitch`
-  against iRobot's faceplate drawing before printing (marked TODO in the
-  file; Create 3 is discontinued, see the infra doc).
+  For an iRobot Create 3 set `create3 = true`: the faceplate is a 12 mm
+  grid of 3 mm holes (M3 / #4) per iRobot's mechanical docs, already set.
+  Create 3 is discontinued (see the infra doc), so this is for units that
+  already exist.
 - Battery straps through the two rear slots (`bat_offset`, `bat_slot_pitch`);
   the pack goes rearward and low per the build doc's CoM rule.
 
@@ -44,14 +46,15 @@ Marked in the .scad with `verify`:
 
 | Parameter | Default | Verify against |
 |---|---|---|
-| `a1_holes` | 60 x 40 pitch | RPLIDAR A1M8 datasheet mounting drawing |
-| `c1_bolt_circle`, `c1_hole_n` | 46 / 4 | RPLIDAR C1 datasheet |
-| `opi5_holes`, `jetson_holes` | approximate | the board's mechanical drawing |
+| `a1_holes` | 60 x 40 pitch (placeholder) | RPLIDAR A1M8 datasheet drawing; body 96.8 x 70.3 x 55, 4x M2.5 confirmed, pitch not |
+| `c1_bolt_circle`, `c1_hole_n` | 46 / 4 (placeholder) | RPLIDAR C1 datasheet; body 55.6 x 55.6 x 41.3 confirmed, holes not |
+| `ped_h` | 30 (A1) / 45 (C1) | keep the scan plane above the camera head (~60 over the plate) |
+| `opi5_holes`, `jetson_holes` | approximate | the board's mechanical drawing (Jetson carrier drawing is login-gated at NVIDIA) |
 | `picam_lens` (camera-mast.scad) | (0, 4.7) | Camera Module 3 drawing |
-| `create3_pitch` | 20 | iRobot Create 3 faceplate drawing |
+| `picam_holes` | 21 x 12.5 pitch | commonly cited, reuses the Camera Module 2 pattern; confirm on the board |
 
-Pi 5 (58 x 49 pitch, 2.7 mm holes) and Camera Module 3 (21 x 12.5 pitch,
-2.2 mm) are from the official drawings and need no check.
+Pi 5 (58 x 49 pitch, 2.7 mm holes, same as Pi 4; the HAT+ standard depends on
+it) and Create 3 (12 mm grid) are settled.
 
 ## Render
 

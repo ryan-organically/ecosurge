@@ -3,8 +3,8 @@
 // mast : 12x12 mm square post, socketed into roombot-deck.scad's mast socket
 //        (mast_socket 14x14 with 0.15 tol → 13.7 effective; post is 12 + 2*0.85 ribs)
 // head : serrated tilt hinge on an M3 bolt; holds EITHER
-//        cam="picam3"  Raspberry Pi Camera Module 3 (25x24 board, holes 21 x 12.5 pitch, 2.2 mm)
-//        cam="xiao"    Seeed XIAO ESP32S3 Sense (21 x 17.5 board, camera daughterboard on top)
+//        cam="picam3"  Raspberry Pi Camera Module 3 (25 x 24 x 11.5 module; reuses the CM2 hole pattern, 21 x 12.5 pitch commonly cited, verify)
+//        cam="xiao"    Seeed XIAO ESP32S3 Sense (21 x 17.8 board, camera daughterboard on top)
 // The scan plane of the LIDAR sits at plate + pedestal (35) + ~25 mm; keep
 // mast_h + head below that or move the mast further forward.
 
@@ -25,7 +25,7 @@ nut_t    = 2.5;
 
 picam_b = [25, 24];  picam_holes = [[-10.5, -6.25], [10.5, -6.25], [-10.5, 6.25], [10.5, 6.25]]; picam_hole_d = 2.2;
 picam_lens = [0, 4.7];   // lens center offset from board center (verify, ~ 9.5 mm from top edge on CM3)
-xiao_b  = [21, 17.5]; xiao_t = 1.2;
+xiao_b  = [21, 17.8]; xiao_t = 1.2;   // Seeed wiki: 21 x 17.8 (often misquoted as 17.5); Sense stack is 15 tall with the camera board
 
 $fn = 40;
 module rrect(w, d, h, r) { hull() for (x=[-w/2+r, w/2-r], y=[-d/2+r, d/2-r]) translate([x, y, 0]) cylinder(r=r, h=h); }
