@@ -2,6 +2,16 @@
 
 🌱 **A beacon for green tech innovation, leading the way in sustainable technology solutions for a cleaner future.**
 
+> **Robotics (2026-08-25): vision infra decided and deck blueprints drawn.**
+> Read [`docs/roombot-vision-infra.md`](docs/roombot-vision-infra.md) before
+> buying or benchmarking anything vision-shaped: thin robot, fat desktop
+> (reflexes on an ESP32, semantics on the RTX 4060 over WiFi), Tier 0 camera
+> infra for ~$45, and the dead ends listed so they are not re-researched.
+> Printable parts (deck plate, camera mast, LIDAR pedestal) are parametric
+> OpenSCAD in [`hardware/roombot/`](hardware/roombot/README.md). Build
+> runbook: [`docs/zen-gardener-build.md`](docs/zen-gardener-build.md).
+> Journal: `devlog/2026-08-25-roombot-vision-infra.md`.
+
 ## About Ecosurge
 
 Ecosurge is dedicated to developing cutting-edge green technologies that make a real impact on our planet's future. We focus on creating sustainable solutions across multiple domains including renewable energy, energy storage, carbon solutions, and smart efficiency systems.
