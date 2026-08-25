@@ -25,3 +25,5 @@ public/data/db-manifest.json
 
 # macOS archive junk
 __MACOSX/
+.organically/
+hardware/**/stl/
