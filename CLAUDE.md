@@ -144,3 +144,5 @@ gitignored). Read `docs/roombot-vision-infra.md` before buying or
 benchmarking anything vision-shaped: the settled doctrine is thin robot, fat
 desktop (reflexes on an ESP32, semantics on the 4060 over WiFi), and it
 lists the dead ends so they are not re-researched.
+
+Security floor (2026-10-27): sharp 0.35.5. Do not downgrade or regenerate the lockfile below these.
