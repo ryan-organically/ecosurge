@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EcoSurge · A beacon for green tech</title>
+<meta name="description" content="EcoSurge is an open platform for the people building a living planet. The Fall 2026 Community Release is open: add a species, wire a feed, print a part, host a field day.">
+<meta name="theme-color" content="#02070a">
+<script>
+  // Content waits for its entrance; reduced motion and no-JS show it at rest.
+  if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.documentElement.classList.add("js-motion");
+    setTimeout(function () { if (!window.gsap) document.documentElement.classList.add("reveal-all"); }, 2500);
+  }
+</script>
+<link rel="preload" href="fonts/DxGrafik-SemiBold.otf" as="font" type="font/otf" crossorigin>
+<link rel="preload" href="photos/hero-dolphins.webp" as="image">
+<link rel="stylesheet" href="beacon.css">
+</head>
+<body id="top">
+
+<svg class="sr-only" aria-hidden="true">
+  <defs>
+    <mask id="mark-green-cut"><rect width="64" height="64" fill="#fff"/><circle cx="36.5" cy="29" r="23.5" fill="#000"/></mask>
+    <mask id="mark-amber-cut"><rect width="64" height="64" fill="#fff"/><circle cx="35" cy="37.5" r="23" fill="#000"/></mask>
+    <symbol id="mark" viewBox="0 0 64 64">
+      <circle cx="31" cy="34" r="27" fill="#3f8a4e" mask="url(#mark-green-cut)"/>
+      <circle cx="34" cy="30" r="22" fill="#ee9a2c" mask="url(#mark-amber-cut)"/>
+      <path d="M23 29.5C31 24.5 41 24 51 26.5C42 30.5 32 32 23 29.5Z" fill="#6aa84f"/>
+      <path d="M15.5 34C23 32 31 34 38.5 38.5C29.5 40.5 21.5 38.5 15.5 34Z" fill="#f2a33a"/>
+    </symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav">
+  <a class="nav-brand" href="#top" aria-label="EcoSurge home">
+    <svg class="nav-mark" aria-hidden="true"><use href="#mark"/></svg>
+    <span class="nav-word">EcoSurge</span>
+  </a>
+  <nav class="nav-links" aria-label="Sections">
+    <a href="#species">Species</a>
+    <a href="#release">Release</a>
+    <a href="#ways-in">Contribute</a>
+    <a href="#beacon">Divisions</a>
+    <a href="#proof">Proof</a>
+  </nav>
+  <a class="nav-release" href="#release"><span class="nav-release-dot" aria-hidden="true"></span>Fall 2026 Community Release</a>
+  <a class="btn btn--small" href="#join">Contribute</a>
+</header>
+
+<main id="main">
+
+  <!-- Hero: dolphins in open water -->
+  <section class="hero-section" aria-labelledby="hero-title">
+    <div class="hero-media" aria-hidden="true">
+      <img class="hero-photo" src="photos/hero-dolphins.webp" alt="" width="2600" height="1913" fetchpriority="high">
+      <div class="hero-shade"></div>
+    </div>
+
+    <p class="hero-caption">Three dolphins, open water · Photo: Talia Cohen / Unsplash</p>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-reveal><span class="hero-eyebrow-dot" aria-hidden="true"></span>Fall 2026 Community Release · Open now</p>
+      <h1 class="hero-title" id="hero-title" data-split>A beacon for green tech.</h1>
+      <div class="hero-side" data-reveal>
+        <p class="hero-sub">EcoSurge is an open platform for the people building a living planet: species knowledge, planetary instruments, field machines. Bring what you know. Build it with us.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#ways-in">Contribute</a>
+          <a class="btn btn--ghost" href="#release">See the release</a>
+        </div>
+      </div>
+    </div>
+
+    <dl class="hero-stats" data-reveal>
+      <div class="hero-stat"><dt>Species in the Archive</dt><dd>3,218</dd></div>
+      <div class="hero-stat"><dt>Biomes mapped</dt><dd>14</dd></div>
+      <div class="hero-stat"><dt>Living structures</dt><dd>50</dd></div>
+      <div class="hero-stat"><dt>Code</dt><dd>Public</dd></div>
+    </dl>
+  </section>
+
+  <!-- 01 The signal: rare species, pinned horizontal gallery -->
+  <section class="section signal" id="species" aria-labelledby="signal-title">
+    <div class="section-head"><span class="section-head-index">01 / 05</span><span class="section-head-label">The signal</span><span class="section-head-unit">IUCN Red List</span></div>
+    <div class="signal-intro">
+      <h2 class="section-title" id="signal-title" data-split>Rare is a countdown.</h2>
+      <p class="section-subtitle" data-reveal>One million species are threatened with extinction.<a class="ref" href="#src-1">1</a> Monitored wildlife populations have fallen 73% on average since 1970.<a class="ref" href="#src-2">2</a> These are ten of the faces.</p>
+    </div>
+  </section>
+
+  <div class="signal-pin">
+    <div class="signal-stage">
+      <ol class="signal-track" aria-label="Threatened species">
+        <li class="species-card">
+          <figure class="species-photo"><img src="photos/sp-orangutan.webp" alt="An orangutan looking straight into the camera" loading="lazy"></figure>
+          <span class="status status--cr">CR · Critically Endangered</span>
+          <h3 class="species-name">Orangutan</h3>
+          <p class="species-latin">Pongo spp.</p>
+          <p class="species-fact">All three orangutan species are Critically Endangered. Their forests are cleared for plantations and logging.</p>
+          <p class="species-credit">Photo: Sies Kranen / Unsplash</p>
+        </li>
+        <li class="species-card">
+          <figure class="species-photo"><img src="photos/sp-gorilla.webp" alt="Close-up of a western lowland gorilla" loading="lazy"></figure>
+          <span class="status status--cr">CR · Critically Endangered</span>
+          <h3 class="species-name">Western gorilla</h3>
+          <p class="species-latin">Gorilla gorilla</p>
+          <p class="species-fact">Poaching and disease, Ebola among them, drive the decline.</p>
+          <p class="species-credit">Photo: Smithsonian / Unsplash</p>
+        </li>
+        <li class="species-card">
+          <figure class="species-photo"><img src="photos/sp-axolotl.webp" alt="A pale pink axolotl resting on stones in dark water" loading="lazy"></figure>
+          <span class="status status--cr">CR · Critically Endangered</span>
+          <h3 class="species-name">Axolotl</h3>
+          <p class="species-latin">Ambystoma mexicanum</p>
+          <p class="species-fact">Wild only in the remnant canals of Xochimilco, Mexico City.</p>
+          <p class="species-credit">Photo: Mattias Banguese / Unsplash</p>
+        </li>
+        <li class="species-card">
+          <figure class="species-photo"><img src="photos/sp-pangolin.webp" alt="A pangolin walking, its scales lit against a dark background" loading="lazy"></figure>
+          <span class="status status--en">All 8 species threatened</span>
+          <h3 class="species-name">Pangolin</h3>
+          <p class="species-latin">Manidae</p>
+          <p class="species-fact">Among the most trafficked mammals on Earth, for scales and meat.</p>
+          <p class="species-credit">Photo: Studio Crevettes / Unsplash</p>
+        </li>
+        <li class="species-card">
+          <figure class="species-photo"><img src="photos/sp-tiger.webp" alt="A tiger roaring, teeth bared" loading="lazy"></figure>
+          <span class="status status--en">EN · Endangered</span>
+          <h3 class="species-name">Tiger</h3>
+          <p class="species-latin">Panthera tigris</p>
+          <p class="species-fact">Fewer than 5,600 left in the wild.</p>
+          <p class="species-credit">Photo: Kartik Iyer / Unsplash</p>
+        </li>
+        <li class="species-card">
+          <figure class="species-photo"><img src="photos/sp-whale-shark.webp" alt="A whale shark swimming with its mouth open in deep blue water" loading="lazy"></figure>
+          <span class="status status--en">EN · Endangered</span>
+          <h3 class="species-name">Whale shark</h3>
+          <p class="species-latin">Rhincodon typus</p>
+          <p class="species-fact">The largest fish alive. Listed Endangered since 2016.</p>
+          <p class="species-credit">Photo: dani grau / Unsplash</p>
+        </li>
+        <li class="species-card">
+          <figure class="species-photo"><img src="photos/sp-red-panda.webp" alt="A red panda resting on a branch, looking at the camera" loading="lazy"></figure>
+          <span class="status status--en">EN · Endangered</span>
+          <h3 class="species-name">Red panda</h3>
+          <p class="species-latin">Ailurus fulgens</p>
+          <p class="species-fact">Its bamboo forests across the eastern Himalaya are being cut and broken apart.</p>
+          <p class="species-credit">Photo: Smithsonian / Unsplash</p>
+        </li>
+        <li class="species-card">
+          <figure class="species-photo"><img src="photos/sp-sea-otter.webp" alt="A sea otter floating on its back in choppy water" loading="lazy"></figure>
+          <span class="status status--en">EN · Endangered</span>
+          <h3 class="species-name">Sea otter</h3>
+          <p class="species-latin">Enhydra lutris</p>
+          <p class="species-fact">A keystone species: it keeps urchins from stripping kelp forests bare.</p>
+          <p class="species-credit">Photo: Scott K / Unsplash</p>
+        </li>
+        <li class="species-card">
+          <figure class="species-photo"><img src="photos/sp-snow-leopard.webp" alt="A snow leopard resting on a tree branch" loading="lazy"></figure>
+          <span class="status status--vu">VU · Vulnerable</span>
+          <h3 class="species-name">Snow leopard</h3>
+          <p class="species-latin">Panthera uncia</p>
+          <p class="species-fact">Ranges across the high mountains of twelve countries in Central and South Asia.</p>
+          <p class="species-credit">Photo: Robert Sachowski / Unsplash</p>
+        </li>
+        <li class="species-card">
+          <figure class="species-photo"><img src="photos/sp-polar-bear.webp" alt="Black and white close-up of a polar bear's face" loading="lazy"></figure>
+          <span class="status status--vu">VU · Vulnerable</span>
+          <h3 class="species-name">Polar bear</h3>
+          <p class="species-latin">Ursus maritimus</p>
+          <p class="species-fact">It hunts from sea ice. Less ice means fewer seals within reach.</p>
+          <p class="species-credit">Photo: Jorgen Hendriksen / Unsplash</p>
+        </li>
+      </ol>
+      <p class="signal-progress" aria-hidden="true"><span class="signal-progress-bar"><span class="signal-progress-fill"></span></span><span class="signal-progress-label">Statuses: IUCN Red List<a class="ref" href="#src-3">3</a></span></p>
+    </div>
+  </div>
+
+  <!-- Interlude: the dolphin -->
+  <section class="interlude" aria-labelledby="interlude-title">
+    <div class="interlude-media frame-clip" aria-hidden="true">
+      <img src="photos/dolphin-leap.webp" alt="" loading="lazy" data-parallax>
+    </div>
+    <div class="interlude-content">
+      <h2 class="interlude-title" id="interlude-title" data-split>The Maui dolphin is down to about 54.</h2>
+      <p class="interlude-note" data-reveal>One of the smallest dolphins on Earth, found only off the west coast of New Zealand's North Island. Count of animals a year or older, 2021 estimate.<a class="ref" href="#src-4">4</a></p>
+    </div>
+    <p class="interlude-caption">Pictured: a dolphin leaping in open ocean · Photo: Markus Kammermann / Unsplash</p>
+  </section>
+
+  <!-- 02 Fall 2026 Community Release -->
+  <section class="section release" id="release" aria-labelledby="release-title">
+    <div class="section-head"><span class="section-head-index">02 / 05</span><span class="section-head-label">Community release</span><span class="section-head-unit">Fall 2026</span></div>
+
+    <div class="release-top">
+      <div class="release-heading">
+        <p class="release-tag">Release 01</p>
+        <h2 class="release-title" id="release-title" data-split>Fall 2026 Community Release</h2>
+      </div>
+      <div class="release-lead" data-reveal>
+        <p>EcoSurge opens up. The code is public, the data is open, and this season we are asking people to help build it: naturalists, developers, makers and anyone who can organize a Saturday.</p>
+        <div class="season" aria-label="Fall 2026 season progress">
+          <div class="season-labels"><span>Sep 22 · Equinox</span><span class="season-left" data-season-left>8 weeks of fall left</span><span>Dec 21 · Solstice</span></div>
+          <div class="season-bar"><span class="season-fill" style="--p: 0.378"></span><span class="season-today" style="--p: 0.378"><span>Today</span></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="release-notes">
+      <p class="release-notes-title">What ships in Release 01</p>
+      <ol class="release-list">
+        <li class="release-item" data-reveal>
+          <span class="release-key">Archive</span>
+          <p class="release-text"><strong>The Species Archive.</strong> 3,218 species across the tree of life, 14 biomes, 3D globes and clade diagrams, open for corrections and new records.</p>
+          <span class="release-state release-state--live">Live</span>
+        </li>
+        <li class="release-item" data-reveal>
+          <span class="release-key">Watch</span>
+          <p class="release-text"><strong>Fire Watch and the feed pattern behind it.</strong> Poll a public instrument, fall back to a snapshot, and never show a fake zero when a feed is down.</p>
+          <span class="release-state release-state--live">Live</span>
+        </li>
+        <li class="release-item" data-reveal>
+          <span class="release-key">Zoo</span>
+          <p class="release-text"><strong>The structure zoo.</strong> 50 molecules and living structures, from DNA to ATP synthase, rendered in the browser.</p>
+          <span class="release-state">Preview</span>
+        </li>
+        <li class="release-item" data-reveal>
+          <span class="release-key">Bench</span>
+          <p class="release-text"><strong>Open hardware.</strong> Parametric blueprints for the Zen Gardener's deck, camera mast and LIDAR pedestal, and a stair-sweeper physics lab with ten concepts.</p>
+          <span class="release-state">Prototype</span>
+        </li>
+      </ol>
+    </div>
+
+    <div class="ways" id="ways-in">
+      <div class="ways-head">
+        <h3 class="ways-title" data-split>Four ways in.</h3>
+        <p class="ways-note" data-reveal>Pick the one that fits your hands. Every track ends in something real: a record, a feed, a part, a field day.</p>
+      </div>
+      <ol class="ways-grid">
+        <li class="way-card" data-reveal>
+          <figure class="way-photo frame-clip"><img src="photos/diver-reef.webp" alt="A scuba diver over a coral reef, a clownfish in the foreground" loading="lazy"></figure>
+          <p class="way-who"><span>01</span>Naturalists</p>
+          <h4 class="way-name">Add a species</h4>
+          <p class="way-text">Correct a record, add a range, attach a field photo. Every species page is one pull request away.</p>
+        </li>
+        <li class="way-card" data-reveal>
+          <figure class="way-photo frame-clip"><img src="photos/solar-install.webp" alt="A person installing a solar panel on a roof" loading="lazy"></figure>
+          <p class="way-who"><span>02</span>Developers</p>
+          <h4 class="way-name">Wire a feed</h4>
+          <p class="way-text">Storms, quakes, solar weather. Bring a public instrument into the Watch, built the Fire Watch way.</p>
+        </li>
+        <li class="way-card" data-reveal>
+          <figure class="way-photo frame-clip"><img src="photos/robot-arms.webp" alt="Industrial robot arms in a clean workshop" loading="lazy"></figure>
+          <p class="way-who"><span>03</span>Makers</p>
+          <h4 class="way-name">Print a part</h4>
+          <p class="way-text">Print the deck, mount the mast, run the stair sim. Send back what broke; that is the useful part.</p>
+        </li>
+        <li class="way-card" data-reveal>
+          <figure class="way-photo frame-clip"><img src="photos/cleanup-coast.webp" alt="People picking up litter on a wide beach" loading="lazy"></figure>
+          <p class="way-who"><span>04</span>Organizers</p>
+          <h4 class="way-name">Host a field day</h4>
+          <p class="way-text">A cleanup, a planting, a bioblitz. Bring your town; we will help you log what you find.</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="gather">
+      <figure class="gather-photo gather-photo--a frame-clip" data-reveal><img src="photos/garden-city.webp" alt="A community garden in bloom between houses" loading="lazy" data-parallax><figcaption>Steve Adams / Unsplash</figcaption></figure>
+      <figure class="gather-photo gather-photo--b frame-clip" data-reveal><img src="photos/farmer-seedlings.webp" alt="A farmer carrying rice seedlings across a wet field" loading="lazy" data-parallax><figcaption>Nandhu Kumar / Unsplash</figcaption></figure>
+      <figure class="gather-photo gather-photo--c frame-clip" data-reveal><img src="photos/hikers.webp" alt="A group of friends hiking together in a forest" loading="lazy" data-parallax><figcaption>Vitaly Gariev / Unsplash</figcaption></figure>
+      <figure class="gather-photo gather-photo--d frame-clip" data-reveal><img src="photos/planting-hand.webp" alt="A hand planting a young tree seedling" loading="lazy" data-parallax><figcaption>Vitor Monthay / Unsplash</figcaption></figure>
+      <figure class="gather-photo gather-photo--e frame-clip" data-reveal><img src="photos/surf-aerial.webp" alt="Aerial view of a surfer paddling in turquoise water" loading="lazy" data-parallax><figcaption>Silas Baisch / Unsplash</figcaption></figure>
+
+      <div class="gather-copy">
+        <h3 class="gather-title" data-split>Community engagement, all season.</h3>
+        <ol class="gather-list">
+          <li data-reveal><span class="gather-kind">In person</span><strong>Field days.</strong> Cleanups, plantings and bioblitzes, hosted in your town.</li>
+          <li data-reveal><span class="gather-kind">Online</span><strong>Species sprints.</strong> A weekend, a clade, and everyone filling it in together.</li>
+          <li data-reveal><span class="gather-kind">Workshop</span><strong>Open bench.</strong> Build nights for the robots, with the sims running beside them.</li>
+          <li data-reveal><span class="gather-kind">Live</span><strong>Release call.</strong> A walkthrough of what shipped and what the community changed.</li>
+        </ol>
+        <p class="gather-note" data-reveal>Dates go out to the list first.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join the release -->
+  <section class="section join" id="join" aria-labelledby="join-title">
+    <div class="join-media frame-clip" aria-hidden="true"><img src="photos/dolphins-deep.webp" alt="" loading="lazy" data-parallax></div>
+    <div class="join-inner">
+      <p class="release-tag">Release 01 · Fall 2026</p>
+      <h2 class="join-title" id="join-title" data-split>Join the release.</h2>
+      <form class="join-form" novalidate data-reveal>
+        <fieldset class="join-roles">
+          <legend class="join-label">I can help as</legend>
+          <button class="join-role" type="button" aria-pressed="false">Naturalist</button>
+          <button class="join-role" type="button" aria-pressed="false">Developer</button>
+          <button class="join-role" type="button" aria-pressed="false">Maker</button>
+          <button class="join-role" type="button" aria-pressed="false">Organizer</button>
+        </fieldset>
+        <label class="join-label" for="join-email">Email</label>
+        <div class="join-field">
+          <input class="join-input" id="join-email" name="email" type="email" autocomplete="email" placeholder="you@planet.earth" required>
+          <button class="btn" type="submit">Count me in</button>
+        </div>
+        <p class="join-status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="join-repo" data-reveal>Or start now: <a href="https://github.com/ryan-organically/ecosurge">the code is on GitHub</a>.</p>
+    </div>
+    <p class="join-caption">Photo: Will Rust / Unsplash</p>
+  </section>
+
+  <!-- 03 The beacon: divisions, sticky photo swaps as you read -->
+  <section class="section beacon" id="beacon" aria-labelledby="beacon-title">
+    <div class="section-head"><span class="section-head-index">03 / 05</span><span class="section-head-label">The beacon</span><span class="section-head-unit">Divisions</span></div>
+    <div class="beacon-intro">
+      <h2 class="section-title" id="beacon-title" data-split>What the beacon lights.</h2>
+      <p class="section-subtitle" data-reveal>Green tech is scattered across labs, farms and garages. EcoSurge puts it in one place, in public, where it can be checked and built on.</p>
+    </div>
+
+    <div class="beacon-grid">
+      <ol class="beacon-list">
+        <li class="beacon-row" data-photo="0">
+          <span class="beacon-index">01</span>
+          <h3 class="beacon-name">Archive</h3>
+          <span class="beacon-state beacon-state--live">Live</span>
+          <p class="beacon-text">The tree of life from domain to species: field guides, clade diagrams, biome dashboards and 3D globes.</p>
+          <img class="beacon-row-photo" src="photos/sp-orangutan.webp" alt="" loading="lazy">
+        </li>
+        <li class="beacon-row" data-photo="1">
+          <span class="beacon-index">02</span>
+          <h3 class="beacon-name">Watch</h3>
+          <span class="beacon-state beacon-state--live">Live</span>
+          <p class="beacon-text">Planetary feeds from public instruments. Fire Watch runs on NASA EONET today; storms, disasters and trends come next.</p>
+          <img class="beacon-row-photo" src="photos/wind-clouds.webp" alt="" loading="lazy">
+        </li>
+        <li class="beacon-row" data-photo="2">
+          <span class="beacon-index">03</span>
+          <h3 class="beacon-name">Field</h3>
+          <span class="beacon-state">Building</span>
+          <p class="beacon-text">Agriculture in harmony with nature. Farms hold half the world's habitable land,<a class="ref" href="#src-9">9</a> so that is where the lever is.</p>
+          <img class="beacon-row-photo" src="photos/reforest-team.webp" alt="" loading="lazy">
+        </li>
+        <li class="beacon-row" data-photo="3">
+          <span class="beacon-index">04</span>
+          <h3 class="beacon-name">Machines</h3>
+          <span class="beacon-state">Prototype</span>
+          <p class="beacon-text">Biomechanical robots: reflexes on the robot, perception on the desktop. The Zen Gardener is on the bench.</p>
+          <img class="beacon-row-photo" src="photos/robot-arms.webp" alt="" loading="lazy">
+        </li>
+        <li class="beacon-row" data-photo="4">
+          <span class="beacon-index">05</span>
+          <h3 class="beacon-name">Genome</h3>
+          <span class="beacon-state">Research</span>
+          <p class="beacon-text">Biotechnology, starting with sight: the structures life is built from, rendered so anyone can see them.</p>
+          <img class="beacon-row-photo" src="photos/microscope.webp" alt="" loading="lazy">
+        </li>
+      </ol>
+      <div class="beacon-figure" aria-hidden="true">
+        <div class="beacon-frame">
+          <img class="beacon-photo beacon-photo--on" src="photos/sp-orangutan.webp" alt="" loading="lazy">
+          <img class="beacon-photo" src="photos/wind-clouds.webp" alt="" loading="lazy">
+          <img class="beacon-photo" src="photos/reforest-team.webp" alt="" loading="lazy">
+          <img class="beacon-photo" src="photos/robot-arms.webp" alt="" loading="lazy">
+          <img class="beacon-photo" src="photos/microscope.webp" alt="" loading="lazy">
+          <span class="beacon-count"><span data-beacon-count>01</span> / 05</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 Proof: the humpback -->
+  <section class="proof" id="proof" aria-labelledby="proof-title">
+    <div class="proof-media frame-clip" aria-hidden="true"><img src="photos/humpback-deep.webp" alt="" loading="lazy" data-parallax></div>
+    <div class="proof-inner">
+      <div class="section-head"><span class="section-head-index">04 / 05</span><span class="section-head-label">Proof</span><span class="section-head-unit">Recovery</span></div>
+      <p class="proof-figure" data-reveal>450 <span aria-hidden="true">→</span> 25,000</p>
+      <h2 class="proof-title" id="proof-title" data-split>Protection works when it is measured and kept.</h2>
+      <p class="proof-text" data-reveal>Western South Atlantic humpback whales came back from about 450 in the 1950s to about 25,000, close to their size before whaling.<a class="ref" href="#src-5">5</a></p>
+      <dl class="proof-row" data-reveal>
+        <div><dt>2066</dt><dd>The Antarctic ozone hole back to 1980 levels, projected, because one treaty held.<a class="ref" href="#src-6">6</a></dd></div>
+        <div><dt>−90%</dt><dd>The fall in the cost of utility-scale solar power, 2010 to 2023.<a class="ref" href="#src-7">7</a></dd></div>
+        <div><dt>30 × 30</dt><dd>The global pledge to protect 30% of land and ocean by 2030.<a class="ref" href="#src-8">8</a></dd></div>
+      </dl>
+    </div>
+    <p class="proof-caption">A humpback whale in deep water · Photo: Gabriel Dizzi / Unsplash</p>
+  </section>
+
+  <!-- 05 Contribute -->
+  <section class="section contribute" aria-labelledby="contribute-title">
+    <div class="section-head"><span class="section-head-index">05 / 05</span><span class="section-head-label">Contribute</span><span class="section-head-unit">Open</span></div>
+    <h2 class="contribute-title" id="contribute-title" data-split>Keep the light on.</h2>
+    <div class="contribute-actions" data-reveal>
+      <a class="btn" href="#join">Join the release</a>
+      <a class="btn btn--ghost" href="https://github.com/ryan-organically/ecosurge">Open the repo</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-cols">
+    <div>
+      <p class="footer-title">Sources</p>
+      <ol class="footer-sources">
+        <li id="src-1">IPBES, Global Assessment Report on Biodiversity and Ecosystem Services (2019).</li>
+        <li id="src-2">WWF and ZSL, Living Planet Report 2024.</li>
+        <li id="src-3">IUCN Red List of Threatened Species, current assessments for each species shown.</li>
+        <li id="src-4">New Zealand Department of Conservation, Maui dolphin abundance estimate (2021).</li>
+        <li id="src-5">Zerbini et al., Royal Society Open Science (2019).</li>
+        <li id="src-6">WMO and UNEP, Scientific Assessment of Ozone Depletion: 2022.</li>
+        <li id="src-7">IRENA, Renewable Power Generation Costs in 2023 (2024).</li>
+        <li id="src-8">CBD, Kunming-Montreal Global Biodiversity Framework (2022), Target 3.</li>
+        <li id="src-9">Our World in Data, Land Use (Ritchie and Roser).</li>
+      </ol>
+    </div>
+    <div>
+      <p class="footer-title">Photography via Unsplash</p>
+      <p class="footer-credits"><a href="https://unsplash.com/@taliacohen?utm_source=ecosurge&amp;utm_medium=referral">Talia Cohen</a>, <a href="https://unsplash.com/@makabera?utm_source=ecosurge&amp;utm_medium=referral">Markus Kammermann</a>, <a href="https://unsplash.com/@dawncasey?utm_source=ecosurge&amp;utm_medium=referral">Dawn Casey</a>, <a href="https://unsplash.com/@willrust?utm_source=ecosurge&amp;utm_medium=referral">Will Rust</a>, <a href="https://unsplash.com/@gabrieldizzi?utm_source=ecosurge&amp;utm_medium=referral">Gabriel Dizzi</a>, <a href="https://unsplash.com/@toddcravens?utm_source=ecosurge&amp;utm_medium=referral">Todd Cravens</a>, <a href="https://unsplash.com/@sinusfiction?utm_source=ecosurge&amp;utm_medium=referral">Sies Kranen</a>, <a href="https://unsplash.com/@smithsonian?utm_source=ecosurge&amp;utm_medium=referral">Smithsonian</a>, <a href="https://unsplash.com/@matt80?utm_source=ecosurge&amp;utm_medium=referral">Mattias Banguese</a>, <a href="https://unsplash.com/@louismornaud?utm_source=ecosurge&amp;utm_medium=referral">Studio Crevettes</a>, <a href="https://unsplash.com/@fit_foodie_fotographer?utm_source=ecosurge&amp;utm_medium=referral">Kartik Iyer</a>, <a href="https://unsplash.com/@danigrau?utm_source=ecosurge&amp;utm_medium=referral">dani grau</a>, <a href="https://unsplash.com/@sizzle_king?utm_source=ecosurge&amp;utm_medium=referral">Scott K</a>, <a href="https://unsplash.com/@rsachowski?utm_source=ecosurge&amp;utm_medium=referral">Robert Sachowski</a>, <a href="https://unsplash.com/@jor9en?utm_source=ecosurge&amp;utm_medium=referral">Jorgen Hendriksen</a>, <a href="https://unsplash.com/@valentinapaschetto?utm_source=ecosurge&amp;utm_medium=referral">Valentina Paschetto</a>, <a href="https://unsplash.com/@brian_yuri?utm_source=ecosurge&amp;utm_medium=referral">Brian Yurasits</a>, <a href="https://unsplash.com/@silverkblack?utm_source=ecosurge&amp;utm_medium=referral">Vitaly Gariev</a>, <a href="https://unsplash.com/@sradams57?utm_source=ecosurge&amp;utm_medium=referral">Steve Adams</a>, <a href="https://unsplash.com/@vitormonthay?utm_source=ecosurge&amp;utm_medium=referral">Vitor Monthay</a>, <a href="https://unsplash.com/@nandhukumarndd?utm_source=ecosurge&amp;utm_medium=referral">Nandhu Kumar</a>, <a href="https://unsplash.com/@callmerod792?utm_source=ecosurge&amp;utm_medium=referral">Rod esm</a>, <a href="https://unsplash.com/@wmmead?utm_source=ecosurge&amp;utm_medium=referral">Bill Mead</a>, <a href="https://unsplash.com/@hermeus?utm_source=ecosurge&amp;utm_medium=referral">Hermeus</a>, <a href="https://unsplash.com/@zetong?utm_source=ecosurge&amp;utm_medium=referral">Zetong Li</a>, <a href="https://unsplash.com/@nci?utm_source=ecosurge&amp;utm_medium=referral">National Cancer Institute</a>, <a href="https://unsplash.com/@silasbaisch?utm_source=ecosurge&amp;utm_medium=referral">Silas Baisch</a>, <a href="https://unsplash.com/@sweeksco?utm_source=ecosurge&amp;utm_medium=referral">Steven Weeks</a>, <a href="https://unsplash.com/@mero_dnt?utm_source=ecosurge&amp;utm_medium=referral">Chinh Le Duc</a>, <a href="https://unsplash.com/@ulyyyanka?utm_source=ecosurge&amp;utm_medium=referral">Uliana Semenova</a>.</p>
+    </div>
+  </div>
+  <div class="footer-base">
+    <a class="nav-brand" href="#top" aria-label="EcoSurge, back to top">
+      <svg class="nav-mark" aria-hidden="true"><use href="#mark"/></svg>
+      <span class="nav-word">EcoSurge</span>
+    </a>
+    <p class="footer-meta">© 2026 EcoSurge · A beacon for green tech</p>
+  </div>
+</footer>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/SplitText.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="beacon.js"></script>
+</body>
+</html>

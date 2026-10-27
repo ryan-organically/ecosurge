@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EcoSurge · 2100 is one lifetime away</title>
+<meta name="description" content="A child born this year turns 74 in 2100. EcoSurge builds the knowledge, instruments and machines for the planet they inherit.">
+<meta name="theme-color" content="#030605">
+<script>
+  // Content waits for its entrance; reduced motion and no-JS show it at rest.
+  if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.documentElement.classList.add("js-motion");
+    setTimeout(function () { if (!window.gsap) document.documentElement.classList.add("reveal-all"); }, 2500);
+  }
+</script>
+<link rel="preload" href="fonts/DxGrafik-SemiBold.otf" as="font" type="font/otf" crossorigin>
+<link rel="stylesheet" href="2100.css">
+</head>
+<body id="top">
+
+<svg class="sr-only" aria-hidden="true">
+  <defs>
+    <mask id="mark-green-cut"><rect width="64" height="64" fill="#fff"/><circle cx="36.5" cy="29" r="23.5" fill="#000"/></mask>
+    <mask id="mark-amber-cut"><rect width="64" height="64" fill="#fff"/><circle cx="35" cy="37.5" r="23" fill="#000"/></mask>
+    <symbol id="mark" viewBox="0 0 64 64">
+      <circle cx="31" cy="34" r="27" fill="#3f8a4e" mask="url(#mark-green-cut)"/>
+      <circle cx="34" cy="30" r="22" fill="#ee9a2c" mask="url(#mark-amber-cut)"/>
+      <path d="M23 29.5C31 24.5 41 24 51 26.5C42 30.5 32 32 23 29.5Z" fill="#6aa84f"/>
+      <path d="M15.5 34C23 32 31 34 38.5 38.5C29.5 40.5 21.5 38.5 15.5 34Z" fill="#f2a33a"/>
+    </symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav">
+  <a class="nav-brand" href="#top" aria-label="EcoSurge home">
+    <svg class="nav-mark" aria-hidden="true"><use href="#mark"/></svg>
+    <span class="nav-word">EcoSurge</span>
+  </a>
+  <nav class="nav-links" aria-label="Sections">
+    <a href="#lifetime">Lifetime</a>
+    <a href="#ledger">Instruments</a>
+    <a href="#fork">The fork</a>
+    <a href="#surge">Divisions</a>
+    <a href="#thesis">Thesis</a>
+  </nav>
+  <div class="nav-clock" role="timer" aria-label="Time remaining until 1 January 2100">
+    <span class="nav-clock-label">2100 in</span>
+    <span class="nav-clock-value" data-countdown>73y 067d 00:00:00</span>
+  </div>
+  <a class="btn btn--small" href="#join">Join</a>
+</header>
+
+<main id="main">
+
+  <!-- Hero: a sticky stage; scrolling walks the year from 2026 to 2100 -->
+  <section class="hero-section" aria-labelledby="hero-title">
+    <div class="hero-stage">
+      <canvas class="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero-copy">
+        <p class="hero-eyebrow"><span class="hero-eyebrow-dot" aria-hidden="true"></span>Planetary state · 2026 to 2100</p>
+        <h1 class="hero-title" id="hero-title" data-split>2100 is one lifetime away.</h1>
+        <p class="hero-sub" data-reveal>A child born this year turns 74 in 2100. Which planet meets them is being decided now, a tenth of a degree at a time.</p>
+        <div class="hero-actions" data-reveal>
+          <a class="btn" href="/archive">Enter the Archive</a>
+          <a class="btn btn--ghost" href="#ledger">Read the instruments</a>
+        </div>
+      </div>
+
+      <div class="hero-orb" aria-hidden="true">
+        <p class="hero-legend">
+          <span>Model planet, not a map</span>
+          <span>Contours: terrain · Ink: warming, poles amplified</span>
+          <span>Points: fire · Sea rise exaggerated to be seen</span>
+        </p>
+      </div>
+
+      <div class="hero-base">
+        <div class="hero-year-wrap">
+          <span class="hero-year-label">Year</span>
+          <output class="hero-year" aria-live="off">2026</output>
+        </div>
+
+        <dl class="hero-readout">
+          <div class="hero-readout-cell">
+            <dt>Scenario <span data-r="code">SSP2-4.5</span></dt>
+            <dd data-r="name">Intermediate</dd>
+          </div>
+          <div class="hero-readout-cell">
+            <dt>Warming by 2100<a class="ref" href="#src-1">1</a></dt>
+            <dd><span class="hero-readout-big" data-r="dt">+2.7 °C</span> <span class="hero-readout-range" data-r="range">likely 2.1 to 3.5</span></dd>
+          </div>
+          <div class="hero-readout-cell">
+            <dt>Sea level by 2100</dt>
+            <dd data-r="slr">+0.44 to 0.76 m</dd>
+          </div>
+          <div class="hero-readout-cell">
+            <dt>Emissions path</dt>
+            <dd data-r="path">Near today's until 2050</dd>
+          </div>
+        </dl>
+
+        <div class="hero-dial">
+          <p class="hero-dial-label" id="dial-label"><span>Choose a 2100</span><span class="hero-dial-hint">Scroll to arrive</span></p>
+          <div class="hero-dial-row" role="group" aria-labelledby="dial-label">
+            <button class="hero-dial-btn" type="button" data-scenario="0" aria-pressed="false" style="--t: 0.08"><span class="hero-dial-code">SSP1-1.9</span><span class="hero-dial-temp">+1.4°</span></button>
+            <button class="hero-dial-btn" type="button" data-scenario="1" aria-pressed="false" style="--t: 0.22"><span class="hero-dial-code">SSP1-2.6</span><span class="hero-dial-temp">+1.8°</span></button>
+            <button class="hero-dial-btn" type="button" data-scenario="2" aria-pressed="true" style="--t: 0.5"><span class="hero-dial-code">SSP2-4.5</span><span class="hero-dial-temp">+2.7°</span></button>
+            <button class="hero-dial-btn" type="button" data-scenario="3" aria-pressed="false" style="--t: 0.75"><span class="hero-dial-code">SSP3-7.0</span><span class="hero-dial-temp">+3.6°</span></button>
+            <button class="hero-dial-btn" type="button" data-scenario="4" aria-pressed="false" style="--t: 1"><span class="hero-dial-code">SSP5-8.5</span><span class="hero-dial-temp">+4.4°</span></button>
+          </div>
+        </div>
+      </div>
+
+      <p class="hero-stamp" aria-hidden="true">Arrived · 1 Jan 2100</p>
+    </div>
+  </section>
+
+  <!-- 01 One lifetime -->
+  <section class="section lifetime" id="lifetime" aria-labelledby="lifetime-title">
+    <div class="section-head"><span class="section-head-index">01 / 06</span><span class="section-head-label">One lifetime</span><span class="section-head-unit">Years</span></div>
+    <div class="lifetime-intro">
+      <h2 class="section-title" id="lifetime-title" data-split>The century ends inside a single human life.</h2>
+      <p class="section-subtitle" data-reveal>Global life expectancy at birth is 73.3 years.<a class="ref" href="#src-6">6</a> From today, 2100 is 74. Everything on this ruler happened, or will, within reach of people alive now.</p>
+    </div>
+
+    <div class="ruler" data-reveal>
+      <div class="ruler-axis" aria-hidden="true"></div>
+      <ol class="ruler-marks">
+        <li class="ruler-mark" style="--x: 0; --lane: 1">
+          <span class="ruler-year">1850</span>
+          <span class="ruler-text">Industrial baseline. CO₂ at 280 ppm.<a class="ref" href="#src-2">2</a></span>
+        </li>
+        <li class="ruler-mark" style="--x: 0.432; --lane: 1">
+          <span class="ruler-year">1958</span>
+          <span class="ruler-text">Keeling starts measuring CO₂ on Mauna Loa: about 315 ppm.<a class="ref" href="#src-2">2</a></span>
+        </li>
+        <li class="ruler-mark" style="--x: 0.548; --lane: 2">
+          <span class="ruler-year">1987</span>
+          <span class="ruler-text">Montreal Protocol signed. The ozone repair begins.<a class="ref" href="#src-5">5</a></span>
+        </li>
+        <li class="ruler-mark" style="--x: 0.66; --lane: 3">
+          <span class="ruler-year">2015</span>
+          <span class="ruler-text">Paris Agreement: well below 2 °C, pursue 1.5 °C.</span>
+        </li>
+        <li class="ruler-mark ruler-mark--alarm" style="--x: 0.696; --lane: 1">
+          <span class="ruler-year">2024</span>
+          <span class="ruler-text">First calendar year above 1.5 °C.<a class="ref" href="#src-3">3</a></span>
+        </li>
+        <li class="ruler-mark ruler-mark--now" style="--x: 0.704; --lane: 0">
+          <span class="ruler-year">2026</span>
+          <span class="ruler-text">Now. You are here.</span>
+        </li>
+        <li class="ruler-mark" style="--x: 0.8; --lane: 2">
+          <span class="ruler-year">2050</span>
+          <span class="ruler-text">Net zero CO₂ in pathways that hold 1.5 °C.<a class="ref" href="#src-4">4</a></span>
+        </li>
+        <li class="ruler-mark" style="--x: 0.864; --lane: 3">
+          <span class="ruler-year">2066</span>
+          <span class="ruler-text">Antarctic ozone back to 1980 levels, if the Protocol holds.<a class="ref" href="#src-5">5</a></span>
+        </li>
+        <li class="ruler-mark ruler-mark--end" style="--x: 1; --lane: 1">
+          <span class="ruler-year">2100</span>
+          <span class="ruler-text">Arrival. A child born today is 74.</span>
+        </li>
+      </ol>
+      <div class="ruler-span" style="--from: 0; --to: 0.704">
+        <span class="ruler-span-label">176 years of industry · 280 to 424 ppm</span>
+      </div>
+      <div class="ruler-span ruler-span--life" style="--from: 0.704; --to: 1">
+        <span class="ruler-span-label">One lifetime · 74 years</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 The ledger -->
+  <section class="section ledger" id="ledger" aria-labelledby="ledger-title">
+    <div class="section-head"><span class="section-head-index">02 / 06</span><span class="section-head-label">The ledger</span><span class="section-head-unit">Measured</span></div>
+    <h2 class="section-title" id="ledger-title" data-split>The instruments already read the warning.</h2>
+
+    <div class="ledger-grid">
+      <article class="ledger-cell" data-reveal>
+        <p class="ledger-figure"><span data-count="424.6" data-decimals="1">424.6</span><span class="ledger-unit">ppm</span></p>
+        <p class="ledger-text">CO₂ at Mauna Loa, 2024 annual mean. It was 280 before industry.</p>
+        <p class="ledger-source"><a class="ref" href="#src-2">2</a>NOAA GML</p>
+      </article>
+      <article class="ledger-cell ledger-cell--alarm" data-reveal>
+        <p class="ledger-figure"><span data-count="1.55" data-decimals="2">1.55</span><span class="ledger-unit">°C</span></p>
+        <p class="ledger-text">2024 warming over pre-industrial. The first calendar year past the 1.5 line.</p>
+        <p class="ledger-source"><a class="ref" href="#src-3">3</a>WMO</p>
+      </article>
+      <article class="ledger-cell" data-reveal>
+        <p class="ledger-figure"><span data-count="73" data-decimals="0">73</span><span class="ledger-unit">%</span></p>
+        <p class="ledger-text">Average decline in monitored wildlife populations since 1970.</p>
+        <p class="ledger-source"><a class="ref" href="#src-7">7</a>Living Planet Index</p>
+      </article>
+      <article class="ledger-cell" data-reveal>
+        <p class="ledger-figure"><span data-count="1000000" data-decimals="0">1,000,000</span></p>
+        <p class="ledger-text">Species threatened with extinction, many within decades.</p>
+        <p class="ledger-source"><a class="ref" href="#src-8">8</a>IPBES</p>
+      </article>
+      <article class="ledger-cell" data-reveal>
+        <p class="ledger-figure"><span data-count="84" data-decimals="0">84</span><span class="ledger-unit">%</span></p>
+        <p class="ledger-text">Share of the world's reef area hit by bleaching-level heat in the fourth global event.</p>
+        <p class="ledger-source"><a class="ref" href="#src-9">9</a>NOAA Coral Reef Watch</p>
+      </article>
+      <article class="ledger-cell" data-reveal>
+        <p class="ledger-figure"><span data-count="4" data-decimals="0">4</span><span class="ledger-unit">%</span></p>
+        <p class="ledger-text">Wild mammals' share of all mammal mass on Earth. Livestock is 60%, people 36%.</p>
+        <p class="ledger-source"><a class="ref" href="#src-10">10</a>Bar-On et al.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 03 The fork -->
+  <section class="section fork" id="fork" aria-labelledby="fork-title">
+    <div class="section-head"><span class="section-head-index">03 / 06</span><span class="section-head-label">The fork</span><span class="section-head-unit">IPCC AR6</span></div>
+    <div class="fork-intro">
+      <h2 class="section-title" id="fork-title" data-split>Two 2100s. One decade to choose.</h2>
+      <p class="section-subtitle" data-reveal>Current policies point near the intermediate path, about 2.7 °C.<a class="ref" href="#src-11">11</a> The low path is still physically open. Both columns are the same planet.</p>
+    </div>
+
+    <div class="fork-table" role="table" aria-label="Two 2100 scenarios compared" data-reveal>
+      <div class="fork-row fork-row--head" role="row">
+        <span class="fork-label" role="columnheader">By 2100</span>
+        <span class="fork-col fork-col--low" role="columnheader"><span class="fork-tag">SSP1-1.9</span>Holding 1.5 °C</span>
+        <span class="fork-col fork-col--high" role="columnheader"><span class="fork-tag">SSP2-4.5</span>Current course</span>
+      </div>
+      <div class="fork-row" role="row">
+        <span class="fork-label" role="rowheader">Warming, 2081 to 2100<a class="ref" href="#src-1">1</a></span>
+        <span class="fork-col fork-col--low" role="cell"><strong>+1.4 °C</strong> likely 1.0 to 1.8</span>
+        <span class="fork-col fork-col--high" role="cell"><strong>+2.7 °C</strong> likely 2.1 to 3.5</span>
+      </div>
+      <div class="fork-row" role="row">
+        <span class="fork-label" role="rowheader">Global sea level<a class="ref" href="#src-1">1</a></span>
+        <span class="fork-col fork-col--low" role="cell"><strong>+0.28 to 0.55 m</strong></span>
+        <span class="fork-col fork-col--high" role="cell"><strong>+0.44 to 0.76 m</strong></span>
+      </div>
+      <div class="fork-row" role="row">
+        <span class="fork-label" role="rowheader">Net zero CO₂</span>
+        <span class="fork-col fork-col--low" role="cell"><strong>Around 2050</strong></span>
+        <span class="fork-col fork-col--high" role="cell"><strong>Not this century</strong></span>
+      </div>
+      <div class="fork-row" role="row">
+        <span class="fork-label" role="rowheader">Warm-water coral reefs<a class="ref" href="#src-4">4</a></span>
+        <span class="fork-col fork-col--low" role="cell"><strong>70 to 90% lost</strong> at 1.5 °C</span>
+        <span class="fork-col fork-col--high" role="cell"><strong>Over 99% lost</strong> from 2 °C</span>
+      </div>
+      <div class="fork-row fork-row--locked" role="row">
+        <span class="fork-label" role="rowheader">Locked in either way<a class="ref" href="#src-1">1</a></span>
+        <span class="fork-locked" role="cell">An Arctic practically free of sea ice in September, likely at least once before 2050. Seas that keep rising for centuries after 2100.</span>
+      </div>
+    </div>
+
+    <div class="heat" data-reveal>
+      <div class="heat-head">
+        <h3 class="heat-title">The once-a-decade heatwave</h3>
+        <p class="heat-note">A hot extreme that struck once per decade before industry now arrives this many times per decade, and this much hotter.<a class="ref" href="#src-1">1</a></p>
+      </div>
+      <ol class="heat-rows"></ol>
+    </div>
+  </section>
+
+  <!-- 04 Proof -->
+  <section class="section proof" id="proof" aria-labelledby="proof-title">
+    <div class="section-head"><span class="section-head-index">04 / 06</span><span class="section-head-label">Recovery is measurable</span><span class="section-head-unit">Precedent</span></div>
+    <h2 class="section-title" id="proof-title" data-split>We have fixed a sky before.</h2>
+
+    <div class="proof-grid">
+      <article class="proof-card" data-reveal>
+        <p class="proof-figure">2066</p>
+        <p class="proof-text">The Antarctic ozone hole returns to 1980 levels, projected. Most of the world gets there around 2040. One treaty did that.<a class="ref" href="#src-5">5</a></p>
+      </article>
+      <article class="proof-card" data-reveal>
+        <p class="proof-figure">450 <span class="proof-arrow" aria-hidden="true">→</span> 25,000</p>
+        <p class="proof-text">Western South Atlantic humpback whales, 1950s to 2019. Back to about 93% of their pre-whaling size.<a class="ref" href="#src-12">12</a></p>
+      </article>
+      <article class="proof-card" data-reveal>
+        <p class="proof-figure">−90%</p>
+        <p class="proof-text">The fall in the cost of utility-scale solar power from 2010 to 2023.<a class="ref" href="#src-13">13</a></p>
+      </article>
+      <article class="proof-card" data-reveal>
+        <p class="proof-figure">30 × 30</p>
+        <p class="proof-text">Parties to the Kunming-Montreal framework agreed to protect 30% of land and ocean by 2030.<a class="ref" href="#src-14">14</a></p>
+      </article>
+    </div>
+    <p class="proof-coda" data-reveal>Every tenth of a degree is a different planet. Recovery is not a mood. It is a measurement.</p>
+  </section>
+
+  <!-- 05 Divisions -->
+  <section class="section surge" id="surge" aria-labelledby="surge-title">
+    <div class="section-head"><span class="section-head-index">05 / 06</span><span class="section-head-label">The surge</span><span class="section-head-unit">Divisions</span></div>
+    <div class="surge-intro">
+      <h2 class="section-title" id="surge-title" data-split>A conglomerate for the living planet.</h2>
+      <p class="section-subtitle" data-reveal>Biology, machines and agriculture under one roof, with one instrument panel. Status is stated plainly.</p>
+    </div>
+
+    <ol class="surge-list">
+      <li class="surge-row" data-reveal>
+        <span class="surge-index">01</span>
+        <h3 class="surge-name">Archive</h3>
+        <span class="surge-status surge-status--live">Live</span>
+        <p class="surge-text">The Species Archive. The tree of life from domain to species: 3D globes, clade diagrams, field guides and biome dashboards.</p>
+      </li>
+      <li class="surge-row" data-reveal>
+        <span class="surge-index">02</span>
+        <h3 class="surge-name">Watch</h3>
+        <span class="surge-status surge-status--live">Live</span>
+        <p class="surge-text">Planetary feeds from public instruments. Fire Watch runs on NASA EONET today; storms, disasters and trends are next.</p>
+      </li>
+      <li class="surge-row" data-reveal>
+        <span class="surge-index">03</span>
+        <h3 class="surge-name">Field</h3>
+        <span class="surge-status surge-status--building">Building</span>
+        <p class="surge-text">Agriculture in harmony with nature. Farming holds half the world's habitable land<a class="ref" href="#src-15">15</a> and 70% of its freshwater withdrawals.<a class="ref" href="#src-16">16</a> That is where the lever is.</p>
+      </li>
+      <li class="surge-row" data-reveal>
+        <span class="surge-index">04</span>
+        <h3 class="surge-name">Machines</h3>
+        <span class="surge-status surge-status--proto">Prototype</span>
+        <p class="surge-text">Biomechanical robots: reflexes on the robot, perception on the desktop. The Zen Gardener is on the bench; a stair-climbing sweeper runs in simulation.</p>
+      </li>
+      <li class="surge-row" data-reveal>
+        <span class="surge-index">05</span>
+        <h3 class="surge-name">Genome</h3>
+        <span class="surge-status surge-status--research">Research</span>
+        <p class="surge-text">Biotechnology, starting with sight: molecular structures rendered so anyone can see what life is built from.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- 06 Thesis (the one paper section) -->
+  <section class="section section--paper thesis" id="thesis" aria-labelledby="thesis-title">
+    <div class="section-head"><span class="section-head-index">06 / 06</span><span class="section-head-label">Thesis</span><span class="section-head-unit">EcoSurge</span></div>
+    <h2 class="thesis-quote" id="thesis-title" data-split>Nature is not a sector. It is the system every sector runs on.</h2>
+    <div class="thesis-body">
+      <svg class="thesis-mark" aria-hidden="true"><use href="#mark"/></svg>
+      <p data-reveal>EcoSurge builds where biology, machines and agriculture meet: knowledge anyone can open, instruments that watch the planet as it changes, and machines that do the patient work of repair.</p>
+    </div>
+    <ol class="thesis-principles">
+      <li data-reveal><span class="thesis-num">i</span><h3>Measure everything.</h3><p>Every number on this page names the instrument that produced it.</p></li>
+      <li data-reveal><span class="thesis-num">ii</span><h3>Open the knowledge.</h3><p>The living world belongs to everyone who lives in it. The Archive is free to read.</p></li>
+      <li data-reveal><span class="thesis-num">iii</span><h3>Build for 2100.</h3><p>Someone alive today will be there to check our work.</p></li>
+    </ol>
+  </section>
+
+  <!-- Join -->
+  <section class="section join" id="join" aria-labelledby="join-title">
+    <div class="join-grid">
+      <div class="join-copy">
+        <p class="join-clock"><span class="join-clock-label">Until 1 Jan 2100, 00:00 UTC</span><span class="join-clock-value" data-countdown>73y 067d 00:00:00</span></p>
+        <h2 class="join-title" id="join-title" data-split>Join the surge.</h2>
+        <p class="section-subtitle" data-reveal>Field notes from the instruments, sent when there is something worth saying.</p>
+      </div>
+      <form class="join-form" novalidate data-reveal>
+        <label class="join-label" for="join-email">Email</label>
+        <div class="join-field">
+          <input class="join-input" id="join-email" name="email" type="email" autocomplete="email" placeholder="you@planet.earth" required>
+          <button class="btn" type="submit">Subscribe</button>
+        </div>
+        <p class="join-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-sources">
+    <p class="footer-sources-title">Sources</p>
+    <ol class="footer-sources-list">
+      <li id="src-1">IPCC AR6 WG1, Summary for Policymakers (2021): Table SPM.1, B.5, Figure SPM.6.</li>
+      <li id="src-2">NOAA Global Monitoring Laboratory and Scripps, Mauna Loa CO₂ record.</li>
+      <li id="src-3">WMO, State of the Global Climate 2024 (2025).</li>
+      <li id="src-4">IPCC, Global Warming of 1.5 °C, Summary for Policymakers (2018).</li>
+      <li id="src-5">WMO and UNEP, Scientific Assessment of Ozone Depletion: 2022.</li>
+      <li id="src-6">UN DESA, World Population Prospects 2024.</li>
+      <li id="src-7">WWF and ZSL, Living Planet Report 2024.</li>
+      <li id="src-8">IPBES, Global Assessment Report on Biodiversity and Ecosystem Services (2019).</li>
+      <li id="src-9">NOAA Coral Reef Watch, fourth global coral bleaching event (2024 to 2025).</li>
+      <li id="src-10">Bar-On, Phillips and Milo, "The biomass distribution on Earth," PNAS (2018).</li>
+      <li id="src-11">Climate Action Tracker, global warming projections, current policies.</li>
+      <li id="src-12">Zerbini et al., Royal Society Open Science (2019).</li>
+      <li id="src-13">IRENA, Renewable Power Generation Costs in 2023 (2024).</li>
+      <li id="src-14">CBD, Kunming-Montreal Global Biodiversity Framework (2022), Target 3.</li>
+      <li id="src-15">Our World in Data, Land Use.</li>
+      <li id="src-16">FAO AQUASTAT, water withdrawal by sector.</li>
+    </ol>
+  </div>
+  <div class="footer-base">
+    <a class="nav-brand" href="#top" aria-label="EcoSurge, back to top">
+      <svg class="nav-mark" aria-hidden="true"><use href="#mark"/></svg>
+      <span class="nav-word">EcoSurge</span>
+    </a>
+    <p class="footer-meta">© 2026 EcoSurge · Built for the planet a child born today will inherit</p>
+  </div>
+</footer>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/SplitText.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="planet.js"></script>
+<script src="2100.js"></script>
+</body>
+</html>
