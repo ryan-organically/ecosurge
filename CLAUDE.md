@@ -105,3 +105,5 @@ npm run fetch:images # Pull species images from Wikimedia
 ## Known Issues
 
 - 5 species IDs are duplicated between `taxonomy/*.ts` and `species.ts` (panthera-leo, balaenoptera-musculus, apis-mellifera, sequoia-sempervirens, octopus-vulgaris). These are intentional (sample species reference the same entities) but could cause key collisions if both datasets are rendered together.
+
+Security floor (2026-10-27): sharp 0.35.5. Do not downgrade or regenerate the lockfile below these.
